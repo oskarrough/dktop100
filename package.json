@@ -1,0 +1,7 @@
+{
+  "name": "top100",
+  "private": true,
+  "scripts": {
+    "dev": "bunx vite dev"
+  }
+}
