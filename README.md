@@ -52,7 +52,7 @@ All-in Cloudflare Workers, nothing else: one Worker serves static assets + the v
 
 - [x] Parse raw.html → top100.json
 - [x] Basic accessible HTML list
-- [x] Fixed snapshot (ranks 21–100; no live DR updates)
+- [x] Fixed snapshot (ranks 1–100; no live DR updates)
 - [x] Global player bar
 - [ ] Your-TOPx picker + share URL
 - [ ] Download cover images locally
