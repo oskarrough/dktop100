@@ -1,59 +1,66 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TOP100</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <h1>TOP100</h1>
-    <menu class="lists" aria-label="Song list">
-      <button type="button" data-list="top100" aria-pressed="true">Top 100</button>
-      <button type="button" data-list="top400" aria-pressed="false">Top 400</button>
-    </menu>
-    <menu class="views" aria-label="View">
-      <button type="button" data-view="list" aria-pressed="true">List</button>
-      <button type="button" data-view="canvas" aria-pressed="false">Canvas</button>
-    </menu>
-    <p id="summary"></p>
-    <top100-my-songs></top100-my-songs>
-    <label class="search" id="search-wrap" hidden>
-      <span class="visually-hidden">Filtrér sange</span>
-      <input type="search" id="search" placeholder="Filter…" autocomplete="off">
-    </label>
-    <ol id="songs"></ol>
-  </main>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>TOP100</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<h1>TOP100</h1>
+			<menu class="lists" aria-label="Song list">
+				<button type="button" data-list="top100" aria-pressed="true">Top 100</button>
+				<button type="button" data-list="top400" aria-pressed="false">Top 400</button>
+			</menu>
+			<menu class="views" aria-label="View">
+				<button type="button" data-view="list" aria-pressed="true">List</button>
+				<button type="button" data-view="canvas" aria-pressed="false">Canvas</button>
+			</menu>
+			<p id="summary"></p>
+			<top100-my-songs></top100-my-songs>
+			<label class="search" id="search-wrap" hidden>
+				<span class="visually-hidden">Filtrér sange</span>
+				<input type="search" id="search" placeholder="Filter…" autocomplete="off" />
+			</label>
+			<ol id="songs"></ol>
+		</main>
 
-  <section id="canvas-view" hidden>
-    <canvas id="field" aria-label="Cover field — drag to pan, scroll to zoom, click a cover to play"></canvas>
-    <p class="hint">træk · scroll for zoom · klik et cover</p>
-  </section>
+		<section id="canvas-view" hidden>
+			<canvas
+				id="field"
+				aria-label="Cover field — drag to pan, scroll to zoom, click a cover to play"
+			></canvas>
+			<p class="hint">træk · scroll for zoom · klik et cover</p>
+		</section>
 
-  <nav id="letter-rail" class="letter-rail" aria-label="Jump to letter" hidden></nav>
+		<nav id="letter-rail" class="letter-rail" aria-label="Jump to letter" hidden></nav>
 
-  <top100-radio></top100-radio>
+		<top100-radio></top100-radio>
 
-  <top100-player></top100-player>
+		<top100-player></top100-player>
 
-  <template id="song-template">
-    <li>
-      <article>
-        <h2></h2>
-        <p class="artist"></p>
-        <img alt="" width="140" height="140">
-        <menu class="song-actions">
-          <button type="button" class="btn icon play-song" aria-label="Play preview">▶</button>
-          <button type="button" class="btn icon add-my-song" aria-label="Add to my picks">+</button>
-          <a class="youtube-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Full track</a>
-        </menu>
-        <p class="funfact"></p>
-        <p class="credits"></p>
-      </article>
-    </li>
-  </template>
+		<template id="song-template">
+			<li>
+				<article>
+					<h2></h2>
+					<p class="artist"></p>
+					<img alt="" width="140" height="140" />
+					<menu class="song-actions">
+						<button type="button" class="btn icon play-song" aria-label="Play preview">▶</button>
+						<button type="button" class="btn icon add-my-song" aria-label="Add to my picks">
+							+
+						</button>
+						<a class="youtube-link" href="#" target="_blank" rel="noopener noreferrer" hidden
+							>Full track</a
+						>
+					</menu>
+					<p class="funfact"></p>
+					<p class="credits"></p>
+				</article>
+			</li>
+		</template>
 
-  <script type="module" src="script.js"></script>
-</body>
+		<script type="module" src="script.js"></script>
+	</body>
 </html>

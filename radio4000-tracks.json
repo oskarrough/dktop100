@@ -1,486 +1,486 @@
 {
-  "source": "top100.json",
-  "count": 80,
-  "tracks": [
-    {
-      "title": "#21 Anne Linnet - Barndommens gade",
-      "url": "https://www.youtube.com/watch?v=bsjvnDcocJc",
-      "ytid": "bsjvnDcocJc",
-      "body": "DR TOP100 2026 rank 21"
-    },
-    {
-      "title": "#22 Lukas Graham - 7 Years",
-      "url": "https://www.youtube.com/watch?v=LHCob76kigA",
-      "ytid": "LHCob76kigA",
-      "body": "DR TOP100 2026 rank 22"
-    },
-    {
-      "title": "#23 TV-2 - Bag duggede ruder",
-      "url": "https://www.youtube.com/watch?v=Vjj7RFez3ZI",
-      "ytid": "Vjj7RFez3ZI",
-      "body": "DR TOP100 2026 rank 23"
-    },
-    {
-      "title": "#24 Shu-Bi-Dua - Danmark",
-      "url": "https://www.youtube.com/watch?v=xvq1__JFtrI",
-      "ytid": "xvq1__JFtrI",
-      "body": "DR TOP100 2026 rank 24"
-    },
-    {
-      "title": "#25 Bent Fabricius-Bjerre - Matador",
-      "url": "https://www.youtube.com/watch?v=41rpXrTujn0",
-      "ytid": "41rpXrTujn0",
-      "body": "DR TOP100 2026 rank 25"
-    },
-    {
-      "title": "#26 Poul Schierbeck. Tekst: H. C. Andersen - I Danmark er jeg født",
-      "url": "https://www.youtube.com/watch?v=nnguV67rdi4",
-      "ytid": "nnguV67rdi4",
-      "body": "DR TOP100 2026 rank 26"
-    },
-    {
-      "title": "#27 APHACA - En drøm om et menneske",
-      "url": "https://www.youtube.com/watch?v=CTfuFLJ_ULU",
-      "ytid": "CTfuFLJ_ULU",
-      "body": "DR TOP100 2026 rank 27"
-    },
-    {
-      "title": "#28 Shu-Bi-Dua - Den røde tråd",
-      "url": "https://www.youtube.com/watch?v=utRz8CXRNmk",
-      "ytid": "utRz8CXRNmk",
-      "body": "DR TOP100 2026 rank 28"
-    },
-    {
-      "title": "#29 Danseorkestret - Kom tilbage nu",
-      "url": "https://www.youtube.com/watch?v=JMwOu3WOTUk",
-      "ytid": "JMwOu3WOTUk",
-      "body": "DR TOP100 2026 rank 29"
-    },
-    {
-      "title": "#30 Gasolin' - Rabalderstræde",
-      "url": "https://www.youtube.com/watch?v=iwMEILToxwo",
-      "ytid": "iwMEILToxwo",
-      "body": "DR TOP100 2026 rank 30"
-    },
-    {
-      "title": "#31 Tommy Seebach Band - Under stjernerne på himlen",
-      "url": "https://www.youtube.com/watch?v=EB5YJlVcI-s",
-      "ytid": "EB5YJlVcI-s",
-      "body": "DR TOP100 2026 rank 31"
-    },
-    {
-      "title": "#32 Poul Krebs - Sådan nogen som os",
-      "url": "https://www.youtube.com/watch?v=mNIdDxpK9bU",
-      "ytid": "mNIdDxpK9bU",
-      "body": "DR TOP100 2026 rank 32"
-    },
-    {
-      "title": "#33 Egil Harder. Tekst: Kaj Munk - Den blå anemone",
-      "url": "https://www.youtube.com/watch?v=31gjxxAW5qs",
-      "ytid": "31gjxxAW5qs",
-      "body": "DR TOP100 2026 rank 33"
-    },
-    {
-      "title": "#34 Tekst: B. S. Ingemann - Dejlig er jorden",
-      "url": "https://www.youtube.com/watch?v=nzwwbs-CG4M",
-      "ytid": "nzwwbs-CG4M",
-      "body": "DR TOP100 2026 rank 34"
-    },
-    {
-      "title": "#35 Liva Weel - Man binder os på mund og hånd",
-      "url": "https://www.youtube.com/watch?v=gUfArSKBC3c",
-      "ytid": "gUfArSKBC3c",
-      "body": "DR TOP100 2026 rank 35"
-    },
-    {
-      "title": "#36 TV-2 - Kys det nu (det satans liv)",
-      "url": "https://www.youtube.com/watch?v=j6D7SMFCeYc",
-      "ytid": "j6D7SMFCeYc",
-      "body": "DR TOP100 2026 rank 36"
-    },
-    {
-      "title": "#37 Dodo & The Dodo's - Vågner i natten",
-      "url": "https://www.youtube.com/watch?v=rO39Z-9wN5A",
-      "ytid": "rO39Z-9wN5A",
-      "body": "DR TOP100 2026 rank 37"
-    },
-    {
-      "title": "#38 Ulige Numre - Frit land",
-      "url": "https://www.youtube.com/watch?v=MMsQrtOinKM",
-      "ytid": "MMsQrtOinKM",
-      "body": "DR TOP100 2026 rank 38"
-    },
-    {
-      "title": "#39 Aqua - Barbie Girl",
-      "url": "https://www.youtube.com/watch?v=ZyhrYis509A",
-      "ytid": "ZyhrYis509A",
-      "body": "DR TOP100 2026 rank 39"
-    },
-    {
-      "title": "#40 The Minds Of 99 - Hurtige hænder (Acoustic Version - Moyo Live P3)",
-      "url": "https://www.youtube.com/watch?v=mdV1bi3Gne4",
-      "ytid": "mdV1bi3Gne4",
-      "body": "DR TOP100 2026 rank 40"
-    },
-    {
-      "title": "#41 Benjamin Hav Feat. Lukas Graham - Du ligner din mor",
-      "url": "https://www.youtube.com/watch?v=ktYB3hF3xi0",
-      "ytid": "ktYB3hF3xi0",
-      "body": "DR TOP100 2026 rank 41"
-    },
-    {
-      "title": "#42 Lars H.U.G. - Elsker dig for evigt",
-      "url": "https://www.youtube.com/watch?v=9qkIcrU4VbY",
-      "ytid": "9qkIcrU4VbY",
-      "body": "DR TOP100 2026 rank 42"
-    },
-    {
-      "title": "#43 TV-2 - De første kærester på månen",
-      "url": "https://www.youtube.com/watch?v=UxP58lcgvvc",
-      "ytid": "UxP58lcgvvc",
-      "body": "DR TOP100 2026 rank 43"
-    },
-    {
-      "title": "#44 Lis Sørensen - Verden er i farver",
-      "url": "https://www.youtube.com/watch?v=XPed-u0vdp4",
-      "ytid": "XPed-u0vdp4",
-      "body": "DR TOP100 2026 rank 44"
-    },
-    {
-      "title": "#45 Birthe Kjær - Vi maler byen rød",
-      "url": "https://www.youtube.com/watch?v=Z58HzQ8baks",
-      "ytid": "Z58HzQ8baks",
-      "body": "DR TOP100 2026 rank 45"
-    },
-    {
-      "title": "#46 Per Warming. Tekst: Jens Rosendal - Forelskelsessang (Du kom med alt det der var dig)",
-      "url": "https://www.youtube.com/watch?v=FSFaDf5ssPk",
-      "ytid": "FSFaDf5ssPk",
-      "body": "DR TOP100 2026 rank 46"
-    },
-    {
-      "title": "#47 C.V. Jørgensen - Sæsonen er slut",
-      "url": "https://www.youtube.com/watch?v=FQnifPUm7Kk",
-      "ytid": "FQnifPUm7Kk",
-      "body": "DR TOP100 2026 rank 47"
-    },
-    {
-      "title": "#48 Michael Falch - I et land uden høje bjerge",
-      "url": "https://www.youtube.com/watch?v=TeqdJXspEeM",
-      "ytid": "TeqdJXspEeM",
-      "body": "DR TOP100 2026 rank 48"
-    },
-    {
-      "title": "#49 TV-2 - Hele verden fra forstanden",
-      "url": "https://www.youtube.com/watch?v=BJkb0Mbrdns",
-      "ytid": "BJkb0Mbrdns",
-      "body": "DR TOP100 2026 rank 49"
-    },
-    {
-      "title": "#50 Love Shop - En nat bliver det sommer",
-      "url": "https://www.youtube.com/watch?v=0XPFOj-8F60",
-      "ytid": "0XPFOj-8F60",
-      "body": "DR TOP100 2026 rank 50"
-    },
-    {
-      "title": "#51 Oluf Ring. Tekst: Jakob Knudsen - Se, nu stiger solen af havets skød",
-      "url": "https://www.youtube.com/watch?v=iVv4TJPV2C8",
-      "ytid": "iVv4TJPV2C8",
-      "body": "DR TOP100 2026 rank 51"
-    },
-    {
-      "title": "#52 Sebastian Feat. Lis Sørensen - Stille før storm",
-      "url": "https://www.youtube.com/watch?v=z_vrgIyqyHQ",
-      "ytid": "z_vrgIyqyHQ",
-      "body": "DR TOP100 2026 rank 52"
-    },
-    {
-      "title": "#53 Carl Nielsen. Tekst: Harald Bergstedt - Solen er så rød mor",
-      "url": "https://www.youtube.com/watch?v=yaQQp8rHyp4",
-      "ytid": "yaQQp8rHyp4",
-      "body": "DR TOP100 2026 rank 53"
-    },
-    {
-      "title": "#54 Nik & Jay - En dag tilbage",
-      "url": "https://www.youtube.com/watch?v=_JgbyISzmjQ",
-      "ytid": "_JgbyISzmjQ",
-      "body": "DR TOP100 2026 rank 54"
-    },
-    {
-      "title": "#55 Gnags - Vilde kaniner",
-      "url": "https://www.youtube.com/watch?v=-fk8fXTiAAo",
-      "ytid": "-fk8fXTiAAo",
-      "body": "DR TOP100 2026 rank 55"
-    },
-    {
-      "title": "#56 Kashmir - Rocket Brothers",
-      "url": "https://www.youtube.com/watch?v=rkQsoyKoiWg",
-      "ytid": "rkQsoyKoiWg",
-      "body": "DR TOP100 2026 rank 56"
-    },
-    {
-      "title": "#57 Carl Emil Petersen - Amager forbrænding",
-      "url": "https://www.youtube.com/watch?v=QjuckJrsZig",
-      "ytid": "QjuckJrsZig",
-      "body": "DR TOP100 2026 rank 57"
-    },
-    {
-      "title": "#58 Sebastian - Du er ikke alene",
-      "url": "https://www.youtube.com/watch?v=WUZuuvnycUM",
-      "ytid": "WUZuuvnycUM",
-      "body": "DR TOP100 2026 rank 58"
-    },
-    {
-      "title": "#59 Gnags - Danmark",
-      "url": "https://www.youtube.com/watch?v=OOH5XdAQPfo",
-      "ytid": "OOH5XdAQPfo",
-      "body": "DR TOP100 2026 rank 59"
-    },
-    {
-      "title": "#60 The Minds Of 99 - Alle skuffer over tid",
-      "url": "https://www.youtube.com/watch?v=XKzKZ6iYIYE",
-      "ytid": "XKzKZ6iYIYE",
-      "body": "DR TOP100 2026 rank 60"
-    },
-    {
-      "title": "#61 John Mogensen - Så længe jeg lever",
-      "url": "https://www.youtube.com/watch?v=Bctlvz-qpKE",
-      "ytid": "Bctlvz-qpKE",
-      "body": "DR TOP100 2026 rank 61"
-    },
-    {
-      "title": "#62 Medina - Kun for mig",
-      "url": "https://www.youtube.com/watch?v=Pmr-EFuIkP8",
-      "ytid": "Pmr-EFuIkP8",
-      "body": "DR TOP100 2026 rank 62"
-    },
-    {
-      "title": "#63 Saybia - The Second You Sleep",
-      "url": "https://www.youtube.com/watch?v=i9oyEHUqAhg",
-      "ytid": "i9oyEHUqAhg",
-      "body": "DR TOP100 2026 rank 63"
-    },
-    {
-      "title": "#64 Tobias Rahim & Andreas Odbjerg - STOR MAND",
-      "url": "https://www.youtube.com/watch?v=HfmWPfqyYyY",
-      "ytid": "HfmWPfqyYyY",
-      "body": "DR TOP100 2026 rank 64"
-    },
-    {
-      "title": "#65 Gasolin' - Hva' gør vi nu lille du",
-      "url": "https://www.youtube.com/watch?v=gQ5ZWxsjDKQ",
-      "ytid": "gQ5ZWxsjDKQ",
-      "body": "DR TOP100 2026 rank 65"
-    },
-    {
-      "title": "#66 Nik & Jay - Novembervej",
-      "url": "https://www.youtube.com/watch?v=TtNRjzHb6s0",
-      "ytid": "TtNRjzHb6s0",
-      "body": "DR TOP100 2026 rank 66"
-    },
-    {
-      "title": "#67 C. C. Hoffmann. Tekst: N. F. S. Grundtvig - Hil dig, Frelser og Forsoner",
-      "url": "https://www.youtube.com/watch?v=Gp72iytsIkI",
-      "ytid": "Gp72iytsIkI",
-      "body": "DR TOP100 2026 rank 67"
-    },
-    {
-      "title": "#68 Nik & Jay - Hot",
-      "url": "https://www.youtube.com/watch?v=YPV8LqSRSDg",
-      "ytid": "YPV8LqSRSDg",
-      "body": "DR TOP100 2026 rank 68"
-    },
-    {
-      "title": "#69 Sebastian Feat. Lis Sørensen - Fuld af nattens stjerner",
-      "url": "https://www.youtube.com/watch?v=-xy8J3UmuU0",
-      "ytid": "-xy8J3UmuU0",
-      "body": "DR TOP100 2026 rank 69"
-    },
-    {
-      "title": "#70 Rasmus Seebach - Øde ø",
-      "url": "https://www.youtube.com/watch?v=iosIF6_3XSY",
-      "ytid": "iosIF6_3XSY",
-      "body": "DR TOP100 2026 rank 70"
-    },
-    {
-      "title": "#71 The Minds Of 99 - Under din sne",
-      "url": "https://www.youtube.com/watch?v=9a3LILb-yQE",
-      "ytid": "9a3LILb-yQE",
-      "body": "DR TOP100 2026 rank 71"
-    },
-    {
-      "title": "#72 Nephew - Igen og igen og",
-      "url": "https://www.youtube.com/watch?v=SMaVOcLHygE",
-      "ytid": "SMaVOcLHygE",
-      "body": "DR TOP100 2026 rank 72"
-    },
-    {
-      "title": "#73 Shu-Bi-Dua - Hvalborg",
-      "url": "https://www.youtube.com/watch?v=jCPiBWSVBE4",
-      "ytid": "jCPiBWSVBE4",
-      "body": "DR TOP100 2026 rank 73"
-    },
-    {
-      "title": "#74 Bamses Venner - I en lille båd der gynger",
-      "url": "https://www.youtube.com/watch?v=kcTiYW6mQ50",
-      "ytid": "kcTiYW6mQ50",
-      "body": "DR TOP100 2026 rank 74"
-    },
-    {
-      "title": "#75 Oluf Ring. Tekst: Thøger Larsen - Danmark, nu blunder",
-      "url": "https://www.youtube.com/watch?v=Jrtl1PlrR0E",
-      "ytid": "Jrtl1PlrR0E",
-      "body": "DR TOP100 2026 rank 75"
-    },
-    {
-      "title": "#76 Nanna - Buster",
-      "url": "https://www.youtube.com/watch?v=CTyB89fOqhE",
-      "ytid": "CTyB89fOqhE",
-      "body": "DR TOP100 2026 rank 76"
-    },
-    {
-      "title": "#77 Gnags - Mr. Swing King",
-      "url": "https://www.youtube.com/watch?v=1cjX37BKvDA",
-      "ytid": "1cjX37BKvDA",
-      "body": "DR TOP100 2026 rank 77"
-    },
-    {
-      "title": "#78 Johnny Madsen - Udenfor sæsonen",
-      "url": "https://www.youtube.com/watch?v=x8MMudQqFkE",
-      "ytid": "x8MMudQqFkE",
-      "body": "DR TOP100 2026 rank 78"
-    },
-    {
-      "title": "#79 Nephew Feat. L.O.C. - Hospital (Live Roskilde Festival 2007)",
-      "url": "https://www.youtube.com/watch?v=LItSnFlKA5k",
-      "ytid": "LItSnFlKA5k",
-      "body": "DR TOP100 2026 rank 79"
-    },
-    {
-      "title": "#80 Agnes Obel - Riverside",
-      "url": "https://www.youtube.com/watch?v=vjncyiuwwXQ",
-      "ytid": "vjncyiuwwXQ",
-      "body": "DR TOP100 2026 rank 80"
-    },
-    {
-      "title": "#81 Thomas Helmig - Stupid Man",
-      "url": "https://www.youtube.com/watch?v=q9Wt4MAPv0A",
-      "ytid": "q9Wt4MAPv0A",
-      "body": "DR TOP100 2026 rank 81"
-    },
-    {
-      "title": "#82 Back To Back - Jonathan",
-      "url": "https://www.youtube.com/watch?v=zLbo5rUckCg",
-      "ytid": "zLbo5rUckCg",
-      "body": "DR TOP100 2026 rank 82"
-    },
-    {
-      "title": "#83 Kesi Feat. Hans Philip - Blå himmel",
-      "url": "https://www.youtube.com/watch?v=4DP2jNfRGzE",
-      "ytid": "4DP2jNfRGzE",
-      "body": "DR TOP100 2026 rank 83"
-    },
-    {
-      "title": "#84 Rugsted & Kreutzfeldt - Jeg ved det godt",
-      "url": "https://www.youtube.com/watch?v=uVyLBAMyLJM",
-      "ytid": "uVyLBAMyLJM",
-      "body": "DR TOP100 2026 rank 84"
-    },
-    {
-      "title": "#85 Carpark North - Transparent & Glasslike",
-      "url": "https://www.youtube.com/watch?v=RCHz-U5UuNQ",
-      "ytid": "RCHz-U5UuNQ",
-      "body": "DR TOP100 2026 rank 85"
-    },
-    {
-      "title": "#86 Safri Duo - Played-A-Live (The Bongo Song)",
-      "url": "https://www.youtube.com/watch?v=IksRDCMYnn8",
-      "ytid": "IksRDCMYnn8",
-      "body": "DR TOP100 2026 rank 86"
-    },
-    {
-      "title": "#87 Scarlet Pleasure - What A Life",
-      "url": "https://www.youtube.com/watch?v=FjVVqpZw-wg",
-      "ytid": "FjVVqpZw-wg",
-      "body": "DR TOP100 2026 rank 87"
-    },
-    {
-      "title": "#88 Mew - Comforting Sounds",
-      "url": "https://www.youtube.com/watch?v=AtckSsQ_Au0",
-      "ytid": "AtckSsQ_Au0",
-      "body": "DR TOP100 2026 rank 88"
-    },
-    {
-      "title": "#89 Shit & Chanel - Smuk og dejlig",
-      "url": "https://www.youtube.com/watch?v=V6qALCFpVuU",
-      "ytid": "V6qALCFpVuU",
-      "body": "DR TOP100 2026 rank 89"
-    },
-    {
-      "title": "#90 John Mogensen - Der er noget galt i Danmark",
-      "url": "https://www.youtube.com/watch?v=qq9hETqTm-s",
-      "ytid": "qq9hETqTm-s",
-      "body": "DR TOP100 2026 rank 90"
-    },
-    {
-      "title": "#91 C.V. Jørgensen - Bellevue",
-      "url": "https://www.youtube.com/watch?v=BwVILChrNbA",
-      "ytid": "BwVILChrNbA",
-      "body": "DR TOP100 2026 rank 91"
-    },
-    {
-      "title": "#92 Danser med Drenge - Hvor længe vil du ydmyge dig?",
-      "url": "https://www.youtube.com/watch?v=0fKOQxbH-08",
-      "ytid": "0fKOQxbH-08",
-      "body": "DR TOP100 2026 rank 92"
-    },
-    {
-      "title": "#93 Søs Fenger, Thomas Helmig, Sanne Salomonsen & Anne Linnet - Den jeg elsker, elsker jeg",
-      "url": "https://www.youtube.com/watch?v=3eSprK01vps",
-      "ytid": "3eSprK01vps",
-      "body": "DR TOP100 2026 rank 93"
-    },
-    {
-      "title": "#94 Marie Key - Uden forsvar",
-      "url": "https://www.youtube.com/watch?v=7uyG1hGNDKs",
-      "ytid": "7uyG1hGNDKs",
-      "body": "DR TOP100 2026 rank 94"
-    },
-    {
-      "title": "#95 Guldimund & Saveus - Vil du noget?",
-      "url": "https://www.youtube.com/watch?v=3nNUyYMuzTo",
-      "ytid": "3nNUyYMuzTo",
-      "body": "DR TOP100 2026 rank 95"
-    },
-    {
-      "title": "#96 Lars H.U.G. - Natsværmer",
-      "url": "https://www.youtube.com/watch?v=vRGDqO1Ze8M",
-      "ytid": "vRGDqO1Ze8M",
-      "body": "DR TOP100 2026 rank 96"
-    },
-    {
-      "title": "#97 Clausen & Petersen feat. Eva Madsen - Mormors kolonihavehus",
-      "url": "https://www.youtube.com/watch?v=rG0RdkmPysk",
-      "ytid": "rG0RdkmPysk",
-      "body": "DR TOP100 2026 rank 97"
-    },
-    {
-      "title": "#98 Gilli - Knokler hårdt",
-      "url": "https://www.youtube.com/watch?v=RRLLPavaSwo",
-      "ytid": "RRLLPavaSwo",
-      "body": "DR TOP100 2026 rank 98"
-    },
-    {
-      "title": "#99 Bamses Venner - Jeg elsker kun dig",
-      "url": "https://www.youtube.com/watch?v=KvASdgGNlrU",
-      "ytid": "KvASdgGNlrU",
-      "body": "DR TOP100 2026 rank 99"
-    },
-    {
-      "title": "#100 One Two - Den bedste tid",
-      "url": "https://www.youtube.com/watch?v=oNAhuyZTZb8",
-      "ytid": "oNAhuyZTZb8",
-      "body": "DR TOP100 2026 rank 100"
-    }
-  ]
+	"source": "top100.json",
+	"count": 80,
+	"tracks": [
+		{
+			"title": "#21 Anne Linnet - Barndommens gade",
+			"url": "https://www.youtube.com/watch?v=bsjvnDcocJc",
+			"ytid": "bsjvnDcocJc",
+			"body": "DR TOP100 2026 rank 21"
+		},
+		{
+			"title": "#22 Lukas Graham - 7 Years",
+			"url": "https://www.youtube.com/watch?v=LHCob76kigA",
+			"ytid": "LHCob76kigA",
+			"body": "DR TOP100 2026 rank 22"
+		},
+		{
+			"title": "#23 TV-2 - Bag duggede ruder",
+			"url": "https://www.youtube.com/watch?v=Vjj7RFez3ZI",
+			"ytid": "Vjj7RFez3ZI",
+			"body": "DR TOP100 2026 rank 23"
+		},
+		{
+			"title": "#24 Shu-Bi-Dua - Danmark",
+			"url": "https://www.youtube.com/watch?v=xvq1__JFtrI",
+			"ytid": "xvq1__JFtrI",
+			"body": "DR TOP100 2026 rank 24"
+		},
+		{
+			"title": "#25 Bent Fabricius-Bjerre - Matador",
+			"url": "https://www.youtube.com/watch?v=41rpXrTujn0",
+			"ytid": "41rpXrTujn0",
+			"body": "DR TOP100 2026 rank 25"
+		},
+		{
+			"title": "#26 Poul Schierbeck. Tekst: H. C. Andersen - I Danmark er jeg født",
+			"url": "https://www.youtube.com/watch?v=nnguV67rdi4",
+			"ytid": "nnguV67rdi4",
+			"body": "DR TOP100 2026 rank 26"
+		},
+		{
+			"title": "#27 APHACA - En drøm om et menneske",
+			"url": "https://www.youtube.com/watch?v=CTfuFLJ_ULU",
+			"ytid": "CTfuFLJ_ULU",
+			"body": "DR TOP100 2026 rank 27"
+		},
+		{
+			"title": "#28 Shu-Bi-Dua - Den røde tråd",
+			"url": "https://www.youtube.com/watch?v=utRz8CXRNmk",
+			"ytid": "utRz8CXRNmk",
+			"body": "DR TOP100 2026 rank 28"
+		},
+		{
+			"title": "#29 Danseorkestret - Kom tilbage nu",
+			"url": "https://www.youtube.com/watch?v=JMwOu3WOTUk",
+			"ytid": "JMwOu3WOTUk",
+			"body": "DR TOP100 2026 rank 29"
+		},
+		{
+			"title": "#30 Gasolin' - Rabalderstræde",
+			"url": "https://www.youtube.com/watch?v=iwMEILToxwo",
+			"ytid": "iwMEILToxwo",
+			"body": "DR TOP100 2026 rank 30"
+		},
+		{
+			"title": "#31 Tommy Seebach Band - Under stjernerne på himlen",
+			"url": "https://www.youtube.com/watch?v=EB5YJlVcI-s",
+			"ytid": "EB5YJlVcI-s",
+			"body": "DR TOP100 2026 rank 31"
+		},
+		{
+			"title": "#32 Poul Krebs - Sådan nogen som os",
+			"url": "https://www.youtube.com/watch?v=mNIdDxpK9bU",
+			"ytid": "mNIdDxpK9bU",
+			"body": "DR TOP100 2026 rank 32"
+		},
+		{
+			"title": "#33 Egil Harder. Tekst: Kaj Munk - Den blå anemone",
+			"url": "https://www.youtube.com/watch?v=31gjxxAW5qs",
+			"ytid": "31gjxxAW5qs",
+			"body": "DR TOP100 2026 rank 33"
+		},
+		{
+			"title": "#34 Tekst: B. S. Ingemann - Dejlig er jorden",
+			"url": "https://www.youtube.com/watch?v=nzwwbs-CG4M",
+			"ytid": "nzwwbs-CG4M",
+			"body": "DR TOP100 2026 rank 34"
+		},
+		{
+			"title": "#35 Liva Weel - Man binder os på mund og hånd",
+			"url": "https://www.youtube.com/watch?v=gUfArSKBC3c",
+			"ytid": "gUfArSKBC3c",
+			"body": "DR TOP100 2026 rank 35"
+		},
+		{
+			"title": "#36 TV-2 - Kys det nu (det satans liv)",
+			"url": "https://www.youtube.com/watch?v=j6D7SMFCeYc",
+			"ytid": "j6D7SMFCeYc",
+			"body": "DR TOP100 2026 rank 36"
+		},
+		{
+			"title": "#37 Dodo & The Dodo's - Vågner i natten",
+			"url": "https://www.youtube.com/watch?v=rO39Z-9wN5A",
+			"ytid": "rO39Z-9wN5A",
+			"body": "DR TOP100 2026 rank 37"
+		},
+		{
+			"title": "#38 Ulige Numre - Frit land",
+			"url": "https://www.youtube.com/watch?v=MMsQrtOinKM",
+			"ytid": "MMsQrtOinKM",
+			"body": "DR TOP100 2026 rank 38"
+		},
+		{
+			"title": "#39 Aqua - Barbie Girl",
+			"url": "https://www.youtube.com/watch?v=ZyhrYis509A",
+			"ytid": "ZyhrYis509A",
+			"body": "DR TOP100 2026 rank 39"
+		},
+		{
+			"title": "#40 The Minds Of 99 - Hurtige hænder (Acoustic Version - Moyo Live P3)",
+			"url": "https://www.youtube.com/watch?v=mdV1bi3Gne4",
+			"ytid": "mdV1bi3Gne4",
+			"body": "DR TOP100 2026 rank 40"
+		},
+		{
+			"title": "#41 Benjamin Hav Feat. Lukas Graham - Du ligner din mor",
+			"url": "https://www.youtube.com/watch?v=ktYB3hF3xi0",
+			"ytid": "ktYB3hF3xi0",
+			"body": "DR TOP100 2026 rank 41"
+		},
+		{
+			"title": "#42 Lars H.U.G. - Elsker dig for evigt",
+			"url": "https://www.youtube.com/watch?v=9qkIcrU4VbY",
+			"ytid": "9qkIcrU4VbY",
+			"body": "DR TOP100 2026 rank 42"
+		},
+		{
+			"title": "#43 TV-2 - De første kærester på månen",
+			"url": "https://www.youtube.com/watch?v=UxP58lcgvvc",
+			"ytid": "UxP58lcgvvc",
+			"body": "DR TOP100 2026 rank 43"
+		},
+		{
+			"title": "#44 Lis Sørensen - Verden er i farver",
+			"url": "https://www.youtube.com/watch?v=XPed-u0vdp4",
+			"ytid": "XPed-u0vdp4",
+			"body": "DR TOP100 2026 rank 44"
+		},
+		{
+			"title": "#45 Birthe Kjær - Vi maler byen rød",
+			"url": "https://www.youtube.com/watch?v=Z58HzQ8baks",
+			"ytid": "Z58HzQ8baks",
+			"body": "DR TOP100 2026 rank 45"
+		},
+		{
+			"title": "#46 Per Warming. Tekst: Jens Rosendal - Forelskelsessang (Du kom med alt det der var dig)",
+			"url": "https://www.youtube.com/watch?v=FSFaDf5ssPk",
+			"ytid": "FSFaDf5ssPk",
+			"body": "DR TOP100 2026 rank 46"
+		},
+		{
+			"title": "#47 C.V. Jørgensen - Sæsonen er slut",
+			"url": "https://www.youtube.com/watch?v=FQnifPUm7Kk",
+			"ytid": "FQnifPUm7Kk",
+			"body": "DR TOP100 2026 rank 47"
+		},
+		{
+			"title": "#48 Michael Falch - I et land uden høje bjerge",
+			"url": "https://www.youtube.com/watch?v=TeqdJXspEeM",
+			"ytid": "TeqdJXspEeM",
+			"body": "DR TOP100 2026 rank 48"
+		},
+		{
+			"title": "#49 TV-2 - Hele verden fra forstanden",
+			"url": "https://www.youtube.com/watch?v=BJkb0Mbrdns",
+			"ytid": "BJkb0Mbrdns",
+			"body": "DR TOP100 2026 rank 49"
+		},
+		{
+			"title": "#50 Love Shop - En nat bliver det sommer",
+			"url": "https://www.youtube.com/watch?v=0XPFOj-8F60",
+			"ytid": "0XPFOj-8F60",
+			"body": "DR TOP100 2026 rank 50"
+		},
+		{
+			"title": "#51 Oluf Ring. Tekst: Jakob Knudsen - Se, nu stiger solen af havets skød",
+			"url": "https://www.youtube.com/watch?v=iVv4TJPV2C8",
+			"ytid": "iVv4TJPV2C8",
+			"body": "DR TOP100 2026 rank 51"
+		},
+		{
+			"title": "#52 Sebastian Feat. Lis Sørensen - Stille før storm",
+			"url": "https://www.youtube.com/watch?v=z_vrgIyqyHQ",
+			"ytid": "z_vrgIyqyHQ",
+			"body": "DR TOP100 2026 rank 52"
+		},
+		{
+			"title": "#53 Carl Nielsen. Tekst: Harald Bergstedt - Solen er så rød mor",
+			"url": "https://www.youtube.com/watch?v=yaQQp8rHyp4",
+			"ytid": "yaQQp8rHyp4",
+			"body": "DR TOP100 2026 rank 53"
+		},
+		{
+			"title": "#54 Nik & Jay - En dag tilbage",
+			"url": "https://www.youtube.com/watch?v=_JgbyISzmjQ",
+			"ytid": "_JgbyISzmjQ",
+			"body": "DR TOP100 2026 rank 54"
+		},
+		{
+			"title": "#55 Gnags - Vilde kaniner",
+			"url": "https://www.youtube.com/watch?v=-fk8fXTiAAo",
+			"ytid": "-fk8fXTiAAo",
+			"body": "DR TOP100 2026 rank 55"
+		},
+		{
+			"title": "#56 Kashmir - Rocket Brothers",
+			"url": "https://www.youtube.com/watch?v=rkQsoyKoiWg",
+			"ytid": "rkQsoyKoiWg",
+			"body": "DR TOP100 2026 rank 56"
+		},
+		{
+			"title": "#57 Carl Emil Petersen - Amager forbrænding",
+			"url": "https://www.youtube.com/watch?v=QjuckJrsZig",
+			"ytid": "QjuckJrsZig",
+			"body": "DR TOP100 2026 rank 57"
+		},
+		{
+			"title": "#58 Sebastian - Du er ikke alene",
+			"url": "https://www.youtube.com/watch?v=WUZuuvnycUM",
+			"ytid": "WUZuuvnycUM",
+			"body": "DR TOP100 2026 rank 58"
+		},
+		{
+			"title": "#59 Gnags - Danmark",
+			"url": "https://www.youtube.com/watch?v=OOH5XdAQPfo",
+			"ytid": "OOH5XdAQPfo",
+			"body": "DR TOP100 2026 rank 59"
+		},
+		{
+			"title": "#60 The Minds Of 99 - Alle skuffer over tid",
+			"url": "https://www.youtube.com/watch?v=XKzKZ6iYIYE",
+			"ytid": "XKzKZ6iYIYE",
+			"body": "DR TOP100 2026 rank 60"
+		},
+		{
+			"title": "#61 John Mogensen - Så længe jeg lever",
+			"url": "https://www.youtube.com/watch?v=Bctlvz-qpKE",
+			"ytid": "Bctlvz-qpKE",
+			"body": "DR TOP100 2026 rank 61"
+		},
+		{
+			"title": "#62 Medina - Kun for mig",
+			"url": "https://www.youtube.com/watch?v=Pmr-EFuIkP8",
+			"ytid": "Pmr-EFuIkP8",
+			"body": "DR TOP100 2026 rank 62"
+		},
+		{
+			"title": "#63 Saybia - The Second You Sleep",
+			"url": "https://www.youtube.com/watch?v=i9oyEHUqAhg",
+			"ytid": "i9oyEHUqAhg",
+			"body": "DR TOP100 2026 rank 63"
+		},
+		{
+			"title": "#64 Tobias Rahim & Andreas Odbjerg - STOR MAND",
+			"url": "https://www.youtube.com/watch?v=HfmWPfqyYyY",
+			"ytid": "HfmWPfqyYyY",
+			"body": "DR TOP100 2026 rank 64"
+		},
+		{
+			"title": "#65 Gasolin' - Hva' gør vi nu lille du",
+			"url": "https://www.youtube.com/watch?v=gQ5ZWxsjDKQ",
+			"ytid": "gQ5ZWxsjDKQ",
+			"body": "DR TOP100 2026 rank 65"
+		},
+		{
+			"title": "#66 Nik & Jay - Novembervej",
+			"url": "https://www.youtube.com/watch?v=TtNRjzHb6s0",
+			"ytid": "TtNRjzHb6s0",
+			"body": "DR TOP100 2026 rank 66"
+		},
+		{
+			"title": "#67 C. C. Hoffmann. Tekst: N. F. S. Grundtvig - Hil dig, Frelser og Forsoner",
+			"url": "https://www.youtube.com/watch?v=Gp72iytsIkI",
+			"ytid": "Gp72iytsIkI",
+			"body": "DR TOP100 2026 rank 67"
+		},
+		{
+			"title": "#68 Nik & Jay - Hot",
+			"url": "https://www.youtube.com/watch?v=YPV8LqSRSDg",
+			"ytid": "YPV8LqSRSDg",
+			"body": "DR TOP100 2026 rank 68"
+		},
+		{
+			"title": "#69 Sebastian Feat. Lis Sørensen - Fuld af nattens stjerner",
+			"url": "https://www.youtube.com/watch?v=-xy8J3UmuU0",
+			"ytid": "-xy8J3UmuU0",
+			"body": "DR TOP100 2026 rank 69"
+		},
+		{
+			"title": "#70 Rasmus Seebach - Øde ø",
+			"url": "https://www.youtube.com/watch?v=iosIF6_3XSY",
+			"ytid": "iosIF6_3XSY",
+			"body": "DR TOP100 2026 rank 70"
+		},
+		{
+			"title": "#71 The Minds Of 99 - Under din sne",
+			"url": "https://www.youtube.com/watch?v=9a3LILb-yQE",
+			"ytid": "9a3LILb-yQE",
+			"body": "DR TOP100 2026 rank 71"
+		},
+		{
+			"title": "#72 Nephew - Igen og igen og",
+			"url": "https://www.youtube.com/watch?v=SMaVOcLHygE",
+			"ytid": "SMaVOcLHygE",
+			"body": "DR TOP100 2026 rank 72"
+		},
+		{
+			"title": "#73 Shu-Bi-Dua - Hvalborg",
+			"url": "https://www.youtube.com/watch?v=jCPiBWSVBE4",
+			"ytid": "jCPiBWSVBE4",
+			"body": "DR TOP100 2026 rank 73"
+		},
+		{
+			"title": "#74 Bamses Venner - I en lille båd der gynger",
+			"url": "https://www.youtube.com/watch?v=kcTiYW6mQ50",
+			"ytid": "kcTiYW6mQ50",
+			"body": "DR TOP100 2026 rank 74"
+		},
+		{
+			"title": "#75 Oluf Ring. Tekst: Thøger Larsen - Danmark, nu blunder",
+			"url": "https://www.youtube.com/watch?v=Jrtl1PlrR0E",
+			"ytid": "Jrtl1PlrR0E",
+			"body": "DR TOP100 2026 rank 75"
+		},
+		{
+			"title": "#76 Nanna - Buster",
+			"url": "https://www.youtube.com/watch?v=CTyB89fOqhE",
+			"ytid": "CTyB89fOqhE",
+			"body": "DR TOP100 2026 rank 76"
+		},
+		{
+			"title": "#77 Gnags - Mr. Swing King",
+			"url": "https://www.youtube.com/watch?v=1cjX37BKvDA",
+			"ytid": "1cjX37BKvDA",
+			"body": "DR TOP100 2026 rank 77"
+		},
+		{
+			"title": "#78 Johnny Madsen - Udenfor sæsonen",
+			"url": "https://www.youtube.com/watch?v=x8MMudQqFkE",
+			"ytid": "x8MMudQqFkE",
+			"body": "DR TOP100 2026 rank 78"
+		},
+		{
+			"title": "#79 Nephew Feat. L.O.C. - Hospital (Live Roskilde Festival 2007)",
+			"url": "https://www.youtube.com/watch?v=LItSnFlKA5k",
+			"ytid": "LItSnFlKA5k",
+			"body": "DR TOP100 2026 rank 79"
+		},
+		{
+			"title": "#80 Agnes Obel - Riverside",
+			"url": "https://www.youtube.com/watch?v=vjncyiuwwXQ",
+			"ytid": "vjncyiuwwXQ",
+			"body": "DR TOP100 2026 rank 80"
+		},
+		{
+			"title": "#81 Thomas Helmig - Stupid Man",
+			"url": "https://www.youtube.com/watch?v=q9Wt4MAPv0A",
+			"ytid": "q9Wt4MAPv0A",
+			"body": "DR TOP100 2026 rank 81"
+		},
+		{
+			"title": "#82 Back To Back - Jonathan",
+			"url": "https://www.youtube.com/watch?v=zLbo5rUckCg",
+			"ytid": "zLbo5rUckCg",
+			"body": "DR TOP100 2026 rank 82"
+		},
+		{
+			"title": "#83 Kesi Feat. Hans Philip - Blå himmel",
+			"url": "https://www.youtube.com/watch?v=4DP2jNfRGzE",
+			"ytid": "4DP2jNfRGzE",
+			"body": "DR TOP100 2026 rank 83"
+		},
+		{
+			"title": "#84 Rugsted & Kreutzfeldt - Jeg ved det godt",
+			"url": "https://www.youtube.com/watch?v=uVyLBAMyLJM",
+			"ytid": "uVyLBAMyLJM",
+			"body": "DR TOP100 2026 rank 84"
+		},
+		{
+			"title": "#85 Carpark North - Transparent & Glasslike",
+			"url": "https://www.youtube.com/watch?v=RCHz-U5UuNQ",
+			"ytid": "RCHz-U5UuNQ",
+			"body": "DR TOP100 2026 rank 85"
+		},
+		{
+			"title": "#86 Safri Duo - Played-A-Live (The Bongo Song)",
+			"url": "https://www.youtube.com/watch?v=IksRDCMYnn8",
+			"ytid": "IksRDCMYnn8",
+			"body": "DR TOP100 2026 rank 86"
+		},
+		{
+			"title": "#87 Scarlet Pleasure - What A Life",
+			"url": "https://www.youtube.com/watch?v=FjVVqpZw-wg",
+			"ytid": "FjVVqpZw-wg",
+			"body": "DR TOP100 2026 rank 87"
+		},
+		{
+			"title": "#88 Mew - Comforting Sounds",
+			"url": "https://www.youtube.com/watch?v=AtckSsQ_Au0",
+			"ytid": "AtckSsQ_Au0",
+			"body": "DR TOP100 2026 rank 88"
+		},
+		{
+			"title": "#89 Shit & Chanel - Smuk og dejlig",
+			"url": "https://www.youtube.com/watch?v=V6qALCFpVuU",
+			"ytid": "V6qALCFpVuU",
+			"body": "DR TOP100 2026 rank 89"
+		},
+		{
+			"title": "#90 John Mogensen - Der er noget galt i Danmark",
+			"url": "https://www.youtube.com/watch?v=qq9hETqTm-s",
+			"ytid": "qq9hETqTm-s",
+			"body": "DR TOP100 2026 rank 90"
+		},
+		{
+			"title": "#91 C.V. Jørgensen - Bellevue",
+			"url": "https://www.youtube.com/watch?v=BwVILChrNbA",
+			"ytid": "BwVILChrNbA",
+			"body": "DR TOP100 2026 rank 91"
+		},
+		{
+			"title": "#92 Danser med Drenge - Hvor længe vil du ydmyge dig?",
+			"url": "https://www.youtube.com/watch?v=0fKOQxbH-08",
+			"ytid": "0fKOQxbH-08",
+			"body": "DR TOP100 2026 rank 92"
+		},
+		{
+			"title": "#93 Søs Fenger, Thomas Helmig, Sanne Salomonsen & Anne Linnet - Den jeg elsker, elsker jeg",
+			"url": "https://www.youtube.com/watch?v=3eSprK01vps",
+			"ytid": "3eSprK01vps",
+			"body": "DR TOP100 2026 rank 93"
+		},
+		{
+			"title": "#94 Marie Key - Uden forsvar",
+			"url": "https://www.youtube.com/watch?v=7uyG1hGNDKs",
+			"ytid": "7uyG1hGNDKs",
+			"body": "DR TOP100 2026 rank 94"
+		},
+		{
+			"title": "#95 Guldimund & Saveus - Vil du noget?",
+			"url": "https://www.youtube.com/watch?v=3nNUyYMuzTo",
+			"ytid": "3nNUyYMuzTo",
+			"body": "DR TOP100 2026 rank 95"
+		},
+		{
+			"title": "#96 Lars H.U.G. - Natsværmer",
+			"url": "https://www.youtube.com/watch?v=vRGDqO1Ze8M",
+			"ytid": "vRGDqO1Ze8M",
+			"body": "DR TOP100 2026 rank 96"
+		},
+		{
+			"title": "#97 Clausen & Petersen feat. Eva Madsen - Mormors kolonihavehus",
+			"url": "https://www.youtube.com/watch?v=rG0RdkmPysk",
+			"ytid": "rG0RdkmPysk",
+			"body": "DR TOP100 2026 rank 97"
+		},
+		{
+			"title": "#98 Gilli - Knokler hårdt",
+			"url": "https://www.youtube.com/watch?v=RRLLPavaSwo",
+			"ytid": "RRLLPavaSwo",
+			"body": "DR TOP100 2026 rank 98"
+		},
+		{
+			"title": "#99 Bamses Venner - Jeg elsker kun dig",
+			"url": "https://www.youtube.com/watch?v=KvASdgGNlrU",
+			"ytid": "KvASdgGNlrU",
+			"body": "DR TOP100 2026 rank 99"
+		},
+		{
+			"title": "#100 One Two - Den bedste tid",
+			"url": "https://www.youtube.com/watch?v=oNAhuyZTZb8",
+			"ytid": "oNAhuyZTZb8",
+			"body": "DR TOP100 2026 rank 100"
+		}
+	]
 }

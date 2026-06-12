@@ -1,14 +1,17 @@
 {
-  "name": "top100",
-  "private": true,
-  "scripts": {
-    "dev": "bunx vite dev",
-    "build": "echo 'No build needed: Cloudflare serves source files directly.'",
-    "deploy": "wrangler deploy",
-    "preview": "wrangler dev"
-  },
-  "devDependencies": {
-    "vite": "^8.0.16",
-    "wrangler": "^4.100.0"
-  }
+	"name": "top100",
+	"private": true,
+	"scripts": {
+		"dev": "bunx vite dev",
+		"build": "echo 'No build needed: Cloudflare serves source files directly.'",
+		"deploy": "wrangler deploy",
+		"preview": "wrangler dev",
+		"check": "oxlint --fix && oxfmt"
+	},
+	"devDependencies": {
+		"oxfmt": "^0.54.0",
+		"oxlint": "^1.69.0",
+		"vite": "^8.0.16",
+		"wrangler": "^4.100.0"
+	}
 }

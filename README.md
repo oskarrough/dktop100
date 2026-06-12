@@ -7,11 +7,11 @@ https://radio4000.com/dktop100
 
 ## Voting process
 
-dr.dk invited to help compile a shared top 100 of the best Danish songs ever. The goal was a conversation about music, different tastes, and Danish song heritage. 
+dr.dk invited to help compile a shared top 100 of the best Danish songs ever. The goal was a conversation about music, different tastes, and Danish song heritage.
 
 The list was built in three steps. Listeners on DR's music channels (P2, P3, P4, P5, P6, P8) suggested Danish songs that deserved a place. Those nominations were narrowed to 400 tracks, and Danes then voted for their five favorites on dr.dk. All votes were tallied to produce this top 100.
 
-## Data 
+## Data
 
 Fixed snapshot — will never be updated. It went like this
 
