@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dktop100",
+  "compatibility_date": "2026-06-12",
+  "workers_dev": true,
+  "assets": {
+    "directory": ".",
+  },
+  "routes": [{ "pattern": "dktop100.0sk.ar", "custom_domain": true }],
+}

@@ -77,7 +77,6 @@ def write_radio4000_export(payload: dict, source: str, out_path: Path) -> None:
                 "title": f"#{rank} {song['artist']} - {song['title']}" if rank else f"{song['artist']} - {song['title']}",
                 "url": url,
                 "ytid": youtube.get("id"),
-                "body": f"DR TOP100 2026 rank {rank}" if rank else "DR TOP100 2026 shortlist",
                 "_rank": rank,
                 "_sequence": song.get("sequence") or 0,
             }

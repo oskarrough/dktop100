@@ -8,12 +8,14 @@ The list was built in three steps. Listeners on DR's music channels (P2, P3, P4,
 
 ## Data (fixed snapshot)
 
-DR's pages are saved once (`raw.html`, `raw400.html`) and will not be updated — this is a historical snapshot (chart ranks 21–100 in the saved reveal HTML; top 20 were never captured).
+Fixed snapshot — will not be updated (chart ranks 21–100; top 20 were never captured in the saved reveal page).
 
-Two JSON files, built from two different pages:
+Two JSON files:
 
-- **`top100.json`** — chart (`scripts/parse-chart-html-to-json.py` ← `raw.html`): rank, fun fact, credits, cover, 30s mp3 snippet. Used by the site.
-- **`top400.json`** — voting shortlist (`scripts/parse-shortlist-html-to-json.py` ← `raw400.html`): all 400 nominees in page order. Chart songs are the same DR ids as in `top100.json`; run `scripts/annotate-shortlist-from-chart.py` once to set `in_top100`, `rank`, and copy fun facts onto those rows.
+- `**top100.json**` — chart: rank, fun fact, credits, cover, 30s mp3 snippet. Used by the site.
+- `**top400.json**` — voting shortlist: all 400 nominees in page order. Chart songs are the same DR ids as in `top100.json`; run `scripts/annotate-shortlist-from-chart.py` once to set `in_top100`, `rank`, and copy fun facts onto those rows.
+
+One-time HTML parsers (no longer needed): `scripts/parse-chart-html-to-json.py`, `scripts/parse-shortlist-html-to-json.py`.
 
 YouTube URLs (Radio4000 + full playback): `python3 scripts/enrich-songs-with-youtube.py` on `top100.json` → `radio4000-tracks.json`; `--input top400.json` → `radio4000-tracks-top400.json`. Uses `yt-dlp` search; skips existing urls and reuses peer/id/query lookups so each track is fetched at most once. Converters preserve existing `youtube` fields by song id if you re-run them. DR mp3 snippets work for instant previews meanwhile.
 
@@ -24,7 +26,7 @@ Auth once: `r4 auth login`. Channel: `dktop100`. Tracks: `radio4000-tracks.json`
 Radio4000 orders tracks by `created_at` DESC (newest first). For a countdown chart (#100 at top, #1 at bottom), **do not** bulk-create tracks in chart order — each new track jumps to the top. Use the placeholder strategy in `scripts/seed-radio4000-placeholders.py`:
 
 1. Create placeholders **#1 first → #100 last** (ascending rank). Oldest slot = #1 (bottom), newest = #100 (top).
-2. **UPDATE** each slot with real title/URL from `radio4000-tracks.json`. `r4 track update` changes title/url/description but **preserves `created_at`**, so order stays fixed.
+2. **UPDATE** each slot with real title/URL from `radio4000-tracks.json` (rank is in the title; description stays empty). `r4 track update` changes title/url/description but **preserves `created_at`**, so order stays fixed.
 
 ```bash
 python3 scripts/seed-radio4000-placeholders.py status              # check current order
@@ -38,7 +40,7 @@ Re-run `fill --confirm` after `scripts/enrich-songs-with-youtube.py` fills more 
 
 ## Dev
 
-`bun run dev` — local preview at http://localhost:5173 (Vite).
+`bun run dev` — local preview at [http://localhost:5173](http://localhost:5173) (Vite).
 
 ## The site
 
@@ -69,7 +71,7 @@ Vote abuse: unsolvable for anonymous voting, stakes are zero — aim for "not em
 - [x] Parse raw.html → top100.json
 - [x] Basic accessible HTML list
 - [x] Fixed snapshot (ranks 21–100; no live DR updates)
-- [ ] Global player bar
+- [x] Global player bar
 - [ ] Your-TOPx picker + share URL
 - [ ] Download cover images locally
 - [x] Find YouTube URLs for all tracks (`scripts/enrich-songs-with-youtube.py`)

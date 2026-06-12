@@ -263,7 +263,6 @@ def load_tracks_json(path: Path) -> list[dict]:
                 "rank": rank,
                 "title": t["title"],
                 "url": t["url"],
-                "description": t.get("body") or t.get("description") or "",
             }
         )
     return sorted(out, key=lambda x: x["rank"])
@@ -311,7 +310,7 @@ def cmd_fill(args: argparse.Namespace) -> int:
             continue
         tid = slot["id"]
         print(f"  #{t['rank']:>3} …", flush=True)
-        update_args = [
+        r4(
             "track",
             "update",
             tid,
@@ -319,10 +318,9 @@ def cmd_fill(args: argparse.Namespace) -> int:
             t["title"],
             "--url",
             t["url"],
-        ]
-        if t["description"]:
-            update_args.extend(["--description", t["description"]])
-        r4(*update_args)
+            "--description",
+            "",
+        )
         updated += 1
         if args.delay:
             time.sleep(args.delay)

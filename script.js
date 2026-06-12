@@ -1,17 +1,16 @@
 import { initCanvas } from './canvas.js';
+import './player.js';
+import {
+  addMySong,
+  isInMySongs,
+  isMySongsFull,
+  CHANGE_EVENT,
+} from './my-songs.js';
 
 const summary = document.querySelector('#summary');
 const list = document.querySelector('#songs');
 const template = document.querySelector('#song-template');
-const audio = document.querySelector('#audio');
-const playerCover = document.querySelector('.player-cover');
-const playerTitle = document.querySelector('.player-title');
-const playerArtist = document.querySelector('.player-artist');
-const playButton = document.querySelector('#play');
-const prevButton = document.querySelector('#prev');
-const nextButton = document.querySelector('#next');
-const shuffleButton = document.querySelector('#shuffle');
-const youtubeLink = document.querySelector('#youtube');
+const player = document.querySelector('top100-player');
 const searchInput = document.querySelector('#search');
 const searchWrap = document.querySelector('#search-wrap');
 
@@ -24,7 +23,6 @@ let activeList = 'top100';
 let queue = [];
 let visibleIndices = [];
 let currentIndex = -1;
-let shuffle = false;
 let canvasView = null;
 let filterQuery = '';
 
@@ -79,21 +77,18 @@ function rebuildVisibleIndices() {
     .map(({ index }) => index);
 }
 
-function songHeading(song, listId) {
-  if (listId === 'top100') {
-    return `#${song.rank} ${text(song.title)}`;
-  }
-  return text(song.title);
+function rankedTitle(song) {
+  return song.rank ? `#${song.rank} ${text(song.title)}` : text(song.title);
 }
 
+// List heading: ranked in the Top 100, plain title in the Top 400 (the badge marks chart songs there).
+function songHeading(song, listId) {
+  return listId === 'top100' ? rankedTitle(song) : text(song.title);
+}
+
+// Player label: ranked for any chart song, in either list.
 function songLabel(song, listId) {
-  if (listId === 'top100' && song.rank) {
-    return `#${song.rank} ${text(song.title)}`;
-  }
-  if (song.in_top100 && song.rank) {
-    return `#${song.rank} ${text(song.title)}`;
-  }
-  return text(song.title);
+  return listId === 'top100' || song.in_top100 ? rankedTitle(song) : text(song.title);
 }
 
 function updateSummary() {
@@ -116,19 +111,44 @@ function updateSummary() {
     : `${total} shortlist songs (alphabetical). ${chartCount} are on the chart.`;
 }
 
-function updatePlayer() {
-  const song = currentSong();
-  const isPlaying = !audio.paused;
+function updateMySongButtons() {
+  const full = isMySongsFull();
 
-  playButton.textContent = isPlaying ? '⏸' : '▶';
-  playButton.setAttribute('aria-label', isPlaying ? 'Pause' : 'Play');
-  shuffleButton.setAttribute('aria-pressed', String(shuffle));
+  document.querySelectorAll('.add-my-song').forEach((button) => {
+    const songId = button.dataset.songId;
+    const selected = songId && isInMySongs(songId);
+
+    button.classList.toggle('is-selected', selected);
+    button.setAttribute('aria-pressed', String(selected));
+
+    if (selected) {
+      button.disabled = true;
+      button.textContent = '✓';
+      button.setAttribute('aria-label', 'In my picks');
+    } else if (full) {
+      button.disabled = true;
+      button.textContent = '+';
+      button.setAttribute('aria-label', 'My picks full (5 of 5)');
+    } else {
+      button.disabled = false;
+      button.textContent = '+';
+      button.setAttribute('aria-label', 'Add to my picks');
+    }
+  });
+}
+
+function updateListPlaybackState() {
+  const song = currentSong();
+  const isPlaying = !player.paused;
 
   document.querySelectorAll('.play-song').forEach((button) => {
+    if (button.disabled) return;
     const isCurrent = Number(button.dataset.index) === currentIndex;
+    const playing = isCurrent && isPlaying;
     button.classList.toggle('is-current', isCurrent);
-    button.textContent = isCurrent && isPlaying ? 'Pause preview' : 'Play preview';
-    button.setAttribute('aria-pressed', String(isCurrent && isPlaying));
+    button.textContent = playing ? '⏸' : '▶';
+    button.setAttribute('aria-label', playing ? 'Pause preview' : 'Play preview');
+    button.setAttribute('aria-pressed', String(playing));
   });
 
   document.querySelectorAll('article.is-playing').forEach((article) => {
@@ -138,21 +158,17 @@ function updatePlayer() {
     const currentArticle = list.querySelector(`[data-index="${currentIndex}"]`);
     currentArticle?.classList.add('is-playing');
   }
+}
 
-  const yt = song ? youtubeUrl(song) : null;
-  if (yt) {
-    youtubeLink.href = yt;
-    youtubeLink.hidden = false;
-  } else {
-    youtubeLink.hidden = true;
-    youtubeLink.removeAttribute('href');
-  }
+function updatePlayer() {
+  const song = currentSong();
+
+  player.syncPlayButton();
+
+  updateListPlaybackState();
 
   if (!song) {
-    playerTitle.textContent = 'Pick a song';
-    playerArtist.textContent = '30 second previews from DR';
-    playerCover.hidden = true;
-    playerCover.removeAttribute('src');
+    player.resetDisplay();
     return;
   }
 
@@ -160,17 +176,14 @@ function updatePlayer() {
     canvasView.focusRank(song.rank);
   }
 
-  playerTitle.textContent = songLabel(song, activeList);
-  playerArtist.textContent = text(song.artist);
-
-  if (song.image?.url) {
-    playerCover.src = song.image.url;
-    playerCover.alt = song.image.alt || `${text(song.title)} cover`;
-    playerCover.hidden = false;
-  } else {
-    playerCover.hidden = true;
-    playerCover.removeAttribute('src');
-  }
+  const image = song.image;
+  player.setMetadata({
+    title: songLabel(song, activeList),
+    artist: text(song.artist),
+    coverUrl: image?.url || null,
+    coverAlt: image?.alt || `${text(song.title)} cover`,
+    youtubeUrl: youtubeUrl(song),
+  });
 }
 
 async function playIndex(index) {
@@ -179,14 +192,11 @@ async function playIndex(index) {
   const song = queue[index];
   currentIndex = index;
 
-  if (audio.src !== song.media.audio_url) {
-    audio.src = song.media.audio_url;
-  }
-
+  player.load(song.media.audio_url);
   updatePlayer();
 
   try {
-    await audio.play();
+    await player.play();
   } catch (error) {
     summary.textContent = `Could not play preview: ${error.message}`;
   }
@@ -197,7 +207,7 @@ async function playIndex(index) {
 function nextIndex(direction) {
   if (!visibleIndices.length) return -1;
 
-  if (shuffle && direction > 0) {
+  if (player.shuffle && direction > 0) {
     const pick = Math.floor(Math.random() * visibleIndices.length);
     return visibleIndices[pick];
   }
@@ -217,9 +227,9 @@ function playPrevious() {
 }
 
 function togglePlay(index = currentIndex) {
-  if (index === currentIndex && audio.src) {
-    if (audio.paused) audio.play();
-    else audio.pause();
+  if (index === currentIndex && player.hasSource) {
+    if (player.paused) player.play();
+    else player.pause();
     return;
   }
 
@@ -234,6 +244,7 @@ function renderSong(song, index) {
   const artist = fragment.querySelector('.artist');
   const image = fragment.querySelector('img');
   const playSong = fragment.querySelector('.play-song');
+  const addMySongButton = fragment.querySelector('.add-my-song');
   const ytLink = fragment.querySelector('.youtube-link');
   const funfact = fragment.querySelector('.funfact');
   const credits = fragment.querySelector('.credits');
@@ -243,7 +254,6 @@ function renderSong(song, index) {
     li.value = song.rank;
   } else {
     li.value = song.sequence;
-    if (song.in_top100) article.classList.add('in-top100');
   }
 
   heading.textContent = songHeading(song, activeList);
@@ -254,9 +264,7 @@ function renderSong(song, index) {
     heading.append(' ', badge);
   }
 
-  artist.textContent = activeList === 'top400'
-    ? `${text(song.artist)} · #${song.sequence}`
-    : text(song.artist);
+  artist.textContent = text(song.artist);
 
   if (song.image?.url) {
     image.src = song.image.url;
@@ -278,7 +286,17 @@ function renderSong(song, index) {
     article.classList.add('playable');
   } else {
     playSong.disabled = true;
-    playSong.textContent = 'No preview';
+    playSong.setAttribute('aria-label', 'No preview');
+  }
+
+  if (song.id) {
+    addMySongButton.dataset.songId = song.id;
+    addMySongButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      addMySong(song, activeList);
+    });
+  } else {
+    addMySongButton.remove();
   }
 
   const yt = youtubeUrl(song);
@@ -330,6 +348,7 @@ function renderList() {
   list.replaceChildren(...nodes);
   updateSummary();
   updatePlayer();
+  updateMySongButtons();
 }
 
 function resetCanvas() {
@@ -344,8 +363,7 @@ function setList(listId) {
   localStorage.setItem('top100-list', listId);
   queue = datasets[listId].songs;
   currentIndex = -1;
-  audio.pause();
-  audio.removeAttribute('src');
+  player.clear();
   filterQuery = '';
   searchInput.value = '';
 
@@ -431,17 +449,14 @@ searchInput.addEventListener('input', () => {
   renderList();
 });
 
-playButton.addEventListener('click', () => togglePlay());
-prevButton.addEventListener('click', playPrevious);
-nextButton.addEventListener('click', playNext);
-shuffleButton.addEventListener('click', () => {
-  shuffle = !shuffle;
-  updatePlayer();
-});
+player.addEventListener('toggle', () => togglePlay());
+player.addEventListener('prev', playPrevious);
+player.addEventListener('next', playNext);
+player.addEventListener('play', updateListPlaybackState);
+player.addEventListener('pause', updateListPlaybackState);
+player.addEventListener('ended', playNext);
 
-audio.addEventListener('play', updatePlayer);
-audio.addEventListener('pause', updatePlayer);
-audio.addEventListener('ended', playNext);
+document.addEventListener(CHANGE_EVENT, updateMySongButtons);
 
 document.addEventListener('keydown', (event) => {
   if (event.target.closest('input, textarea, select, button, a')) return;

@@ -7,9 +7,9 @@
     "funfact and credits are not present in raw400.html",
     "audio_url is built from the DR top100 tracks folder plus the data-sound filename",
     "image URLs normalized from web.archive.org captures to direct asset.dr.dk URLs",
-    "youtube.url via scripts/enrich-songs-with-youtube.py (yt-dlp); preserved by song id if converter is re-run",
     "in_top100 / rank / funfact / credits for chart songs copied from top100.json (scripts/annotate-shortlist-from-chart.py)",
-    "chart ranks are 21–100 in this snapshot (top 20 not in saved reveal HTML)"
+    "chart ranks are 21–100 in this snapshot (top 20 not in saved reveal HTML)",
+    "youtube.url is looked up via scripts/enrich-songs-with-youtube.py (yt-dlp ytsearch1)"
   ],
   "songs": [
     {
@@ -55,7 +55,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "mju-5zqpYe0",
+        "url": "https://www.youtube.com/watch?v=mju-5zqpYe0",
+        "title": "Albert Heath - Horsens (Akustisk Live Session) ft. Sofie1998",
+        "search_query": "Albert Heath Feat. Sofie1998 Horsens",
+        "fetched_at": "2026-06-12T12:30:39.320804+00:00"
+      }
     },
     {
       "sequence": 3,
@@ -74,7 +81,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "B4NXA_69GVo",
+        "url": "https://www.youtube.com/watch?v=B4NXA_69GVo",
+        "title": "Alberte Lyse Nætter 1991",
+        "search_query": "Alberte Lyse nætter",
+        "fetched_at": "2026-06-12T12:30:41.497947+00:00"
+      }
     },
     {
       "sequence": 4,
@@ -93,7 +107,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "FjFgLV7DL7k",
+        "url": "https://www.youtube.com/watch?v=FjFgLV7DL7k",
+        "title": "Vi lå jo i Herning",
+        "search_query": "Allan Olsen Vi lå jo i Herning (Live 1990)",
+        "fetched_at": "2026-06-12T12:30:43.428486+00:00"
+      }
     },
     {
       "sequence": 5,
@@ -112,7 +133,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "eqQW788_69U",
+        "url": "https://www.youtube.com/watch?v=eqQW788_69U",
+        "title": "De Fine Kommer Sjældent Fra Fresse",
+        "search_query": "Allan Olsen De fine kommer sjældent fra Fresse",
+        "fetched_at": "2026-06-12T12:30:45.232883+00:00"
+      }
     },
     {
       "sequence": 6,
@@ -131,7 +159,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-8UxX5STKL4",
+        "url": "https://www.youtube.com/watch?v=-8UxX5STKL4",
+        "title": "Alphabeat - Fascination (Official Music Video)",
+        "search_query": "Alphabeat Fascination",
+        "fetched_at": "2026-06-12T12:30:47.163724+00:00"
+      }
     },
     {
       "sequence": 7,
@@ -150,7 +185,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "khx7Tk4KyQk",
+        "url": "https://www.youtube.com/watch?v=khx7Tk4KyQk",
+        "title": "føler mig selv 100",
+        "search_query": "Andreas Odbjerg Føler mig selv 100",
+        "fetched_at": "2026-06-12T12:30:48.949413+00:00"
+      }
     },
     {
       "sequence": 8,
@@ -169,7 +211,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "9slH1ejBHDU",
+        "url": "https://www.youtube.com/watch?v=9slH1ejBHDU",
+        "title": "i morgen er der også en dag",
+        "search_query": "Andreas Odbjerg I morgen er der også en dag",
+        "fetched_at": "2026-06-12T12:30:50.774844+00:00"
+      }
     },
     {
       "sequence": 9,
@@ -188,7 +237,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Wl5itAi_ptc",
+        "url": "https://www.youtube.com/watch?v=Wl5itAi_ptc",
+        "title": "Jeg Ka' Rigtig Godt Li' Dig",
+        "search_query": "Andreas Odbjerg & Ida Laurberg Jeg ka' rigtig godt li' dig",
+        "fetched_at": "2026-06-12T12:30:52.817844+00:00"
+      }
     },
     {
       "sequence": 10,
@@ -207,7 +263,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WWZ9GWkrBtg",
+        "url": "https://www.youtube.com/watch?v=WWZ9GWkrBtg",
+        "title": "svært at være fantastisk",
+        "search_query": "Andreas Odbjerg Feat. Emma Sehested Høeg svært at være fantastisk",
+        "fetched_at": "2026-06-12T12:30:54.738846+00:00"
+      }
     },
     {
       "sequence": 11,
@@ -226,7 +289,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "nPMMzVjJgDw",
+        "url": "https://www.youtube.com/watch?v=nPMMzVjJgDw",
+        "title": "sommerfugl",
+        "search_query": "Angående Mig Sommerfugl",
+        "fetched_at": "2026-06-12T12:30:56.609221+00:00"
+      }
     },
     {
       "sequence": 12,
@@ -245,7 +315,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "FRF2Seappw8",
+        "url": "https://www.youtube.com/watch?v=FRF2Seappw8",
+        "title": "Anna David - Fuck Dig",
+        "search_query": "Anna David Fuck dig",
+        "fetched_at": "2026-06-12T12:30:58.587104+00:00"
+      }
     },
     {
       "sequence": 13,
@@ -264,7 +341,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "uKePOqtRA20",
+        "url": "https://www.youtube.com/watch?v=uKePOqtRA20",
+        "title": "Tusind stykker",
+        "search_query": "Anne Linnet Tusind stykker",
+        "fetched_at": "2026-06-12T12:31:00.550091+00:00"
+      }
     },
     {
       "sequence": 14,
@@ -283,7 +367,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "DnspQ12-qyc",
+        "url": "https://www.youtube.com/watch?v=DnspQ12-qyc",
+        "title": "Anne Linnet - Forårsdag",
+        "search_query": "Anne Linnet Forårsdag",
+        "fetched_at": "2026-06-12T12:31:02.563766+00:00"
+      }
     },
     {
       "sequence": 15,
@@ -328,7 +419,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "2PlvwDQNg4Y",
+        "url": "https://www.youtube.com/watch?v=2PlvwDQNg4Y",
+        "title": "Knuser Hjerter",
+        "search_query": "Annika Knuser hjerter",
+        "fetched_at": "2026-06-12T12:31:04.521572+00:00"
+      }
     },
     {
       "sequence": 17,
@@ -347,7 +445,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5EybAD2yaFw",
+        "url": "https://www.youtube.com/watch?v=5EybAD2yaFw",
+        "title": "POP (Himlen over København)",
+        "search_query": "Annika Aakjær POP (Himlen over København)",
+        "fetched_at": "2026-06-12T12:31:06.582116+00:00"
+      }
     },
     {
       "sequence": 18,
@@ -366,7 +471,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6GVm6sU5oCc",
+        "url": "https://www.youtube.com/watch?v=6GVm6sU5oCc",
+        "title": "Stolt",
+        "search_query": "Annika Feat. Lamin Stolt",
+        "fetched_at": "2026-06-12T12:31:08.378008+00:00"
+      }
     },
     {
       "sequence": 19,
@@ -385,7 +497,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "bbZ_NV-VBrY",
+        "url": "https://www.youtube.com/watch?v=bbZ_NV-VBrY",
+        "title": "Smelter Under Månen",
+        "search_query": "APHACA Smelter under månen",
+        "fetched_at": "2026-06-12T12:31:10.223768+00:00"
+      }
     },
     {
       "sequence": 20,
@@ -456,7 +575,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "jyYBjidU9Ig",
+        "url": "https://www.youtube.com/watch?v=jyYBjidU9Ig",
+        "title": "Artigeardit - Seaside",
+        "search_query": "Artigeardit Seaside",
+        "fetched_at": "2026-06-12T12:31:12.143425+00:00"
+      }
     },
     {
       "sequence": 23,
@@ -475,7 +601,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "1VQRxuXqPYk",
+        "url": "https://www.youtube.com/watch?v=1VQRxuXqPYk",
+        "title": "Artigeardit x KESI – Er Her",
+        "search_query": "Artigeardit & Kesi Er her",
+        "fetched_at": "2026-06-12T12:31:14.174658+00:00"
+      }
     },
     {
       "sequence": 24,
@@ -494,7 +627,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5shX3YM3Uho",
+        "url": "https://www.youtube.com/watch?v=5shX3YM3Uho",
+        "title": "Fra Mols til Skagen - Denmark 1995 - Eurovision songs with live orchestra",
+        "search_query": "Aud Wilken Fra Mols til Skagen",
+        "fetched_at": "2026-06-12T12:31:16.136117+00:00"
+      }
     },
     {
       "sequence": 25,
@@ -513,7 +653,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8h9Fx6RwbWM",
+        "url": "https://www.youtube.com/watch?v=8h9Fx6RwbWM",
+        "title": "Det Hele Handler Om Dig",
+        "search_query": "August Høyen Det hele handler om dig",
+        "fetched_at": "2026-06-12T12:31:17.954179+00:00"
+      }
     },
     {
       "sequence": 26,
@@ -532,7 +679,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "9kv-I_hzjPg",
+        "url": "https://www.youtube.com/watch?v=9kv-I_hzjPg",
+        "title": "Aura Dione - Geronimo (Official Video)",
+        "search_query": "Aura Dione Geronimo",
+        "fetched_at": "2026-06-12T12:31:19.888793+00:00"
+      }
     },
     {
       "sequence": 27,
@@ -577,7 +731,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "qdJA1lECl34",
+        "url": "https://www.youtube.com/watch?v=qdJA1lECl34",
+        "title": "Intet Stopper Helt",
+        "search_query": "Balstyrko Intet stopper helt",
+        "fetched_at": "2026-06-12T12:31:21.700498+00:00"
+      }
     },
     {
       "sequence": 29,
@@ -622,7 +783,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "AFq4lSASzwQ",
+        "url": "https://www.youtube.com/watch?v=AFq4lSASzwQ",
+        "title": "Hvorfor Går Louise Til Bal?",
+        "search_query": "Bamses Venner Hvorfor går Louise til bal",
+        "fetched_at": "2026-06-12T12:31:23.703460+00:00"
+      }
     },
     {
       "sequence": 31,
@@ -667,7 +835,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "laWjnjVema4",
+        "url": "https://www.youtube.com/watch?v=laWjnjVema4",
+        "title": "Udsving",
+        "search_query": "Barselona Udsving",
+        "fetched_at": "2026-06-12T12:31:25.688108+00:00"
+      }
     },
     {
       "sequence": 33,
@@ -686,7 +861,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "f7sMD9EOKvY",
+        "url": "https://www.youtube.com/watch?v=f7sMD9EOKvY",
+        "title": "Hvornår",
+        "search_query": "Barselona Feat. Thøger Dixgaard Hvornår",
+        "fetched_at": "2026-06-12T12:31:27.583458+00:00"
+      }
     },
     {
       "sequence": 34,
@@ -705,7 +887,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "34M7PpudglU",
+        "url": "https://www.youtube.com/watch?v=34M7PpudglU",
+        "title": "Benal - Uh Babe",
+        "search_query": "Benal Uh Babe",
+        "fetched_at": "2026-06-12T12:31:29.466374+00:00"
+      }
     },
     {
       "sequence": 35,
@@ -724,7 +913,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "reCtQ4MDsVo",
+        "url": "https://www.youtube.com/watch?v=reCtQ4MDsVo",
+        "title": "Benjamin Hav - Den Dejligste Boy",
+        "search_query": "Benjamin Hav Den Dejligste Boy",
+        "fetched_at": "2026-06-12T12:31:31.383203+00:00"
+      }
     },
     {
       "sequence": 36,
@@ -769,7 +965,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GhrPgbIHVAQ",
+        "url": "https://www.youtube.com/watch?v=GhrPgbIHVAQ",
+        "title": "Svantes lykkelige dag (om lidt er kaffen klar) - Povl Dissing",
+        "search_query": "Benny Andersen & Povl Dissing Svantes lykkelige dag",
+        "fetched_at": "2026-06-12T12:31:33.355697+00:00"
+      }
     },
     {
       "sequence": 38,
@@ -788,7 +991,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "IMqTuWl3xAA",
+        "url": "https://www.youtube.com/watch?v=IMqTuWl3xAA",
+        "title": "Alley Cat",
+        "search_query": "Bent Fabric Alley Cat",
+        "fetched_at": "2026-06-12T12:31:35.376249+00:00"
+      }
     },
     {
       "sequence": 39,
@@ -833,7 +1043,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Zn3fJEj8Zzo",
+        "url": "https://www.youtube.com/watch?v=Zn3fJEj8Zzo",
+        "title": "Hej Maria (Luk Vinduet Op)",
+        "search_query": "Bifrost Hej Maria luk vinduet op",
+        "fetched_at": "2026-06-12T12:31:37.239256+00:00"
+      }
     },
     {
       "sequence": 41,
@@ -852,7 +1069,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WYzLJ62f7bc",
+        "url": "https://www.youtube.com/watch?v=WYzLJ62f7bc",
+        "title": "Big fat snake Bonsoir Madame",
+        "search_query": "Big Fat Snake Bonsoir Madame",
+        "fetched_at": "2026-06-12T12:31:44.410241+00:00"
+      }
     },
     {
       "sequence": 42,
@@ -871,7 +1095,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Shw6kLDBaXM",
+        "url": "https://www.youtube.com/watch?v=Shw6kLDBaXM",
+        "title": "Bikstok Røgsystem - Fabrik",
+        "search_query": "Bikstok Røgsystem Fabrik",
+        "fetched_at": "2026-06-12T12:31:46.339872+00:00"
+      }
     },
     {
       "sequence": 43,
@@ -916,7 +1147,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "23BwBx5v5Qk",
+        "url": "https://www.youtube.com/watch?v=23BwBx5v5Qk",
+        "title": "Sommer Og Sol",
+        "search_query": "Birthe Kjær Sommer og sol",
+        "fetched_at": "2026-06-12T12:31:48.350199+00:00"
+      }
     },
     {
       "sequence": 45,
@@ -935,7 +1173,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vX3WRMF5TuY",
+        "url": "https://www.youtube.com/watch?v=vX3WRMF5TuY",
+        "title": "ESC 1957 09 - Denmark - Birthe Wilke & Gustav Winckler - Skibet Skal Sejle I Nat",
+        "search_query": "Birthe Wilke & Gustav Winckler Skibet skal sejle i nat",
+        "fetched_at": "2026-06-12T12:31:50.303753+00:00"
+      }
     },
     {
       "sequence": 46,
@@ -954,7 +1199,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "UBXcEhzlYn4",
+        "url": "https://www.youtube.com/watch?v=UBXcEhzlYn4",
+        "title": "BISSE – Seks Hjerter",
+        "search_query": "Bisse Seks hjerter",
+        "fetched_at": "2026-06-12T12:31:52.208808+00:00"
+      }
     },
     {
       "sequence": 47,
@@ -973,7 +1225,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "esx5thg5HMs",
+        "url": "https://www.youtube.com/watch?v=esx5thg5HMs",
+        "title": "Bjørn Svin - Mer Strøm 2 (Original Mix)",
+        "search_query": "Bjørn Svin Mer strøm # 2",
+        "fetched_at": "2026-06-12T12:31:54.126140+00:00"
+      }
     },
     {
       "sequence": 48,
@@ -992,7 +1251,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Q1fYc5UfMCA",
+        "url": "https://www.youtube.com/watch?v=Q1fYc5UfMCA",
+        "title": "Elsker Dig Så Meget",
+        "search_query": "Blæst Elsker dig så meget",
+        "fetched_at": "2026-06-12T12:31:55.886808+00:00"
+      }
     },
     {
       "sequence": 49,
@@ -1011,7 +1277,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "HACC_0TTuG4",
+        "url": "https://www.youtube.com/watch?v=HACC_0TTuG4",
+        "title": "Juice",
+        "search_query": "Blæst Juice",
+        "fetched_at": "2026-06-12T12:31:57.937638+00:00"
+      }
     },
     {
       "sequence": 50,
@@ -1030,7 +1303,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rAOzJG8svQU",
+        "url": "https://www.youtube.com/watch?v=rAOzJG8svQU",
+        "title": "Blaue Blume - Følsom dreng (Official video)",
+        "search_query": "Blaue Blume Følsom dreng",
+        "fetched_at": "2026-06-12T12:31:59.967162+00:00"
+      }
     },
     {
       "sequence": 51,
@@ -1049,7 +1329,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LAxCqlU-OAo",
+        "url": "https://www.youtube.com/watch?v=LAxCqlU-OAo",
+        "title": "Blue Foundation - Eyes On Fire (Official Music Video)",
+        "search_query": "Blue Foundation Eyes On Fire",
+        "fetched_at": "2026-06-12T12:32:02.084947+00:00"
+      }
     },
     {
       "sequence": 52,
@@ -1068,7 +1355,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "OdGqv_w3zxA",
+        "url": "https://www.youtube.com/watch?v=OdGqv_w3zxA",
+        "title": "Brødrene Olsen - Smuk som et Stjerneskud (Winner of the Danish Song contest 2000, final song)",
+        "search_query": "Brdr. Olsen Smuk som et stjerneskud",
+        "fetched_at": "2026-06-12T12:32:04.047164+00:00"
+      }
     },
     {
       "sequence": 53,
@@ -1087,7 +1381,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5s_zwppYj8I",
+        "url": "https://www.youtube.com/watch?v=5s_zwppYj8I",
+        "title": "Brimheim - Literally Everything (music video)",
+        "search_query": "Brimheim Literally Everything",
+        "fetched_at": "2026-06-12T12:32:06.115892+00:00"
+      }
     },
     {
       "sequence": 54,
@@ -1106,7 +1407,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "zycUHrOpX04",
+        "url": "https://www.youtube.com/watch?v=zycUHrOpX04",
+        "title": "Bryan Rice - No Promises",
+        "search_query": "Bryan Rice No Promises",
+        "fetched_at": "2026-06-12T12:32:08.355498+00:00"
+      }
     },
     {
       "sequence": 55,
@@ -1125,7 +1433,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "A1pXfcR2k9k",
+        "url": "https://www.youtube.com/watch?v=A1pXfcR2k9k",
+        "title": "Burhan G - Mest Ondt - feat. Medina",
+        "search_query": "Burhan G Feat. Medina Mest ondt",
+        "fetched_at": "2026-06-12T12:32:10.190405+00:00"
+      }
     },
     {
       "sequence": 56,
@@ -1144,7 +1459,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "pArLmSakOYI",
+        "url": "https://www.youtube.com/watch?v=pArLmSakOYI",
+        "title": "Burhan G - Tættere På Himlen Feat. Nik & Jay",
+        "search_query": "Burhan G Feat. Nik & Jay Tættere på himlen",
+        "fetched_at": "2026-06-12T12:32:12.092297+00:00"
+      }
     },
     {
       "sequence": 57,
@@ -1215,7 +1537,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "gRqYlyKzan4",
+        "url": "https://www.youtube.com/watch?v=gRqYlyKzan4",
+        "title": "Costa Del Sol (En Inciterende Flamenco)",
+        "search_query": "C.V. Jørgensen Costa del Sol (En inciterende flamenco)",
+        "fetched_at": "2026-06-12T12:32:14.000076+00:00"
+      }
     },
     {
       "sequence": 60,
@@ -1286,7 +1615,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LXgeRS4i4ME",
+        "url": "https://www.youtube.com/watch?v=LXgeRS4i4ME",
+        "title": "Sinfonia Espansiva: Allegro Espansivo - Nielsen // Danish National Symphony Orchestra & Fabio Luisi",
+        "search_query": "Carl Nielsen Symfoni nr 3 Sinfonia Espansiva - Allegro espansivo",
+        "fetched_at": "2026-06-12T12:32:15.944236+00:00"
+      }
     },
     {
       "sequence": 63,
@@ -1331,7 +1667,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "dfDJ10LdMwo",
+        "url": "https://www.youtube.com/watch?v=dfDJ10LdMwo",
+        "title": "Jens Vejmand #521 tekst: Jeppe Aakjær melodi: Carl Nielsen",
+        "search_query": "Carl Nielsen. Tekst: Jeppe Aakjær Jens Vejmand",
+        "fetched_at": "2026-06-12T12:32:17.838561+00:00"
+      }
     },
     {
       "sequence": 65,
@@ -1350,7 +1693,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "fvImePH5_fI",
+        "url": "https://www.youtube.com/watch?v=fvImePH5_fI",
+        "title": "Caroline Henderson - Made In Europe",
+        "search_query": "Caroline Henderson Made In Europe",
+        "fetched_at": "2026-06-12T12:32:19.886558+00:00"
+      }
     },
     {
       "sequence": 66,
@@ -1395,7 +1745,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "UM-gImQT2SE",
+        "url": "https://www.youtube.com/watch?v=UM-gImQT2SE",
+        "title": "Chinah - Away From Me",
+        "search_query": "CHINAH Away From Me",
+        "fetched_at": "2026-06-12T12:32:21.849237+00:00"
+      }
     },
     {
       "sequence": 68,
@@ -1414,7 +1771,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "sepnIuRbYF4",
+        "url": "https://www.youtube.com/watch?v=sepnIuRbYF4",
+        "title": "Choir of Young Believers - Hollow Talk + Lyrics (from Bron/Broen)",
+        "search_query": "Choir Of Young Believers Hollow Talk",
+        "fetched_at": "2026-06-12T12:32:23.871851+00:00"
+      }
     },
     {
       "sequence": 69,
@@ -1433,7 +1797,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6Gy6FMoFczo",
+        "url": "https://www.youtube.com/watch?v=6Gy6FMoFczo",
+        "title": "Christine Milton - Superstar",
+        "search_query": "Christine Milton Superstar",
+        "fetched_at": "2026-06-12T12:32:25.740015+00:00"
+      }
     },
     {
       "sequence": 70,
@@ -1452,7 +1823,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8jpo5bvu3Nc",
+        "url": "https://www.youtube.com/watch?v=8jpo5bvu3Nc",
+        "title": "Christopher - Irony (Official Music Video)",
+        "search_query": "Christopher Irony",
+        "fetched_at": "2026-06-12T12:32:27.651606+00:00"
+      }
     },
     {
       "sequence": 71,
@@ -1471,7 +1849,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "T-9dKi-jR8I",
+        "url": "https://www.youtube.com/watch?v=T-9dKi-jR8I",
+        "title": "Ham Med Guitaren",
+        "search_query": "Christopher Ham med guitaren",
+        "fetched_at": "2026-06-12T12:32:29.744007+00:00"
+      }
     },
     {
       "sequence": 72,
@@ -1490,7 +1875,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "SCvuCUOLPFs",
+        "url": "https://www.youtube.com/watch?v=SCvuCUOLPFs",
+        "title": "Bim bam busse",
+        "search_query": "Cirkeline, Hanne Hastrup & Hans-Henrik Ley Bim bam busse",
+        "fetched_at": "2026-06-12T12:32:31.726447+00:00"
+      }
     },
     {
       "sequence": 73,
@@ -1509,7 +1901,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_vGl6hcbXgE",
+        "url": "https://www.youtube.com/watch?v=_vGl6hcbXgE",
+        "title": "Sig Mig",
+        "search_query": "Citybois Sig mig",
+        "fetched_at": "2026-06-12T12:32:33.651254+00:00"
+      }
     },
     {
       "sequence": 74,
@@ -1528,7 +1927,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "HvucHgwjMFQ",
+        "url": "https://www.youtube.com/watch?v=HvucHgwjMFQ",
+        "title": "Når tiden går baglæns - Clara Sofie & Rune RK (Official Video)",
+        "search_query": "Clara Sofie & Rune RK Når tiden går baglæns",
+        "fetched_at": "2026-06-12T12:32:35.649036+00:00"
+      }
     },
     {
       "sequence": 75,
@@ -1573,7 +1979,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "wj4tbhj9P9M",
+        "url": "https://www.youtube.com/watch?v=wj4tbhj9P9M",
+        "title": "Hardest Thing",
+        "search_query": "Coco O. Hardest Thing",
+        "fetched_at": "2026-06-12T12:32:37.980070+00:00"
+      }
     },
     {
       "sequence": 77,
@@ -1592,7 +2005,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "HDN0Z9-yJmM",
+        "url": "https://www.youtube.com/watch?v=HDN0Z9-yJmM",
+        "title": "Cut 'N' Move - Get Serious (Official Music Video)",
+        "search_query": "Cut 'N' Move Get Serious",
+        "fetched_at": "2026-06-12T12:32:39.969714+00:00"
+      }
     },
     {
       "sequence": 78,
@@ -1611,7 +2031,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ASfVIFUw20Y",
+        "url": "https://www.youtube.com/watch?v=ASfVIFUw20Y",
+        "title": "D-A-D - Sleeping My Day Away",
+        "search_query": "D.A.D Sleeping My Day Away",
+        "fetched_at": "2026-06-12T12:32:41.991869+00:00"
+      }
     },
     {
       "sequence": 79,
@@ -1630,7 +2057,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "HEe2_wr6TQ4",
+        "url": "https://www.youtube.com/watch?v=HEe2_wr6TQ4",
+        "title": "D-A-D - Bad Craziness",
+        "search_query": "D.A.D Bad Craziness",
+        "fetched_at": "2026-06-12T12:32:44.039757+00:00"
+      }
     },
     {
       "sequence": 80,
@@ -1649,7 +2083,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "DYLmytlANG0",
+        "url": "https://www.youtube.com/watch?v=DYLmytlANG0",
+        "title": "D1MA - DRØM MIG VÆK (Lyric Video)",
+        "search_query": "D1MA DRØM MIG VÆK",
+        "fetched_at": "2026-06-12T12:32:46.053874+00:00"
+      }
     },
     {
       "sequence": 81,
@@ -1668,7 +2109,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6KCdhpfV_AQ",
+        "url": "https://www.youtube.com/watch?v=6KCdhpfV_AQ",
+        "title": "Daimi - ”Jeg sætter min hat som jeg vil” | P8 Jazz Alive | DR K",
+        "search_query": "Daimi Jeg sætter min hat som jeg vil",
+        "fetched_at": "2026-06-12T12:32:48.134385+00:00"
+      }
     },
     {
       "sequence": 82,
@@ -1739,7 +2187,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "OdhVPUcimAM",
+        "url": "https://www.youtube.com/watch?v=OdhVPUcimAM",
+        "title": "ESC 1961 13 - Denmark - Dario Campeotto - Angelique",
+        "search_query": "Dario Campeotto Angelique",
+        "fetched_at": "2026-06-12T12:32:50.112613+00:00"
+      }
     },
     {
       "sequence": 85,
@@ -1758,7 +2213,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WA0PE11Js5c",
+        "url": "https://www.youtube.com/watch?v=WA0PE11Js5c",
+        "title": "Spændt op til lir",
+        "search_query": "Den Gale Pose Spændt op til lir'",
+        "fetched_at": "2026-06-12T12:32:52.071626+00:00"
+      }
     },
     {
       "sequence": 86,
@@ -1777,7 +2239,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6I-BTlgcVqU",
+        "url": "https://www.youtube.com/watch?v=6I-BTlgcVqU",
+        "title": "Det Brune Punktum - Vi Skal Ud I Det Blå (Official Music Video)",
+        "search_query": "Det Brune Punktum Vi skal ud i det blå",
+        "fetched_at": "2026-06-12T12:32:54.402964+00:00"
+      }
     },
     {
       "sequence": 87,
@@ -1796,7 +2265,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "lglljPEUDF8",
+        "url": "https://www.youtube.com/watch?v=lglljPEUDF8",
+        "title": "Det Internationale Sigøjner Kompagni - I Kan Ikke Slå Os Ihjel",
+        "search_query": "Det Internationale Sigøjner Kompagni I kan ikke slå os ihjel",
+        "fetched_at": "2026-06-12T12:32:56.279741+00:00"
+      }
     },
     {
       "sequence": 88,
@@ -1815,7 +2291,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "frRttlZopRc",
+        "url": "https://www.youtube.com/watch?v=frRttlZopRc",
+        "title": "Dieters Lieder - Dig og Mig",
+        "search_query": "Dieters Lieder Dig og mig",
+        "fetched_at": "2026-06-12T12:32:58.072534+00:00"
+      }
     },
     {
       "sequence": 89,
@@ -1834,7 +2317,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "atTQTlDf7Do",
+        "url": "https://www.youtube.com/watch?v=atTQTlDf7Do",
+        "title": "Dillistone - Haunted (Official Audio)",
+        "search_query": "Dillistone Haunted",
+        "fetched_at": "2026-06-12T12:32:59.937063+00:00"
+      }
     },
     {
       "sequence": 90,
@@ -1853,7 +2343,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "B-yd1hBRvos",
+        "url": "https://www.youtube.com/watch?v=B-yd1hBRvos",
+        "title": "Dizzy Mizz Lizzy - Silverflame",
+        "search_query": "Dizzy Mizz Lizzy Silverflame",
+        "fetched_at": "2026-06-12T12:33:01.850743+00:00"
+      }
     },
     {
       "sequence": 91,
@@ -1898,7 +2395,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "X5e-Sx64oRY",
+        "url": "https://www.youtube.com/watch?v=X5e-Sx64oRY",
+        "title": "Gi Mig Hvad Du Har",
+        "search_query": "Dodo & The Dodo's Giv mig hvad du har",
+        "fetched_at": "2026-06-12T12:33:03.862765+00:00"
+      }
     },
     {
       "sequence": 93,
@@ -1917,7 +2421,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "MjJ5qFa-M0M",
+        "url": "https://www.youtube.com/watch?v=MjJ5qFa-M0M",
+        "title": "Drew Sycamore - I Wanna Be Dancing (Official Music Video)",
+        "search_query": "Drew Sycamore I Wanna Be Dancing",
+        "fetched_at": "2026-06-12T12:33:05.888625+00:00"
+      }
     },
     {
       "sequence": 94,
@@ -1936,7 +2447,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Dm82A8Glgpc",
+        "url": "https://www.youtube.com/watch?v=Dm82A8Glgpc",
+        "title": "DÚNÉ - DRY LIPS (Official Music Video)",
+        "search_query": "Dúné Dry Lips",
+        "fetched_at": "2026-06-12T12:33:07.832895+00:00"
+      }
     },
     {
       "sequence": 95,
@@ -1955,7 +2473,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "jcorxiH-t7g",
+        "url": "https://www.youtube.com/watch?v=jcorxiH-t7g",
+        "title": "eee gee - Killing It (OFFICIAL MUSIC VIDEO)",
+        "search_query": "eee gee Killing It",
+        "fetched_at": "2026-06-12T12:33:09.742813+00:00"
+      }
     },
     {
       "sequence": 96,
@@ -1974,7 +2499,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vVj3rTWfVVw",
+        "url": "https://www.youtube.com/watch?v=vVj3rTWfVVw",
+        "title": "Efterklang - Modern Drift (Official Video)",
+        "search_query": "Efterklang Modern Drift",
+        "fetched_at": "2026-06-12T12:33:11.855229+00:00"
+      }
     },
     {
       "sequence": 97,
@@ -2019,7 +2551,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "tLOkAScCpzI",
+        "url": "https://www.youtube.com/watch?v=tLOkAScCpzI",
+        "title": "Elisabeth - En Sømand Som Dig (Original Video)",
+        "search_query": "Elisabeth En sømand som dig",
+        "fetched_at": "2026-06-12T12:33:13.837081+00:00"
+      }
     },
     {
       "sequence": 99,
@@ -2038,7 +2577,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "O8ae2tObClU",
+        "url": "https://www.youtube.com/watch?v=O8ae2tObClU",
+        "title": "Baglæns",
+        "search_query": "Ella Augusta Baglæns",
+        "fetched_at": "2026-06-12T12:33:15.907183+00:00"
+      }
     },
     {
       "sequence": 100,
@@ -2057,7 +2603,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GpD9mRpaGaM",
+        "url": "https://www.youtube.com/watch?v=GpD9mRpaGaM",
+        "title": "Air Tonight",
+        "search_query": "Emil Kruse Feat. Benjamin Hav Air Tonight",
+        "fetched_at": "2026-06-12T12:33:17.919567+00:00"
+      }
     },
     {
       "sequence": 101,
@@ -2076,7 +2629,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "QcMeHhGRhbs",
+        "url": "https://www.youtube.com/watch?v=QcMeHhGRhbs",
+        "title": "Emil Kruse - Copenhagen City ft. OK OK, Anthon Edwards",
+        "search_query": "Emil Kruse Feat. OK OK & Anthon Edwards Copenhagen City",
+        "fetched_at": "2026-06-12T12:33:20.089587+00:00"
+      }
     },
     {
       "sequence": 102,
@@ -2095,7 +2655,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "4xLdVS6xgug",
+        "url": "https://www.youtube.com/watch?v=4xLdVS6xgug",
+        "title": "Allerede Is",
+        "search_query": "Emil Stabil Allerede is",
+        "fetched_at": "2026-06-12T12:33:22.075744+00:00"
+      }
     },
     {
       "sequence": 103,
@@ -2114,7 +2681,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "k59E7T0H-Us",
+        "url": "https://www.youtube.com/watch?v=k59E7T0H-Us",
+        "title": "Emmelie de Forest - Only Teardrops - Denmark 🇩🇰 - Official Music Video - Eurovision 2013",
+        "search_query": "Emmelie de Forest Only Teardrops",
+        "fetched_at": "2026-06-12T12:33:23.912384+00:00"
+      }
     },
     {
       "sequence": 104,
@@ -2133,7 +2707,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WL1hlzLsUaU",
+        "url": "https://www.youtube.com/watch?v=WL1hlzLsUaU",
+        "title": "Enur feat. Natasja - Calabria 2007 (Ultra Music)",
+        "search_query": "Enur Feat. Natasja Calabria 2007",
+        "fetched_at": "2026-06-12T12:33:25.808196+00:00"
+      }
     },
     {
       "sequence": 105,
@@ -2152,7 +2733,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "TR7MFSY1gBM",
+        "url": "https://www.youtube.com/watch?v=TR7MFSY1gBM",
+        "title": "Love Song - Frank Leppard Feat. Louise Norbye",
+        "search_query": "Erann DD Feat. Louise Norby Still Believing",
+        "fetched_at": "2026-06-12T12:33:27.661918+00:00"
+      }
     },
     {
       "sequence": 106,
@@ -2171,7 +2759,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "4noJQPVnDKU",
+        "url": "https://www.youtube.com/watch?v=4noJQPVnDKU",
+        "title": "Fallulah - Out of It",
+        "search_query": "Fallulah Out Of It",
+        "fetched_at": "2026-06-12T12:33:29.447759+00:00"
+      }
     },
     {
       "sequence": 107,
@@ -2190,7 +2785,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_DJANZU_RTg",
+        "url": "https://www.youtube.com/watch?v=_DJANZU_RTg",
+        "title": "FIGURINES - Let's Head Out",
+        "search_query": "Figurines Let's Head Out",
+        "fetched_at": "2026-06-12T12:33:31.315610+00:00"
+      }
     },
     {
       "sequence": 108,
@@ -2209,7 +2811,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "DBudp0EmbDM",
+        "url": "https://www.youtube.com/watch?v=DBudp0EmbDM",
+        "title": "Folkeklubben - Fedterøv (Officiel video)",
+        "search_query": "Folkeklubben Fedterøv",
+        "fetched_at": "2026-06-12T12:33:33.279219+00:00"
+      }
     },
     {
       "sequence": 109,
@@ -2228,7 +2837,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_nl7dpvnec0",
+        "url": "https://www.youtube.com/watch?v=_nl7dpvnec0",
+        "title": "døde i dine arme",
+        "search_query": "FRAADS Døde i dine arme",
+        "fetched_at": "2026-06-12T12:33:35.284771+00:00"
+      }
     },
     {
       "sequence": 110,
@@ -2247,7 +2863,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rTyAcJroxAc",
+        "url": "https://www.youtube.com/watch?v=rTyAcJroxAc",
+        "title": "Hang On",
+        "search_query": "Freedom Hang On",
+        "fetched_at": "2026-06-12T12:33:37.093037+00:00"
+      }
     },
     {
       "sequence": 111,
@@ -2266,7 +2889,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "13mp98_Z4pM",
+        "url": "https://www.youtube.com/watch?v=13mp98_Z4pM",
+        "title": "OLYMPISK 📺",
+        "search_query": "Ganger Olympisk",
+        "fetched_at": "2026-06-12T12:33:38.801906+00:00"
+      }
     },
     {
       "sequence": 112,
@@ -2285,7 +2915,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "h4iENUdHwPM",
+        "url": "https://www.youtube.com/watch?v=h4iENUdHwPM",
+        "title": "Gangway - Mountain Song",
+        "search_query": "Gangway Mountain Song",
+        "fetched_at": "2026-06-12T12:33:40.837162+00:00"
+      }
     },
     {
       "sequence": 113,
@@ -2330,7 +2967,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "qMuQNFef32c",
+        "url": "https://www.youtube.com/watch?v=qMuQNFef32c",
+        "title": "Gasolin - Kvinde min - 1982",
+        "search_query": "Gasolin' Kvinde min",
+        "fetched_at": "2026-06-12T12:33:42.727105+00:00"
+      }
     },
     {
       "sequence": 115,
@@ -2401,7 +3045,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "X6w1gvQqCTo",
+        "url": "https://www.youtube.com/watch?v=X6w1gvQqCTo",
+        "title": "Gilli - Tidligt Op",
+        "search_query": "Gilli Tidligt op",
+        "fetched_at": "2026-06-12T12:33:44.562878+00:00"
+      }
     },
     {
       "sequence": 118,
@@ -2420,7 +3071,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6KcKcxFnnSc",
+        "url": "https://www.youtube.com/watch?v=6KcKcxFnnSc",
+        "title": "Gitte Hænning   Ta' med ud å Fisk 1962",
+        "search_query": "Gitte Hænning Tag med ud og fisk",
+        "fetched_at": "2026-06-12T12:33:46.422471+00:00"
+      }
     },
     {
       "sequence": 119,
@@ -2517,7 +3175,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "U7aE7eImN_k",
+        "url": "https://www.youtube.com/watch?v=U7aE7eImN_k",
+        "title": "Gustav Winckler-Grete Klitgaard - Den Gamle Gartners Sang.",
+        "search_query": "Grete Klitgaard & Gustav Winckler Den gamle gartners sang",
+        "fetched_at": "2026-06-12T12:33:48.222499+00:00"
+      }
     },
     {
       "sequence": 123,
@@ -2536,7 +3201,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Gid2IrKa2R8",
+        "url": "https://www.youtube.com/watch?v=Gid2IrKa2R8",
+        "title": "Grethe & Jørgen Ingmann - Dansevise (LIVE) | Denmark 🇩🇰 | Winner of Eurovision 1963",
+        "search_query": "Grethe & Jørgen Ingmann Dansevise",
+        "fetched_at": "2026-06-12T12:33:50.132334+00:00"
+      }
     },
     {
       "sequence": 124,
@@ -2555,7 +3227,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "BKqavfM5Q2Y",
+        "url": "https://www.youtube.com/watch?v=BKqavfM5Q2Y",
+        "title": "Gulddreng - Model",
+        "search_query": "Gulddreng Model",
+        "fetched_at": "2026-06-12T12:33:51.928527+00:00"
+      }
     },
     {
       "sequence": 125,
@@ -2574,7 +3253,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Rnt1oqu0yp0",
+        "url": "https://www.youtube.com/watch?v=Rnt1oqu0yp0",
+        "title": "Det´ kun vigtigt, hvad det er",
+        "search_query": "Guldimund Det' kun vigtigt, hvad det er",
+        "fetched_at": "2026-06-12T12:33:54.073936+00:00"
+      }
     },
     {
       "sequence": 126,
@@ -2619,7 +3305,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6VxLTuREsFE",
+        "url": "https://www.youtube.com/watch?v=6VxLTuREsFE",
+        "title": "Champagnegalloppen // Danish National Symphony Orchestra (LIVE)",
+        "search_query": "H. C. Lumbye Champagne-Galop",
+        "fetched_at": "2026-06-12T12:33:55.941511+00:00"
+      }
     },
     {
       "sequence": 128,
@@ -2638,7 +3331,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "RGMC_CYlOvk",
+        "url": "https://www.youtube.com/watch?v=RGMC_CYlOvk",
+        "title": "Magi I Luften",
+        "search_query": "Halberg Larsen Magi i luften",
+        "fetched_at": "2026-06-12T12:33:58.145341+00:00"
+      }
     },
     {
       "sequence": 129,
@@ -2657,7 +3357,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "TnVPmwqE76M",
+        "url": "https://www.youtube.com/watch?v=TnVPmwqE76M",
+        "title": "Hanne Boel - Don´t Know Much About Love (Official Music Video)",
+        "search_query": "Hanne Boel Don't Know Much About Love",
+        "fetched_at": "2026-06-12T12:34:00.066136+00:00"
+      }
     },
     {
       "sequence": 130,
@@ -2676,7 +3383,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Tx3qPUFHsYI",
+        "url": "https://www.youtube.com/watch?v=Tx3qPUFHsYI",
+        "title": "Walkmand",
+        "search_query": "Hej Matematik Walkmand",
+        "fetched_at": "2026-06-12T12:34:01.974855+00:00"
+      }
     },
     {
       "sequence": 131,
@@ -2695,7 +3409,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "btSifkjs3Qw",
+        "url": "https://www.youtube.com/watch?v=btSifkjs3Qw",
+        "title": "Sweetheart",
+        "search_query": "Henning Stærk Sweetheart",
+        "fetched_at": "2026-06-12T12:34:03.857525+00:00"
+      }
     },
     {
       "sequence": 132,
@@ -2714,7 +3435,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "kIilUjI3li8",
+        "url": "https://www.youtube.com/watch?v=kIilUjI3li8",
+        "title": "Hjalmer - Istedgade (Uhh)",
+        "search_query": "Hjalmer Istedgade (Uhh)",
+        "fetched_at": "2026-06-12T12:34:05.891557+00:00"
+      }
     },
     {
       "sequence": 133,
@@ -2733,7 +3461,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "JbMhbMAWQt8",
+        "url": "https://www.youtube.com/watch?v=JbMhbMAWQt8",
+        "title": "Hugo Helmig - Please Don't Lie [Official Audio]",
+        "search_query": "Hugo Helmig Please Don't Lie",
+        "fetched_at": "2026-06-12T12:34:07.604870+00:00"
+      }
     },
     {
       "sequence": 134,
@@ -2752,7 +3487,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "j4iLv3wRe0k",
+        "url": "https://www.youtube.com/watch?v=j4iLv3wRe0k",
+        "title": "Hymns From Nineveh - A Kid on the Beach (Lyric Video)",
+        "search_query": "Hymns From Nineveh A Kid On The Beach",
+        "fetched_at": "2026-06-12T12:34:09.390910+00:00"
+      }
     },
     {
       "sequence": 135,
@@ -2771,7 +3513,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "gGtorWjUnyU",
+        "url": "https://www.youtube.com/watch?v=gGtorWjUnyU",
+        "title": "I Got You On Tape - Spinning For The Cause",
+        "search_query": "I Got You On Tape Spinning For The Cause",
+        "fetched_at": "2026-06-12T12:34:11.413611+00:00"
+      }
     },
     {
       "sequence": 136,
@@ -2790,7 +3539,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "4nbLSGDeQSE",
+        "url": "https://www.youtube.com/watch?v=4nbLSGDeQSE",
+        "title": "Iceage - Pain Killer (feat. Sky Ferreira) (Official Music Video)",
+        "search_query": "Iceage Feat. Sky Ferreira Pain Killer",
+        "fetched_at": "2026-06-12T12:34:13.295836+00:00"
+      }
     },
     {
       "sequence": 137,
@@ -2809,7 +3565,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8KaJnmD0u3c",
+        "url": "https://www.youtube.com/watch?v=8KaJnmD0u3c",
+        "title": "ICEKIID - ErruDumEllaHvad (Official Video - FIFA 21 Soundtrack)",
+        "search_query": "ICEKIID ErruDumEllaHvad",
+        "fetched_at": "2026-06-12T12:34:15.072813+00:00"
+      }
     },
     {
       "sequence": 138,
@@ -2828,7 +3591,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "7gkhE7t4KCE",
+        "url": "https://www.youtube.com/watch?v=7gkhE7t4KCE",
+        "title": "Fedde Le Grand ft Ida Corr - Let Me Think About It [Official Music Video]",
+        "search_query": "Ida Corr Let Me Think About It (Fedde Le Grand Club Mix)",
+        "fetched_at": "2026-06-12T12:34:17.148843+00:00"
+      }
     },
     {
       "sequence": 139,
@@ -2847,7 +3617,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "4PhY-uin-DU",
+        "url": "https://www.youtube.com/watch?v=4PhY-uin-DU",
+        "title": "Terrier",
+        "search_query": "Ida Laurberg Terrier",
+        "fetched_at": "2026-06-12T12:34:19.368321+00:00"
+      }
     },
     {
       "sequence": 140,
@@ -2866,7 +3643,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "THt5u-i2d9k",
+        "url": "https://www.youtube.com/watch?v=THt5u-i2d9k",
+        "title": "INFERNAL - From Paris to Berlin",
+        "search_query": "Infernal From Paris To Berlin",
+        "fetched_at": "2026-06-12T12:34:21.282460+00:00"
+      }
     },
     {
       "sequence": 141,
@@ -2885,7 +3669,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Rba0ZSCpdCw",
+        "url": "https://www.youtube.com/watch?v=Rba0ZSCpdCw",
+        "title": "INFERNAL - Ten Miles",
+        "search_query": "Infernal Ten Miles",
+        "fetched_at": "2026-06-12T12:34:23.129375+00:00"
+      }
     },
     {
       "sequence": 142,
@@ -2904,7 +3695,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "PKRkw4LexDg",
+        "url": "https://www.youtube.com/watch?v=PKRkw4LexDg",
+        "title": "Jacob Dinesen - Roll With Me",
+        "search_query": "Jacob Dinesen Roll With Me",
+        "fetched_at": "2026-06-12T12:34:25.282598+00:00"
+      }
     },
     {
       "sequence": 143,
@@ -2923,7 +3721,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ELDZ67kkYfM",
+        "url": "https://www.youtube.com/watch?v=ELDZ67kkYfM",
+        "title": "Tango Jalousie // Danish National Symphony Orchestra (Live",
+        "search_query": "Jacob Gade Tango Jalousie",
+        "fetched_at": "2026-06-12T12:34:27.199295+00:00"
+      }
     },
     {
       "sequence": 144,
@@ -2942,7 +3747,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "SKBwx0acsCI",
+        "url": "https://www.youtube.com/watch?v=SKBwx0acsCI",
+        "title": "Hammer Hammer Fedt",
+        "search_query": "Jacob Haugaard Hammer hammer fedt",
+        "fetched_at": "2026-06-12T12:34:28.997678+00:00"
+      }
     },
     {
       "sequence": 145,
@@ -2961,7 +3773,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "EzfZ1Sl1P4M",
+        "url": "https://www.youtube.com/watch?v=EzfZ1Sl1P4M",
+        "title": "Lonely",
+        "search_query": "Jada Lonely",
+        "fetched_at": "2026-06-12T12:34:32.662453+00:00"
+      }
     },
     {
       "sequence": 146,
@@ -2980,7 +3799,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Su4tI-xmtkI",
+        "url": "https://www.youtube.com/watch?v=Su4tI-xmtkI",
+        "title": "Jada - Nudes (Lyric video)",
+        "search_query": "Jada Nudes",
+        "fetched_at": "2026-06-12T12:34:34.493526+00:00"
+      }
     },
     {
       "sequence": 147,
@@ -2999,7 +3825,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LawhphMOnO4",
+        "url": "https://www.youtube.com/watch?v=LawhphMOnO4",
+        "title": "Joey Moe - Smukkest På En Søndag",
+        "search_query": "Joey Moe Smukkest på en søndag",
+        "fetched_at": "2026-06-12T12:34:36.294911+00:00"
+      }
     },
     {
       "sequence": 148,
@@ -3018,7 +3851,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "JhfJfyDCUG4",
+        "url": "https://www.youtube.com/watch?v=JhfJfyDCUG4",
+        "title": "john mogensen - to mennesker på en strand",
+        "search_query": "John Mogensen To mennesker på en strand",
+        "fetched_at": "2026-06-12T12:34:38.395694+00:00"
+      }
     },
     {
       "sequence": 149,
@@ -3089,7 +3929,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "FOglDH-L9Zk",
+        "url": "https://www.youtube.com/watch?v=FOglDH-L9Zk",
+        "title": "Johnny Deluxe – Drømmer jeg (Officiel Musikvideo)",
+        "search_query": "Johnny Deluxe Feat. Anna Nordéll Drømmer jeg",
+        "fetched_at": "2026-06-12T12:34:40.192386+00:00"
+      }
     },
     {
       "sequence": 152,
@@ -3134,7 +3981,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vHomajKBm10",
+        "url": "https://www.youtube.com/watch?v=vHomajKBm10",
+        "title": "Johnny Madsen - Æ kør' o æ motorvej - Smukfest 2017",
+        "search_query": "Johnny Madsen Æ kør' o æ motorvej",
+        "fetched_at": "2026-06-12T12:34:42.046997+00:00"
+      }
     },
     {
       "sequence": 154,
@@ -3153,7 +4007,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GKmfUoqRxno",
+        "url": "https://www.youtube.com/watch?v=GKmfUoqRxno",
+        "title": "Johnson - Kig Forbi",
+        "search_query": "Johnson Kig forbi",
+        "fetched_at": "2026-06-12T12:34:43.936882+00:00"
+      }
     },
     {
       "sequence": 155,
@@ -3172,7 +4033,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XxRVpPdWuXk",
+        "url": "https://www.youtube.com/watch?v=XxRVpPdWuXk",
+        "title": "Jon - Right Here Next To You (Official Music Video)",
+        "search_query": "Jon Right Here Next To You",
+        "fetched_at": "2026-06-12T12:34:45.996288+00:00"
+      }
     },
     {
       "sequence": 156,
@@ -3191,7 +4059,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "qaF6ds3Ep3Q",
+        "url": "https://www.youtube.com/watch?v=qaF6ds3Ep3Q",
+        "title": "Jonah Blacksmith - House On Fire (Official Audio)",
+        "search_query": "Jonah Blacksmith House On Fire",
+        "fetched_at": "2026-06-12T12:34:47.854098+00:00"
+      }
     },
     {
       "sequence": 157,
@@ -3210,7 +4085,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "G6HVoNCqwVQ",
+        "url": "https://www.youtube.com/watch?v=G6HVoNCqwVQ",
+        "title": "Joyce - Formskifter (Officiel Lyrik Video)",
+        "search_query": "Joyce Formskifter",
+        "fetched_at": "2026-06-12T12:34:49.788894+00:00"
+      }
     },
     {
       "sequence": 158,
@@ -3229,7 +4111,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "cgl7chRdGHU",
+        "url": "https://www.youtube.com/watch?v=cgl7chRdGHU",
+        "title": "Julias Moon - Lipstick Lies",
+        "search_query": "Julias Moon Lipstick Lies",
+        "fetched_at": "2026-06-12T12:34:51.809333+00:00"
+      }
     },
     {
       "sequence": 159,
@@ -3248,7 +4137,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XprCumm3q-I",
+        "url": "https://www.youtube.com/watch?v=XprCumm3q-I",
+        "title": "Juncker - Mogens Og Karen",
+        "search_query": "Juncker Mogens og Karen",
+        "fetched_at": "2026-06-12T12:34:54.116123+00:00"
+      }
     },
     {
       "sequence": 160,
@@ -3267,7 +4163,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "SPlQpGeTbIE",
+        "url": "https://www.youtube.com/watch?v=SPlQpGeTbIE",
+        "title": "Junior Senior - Move Your Feet (Official music video, HD)",
+        "search_query": "Junior Senior Feat. Thomas Troelsen Move Your Feet",
+        "fetched_at": "2026-06-12T12:34:56.105376+00:00"
+      }
     },
     {
       "sequence": 161,
@@ -3286,7 +4189,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5thznRlAT5Y",
+        "url": "https://www.youtube.com/watch?v=5thznRlAT5Y",
+        "title": "Lonnie Fra Berlin",
+        "search_query": "Kandis Lonnie Fra Berlin",
+        "fetched_at": "2026-06-12T12:34:58.019672+00:00"
+      }
     },
     {
       "sequence": 162,
@@ -3305,7 +4215,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GHTcRp1vwNA",
+        "url": "https://www.youtube.com/watch?v=GHTcRp1vwNA",
+        "title": "En lille ring af guld - Kandis (Top Charlie)",
+        "search_query": "Kandis En lille ring af guld",
+        "fetched_at": "2026-06-12T12:35:00.034813+00:00"
+      }
     },
     {
       "sequence": 163,
@@ -3324,7 +4241,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "gT2LL4QyiLA",
+        "url": "https://www.youtube.com/watch?v=gT2LL4QyiLA",
+        "title": "Hvorfor er Lykken saa lunefuld. Erik Tuxen's Orkester. Vocal: Karen Jønsson. Denmark 1936",
+        "search_query": "Karen Jønsson & Erik Tuxen og hans orkester Hvorfor er lykken så lunefuld",
+        "fetched_at": "2026-06-12T12:35:01.877067+00:00"
+      }
     },
     {
       "sequence": 164,
@@ -3343,7 +4267,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "0xImkCzIMnM",
+        "url": "https://www.youtube.com/watch?v=0xImkCzIMnM",
+        "title": "Blind Igen",
+        "search_query": "Karl William Blind igen",
+        "fetched_at": "2026-06-12T12:35:03.794451+00:00"
+      }
     },
     {
       "sequence": 165,
@@ -3362,7 +4293,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Pa7kx1QjBhU",
+        "url": "https://www.youtube.com/watch?v=Pa7kx1QjBhU",
+        "title": "Undskyld",
+        "search_query": "Karoline Mousing Undskyld",
+        "fetched_at": "2026-06-12T12:35:05.682831+00:00"
+      }
     },
     {
       "sequence": 166,
@@ -3407,7 +4345,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "7sRIXCBxrfI",
+        "url": "https://www.youtube.com/watch?v=7sRIXCBxrfI",
+        "title": "Lampshade",
+        "search_query": "Kashmir Lampshade",
+        "fetched_at": "2026-06-12T12:35:07.684047+00:00"
+      }
     },
     {
       "sequence": 168,
@@ -3426,7 +4371,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "kQ2mya468pY",
+        "url": "https://www.youtube.com/watch?v=kQ2mya468pY",
+        "title": "Lidt til og meget mer' (feat. C.V. Jørgensen & Sanne Salomonsen) (2012 - Remaster)",
+        "search_query": "Kasper Winding Lidt til og meget mer'",
+        "fetched_at": "2026-06-12T12:35:09.792871+00:00"
+      }
     },
     {
       "sequence": 169,
@@ -3445,7 +4397,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "t6GJ46fSMEY",
+        "url": "https://www.youtube.com/watch?v=t6GJ46fSMEY",
+        "title": "Lars Muhl & Kasper Winding: Sjæl i flammer, 1987",
+        "search_query": "Kasper Winding Sjæl i flammer",
+        "fetched_at": "2026-06-12T12:35:11.516427+00:00"
+      }
     },
     {
       "sequence": 170,
@@ -3464,7 +4423,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "t23kbTAgZF4",
+        "url": "https://www.youtube.com/watch?v=t23kbTAgZF4",
+        "title": "Kogeplade",
+        "search_query": "Katinka Kogeplade",
+        "fetched_at": "2026-06-12T12:35:13.202631+00:00"
+      }
     },
     {
       "sequence": 171,
@@ -3483,7 +4449,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "kxb0uINwg10",
+        "url": "https://www.youtube.com/watch?v=kxb0uINwg10",
+        "title": "Katinka Band - 2000 meter i frit fald (Officiel video)",
+        "search_query": "Katinka Band 2000 meter i frit fald",
+        "fetched_at": "2026-06-12T12:35:15.071246+00:00"
+      }
     },
     {
       "sequence": 172,
@@ -3502,7 +4475,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "R6-8w75S9dA",
+        "url": "https://www.youtube.com/watch?v=R6-8w75S9dA",
+        "title": "Hey Shorty (Yeah Yeah Part II)",
+        "search_query": "KATO Feat. U$O & Johnson Hey Shorty (Yeah Yeah Pt. II)",
+        "fetched_at": "2026-06-12T12:35:17.036604+00:00"
+      }
     },
     {
       "sequence": 173,
@@ -3521,7 +4501,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "7aLEDxP9f9w",
+        "url": "https://www.youtube.com/watch?v=7aLEDxP9f9w",
+        "title": "Musikvideo: 'Fortabt er jeg stadig' af Stine Pilgaard & Katrine Muff (2020)",
+        "search_query": "Katrine Muff Enevoldsen. Tekst: Stine Pilgaard Fortabt er jeg stadig",
+        "fetched_at": "2026-06-12T12:35:18.957054+00:00"
+      }
     },
     {
       "sequence": 174,
@@ -3540,7 +4527,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "bABBJmOgAQ8",
+        "url": "https://www.youtube.com/watch?v=bABBJmOgAQ8",
+        "title": "If u kno u kno (feat. Karoline Mousing)",
+        "search_query": "KEDDE Feat. Karoline Mousing If u kno u kno",
+        "fetched_at": "2026-06-12T12:35:20.791465+00:00"
+      }
     },
     {
       "sequence": 175,
@@ -3559,7 +4553,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8NXza9agcOs",
+        "url": "https://www.youtube.com/watch?v=8NXza9agcOs",
+        "title": "Kellermensch - Quarantine Session - \"Lost At Sea\"",
+        "search_query": "Kellermensch Lost At Sea",
+        "fetched_at": "2026-06-12T12:35:23.004783+00:00"
+      }
     },
     {
       "sequence": 176,
@@ -3578,7 +4579,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "4i0lKe4h2xU",
+        "url": "https://www.youtube.com/watch?v=4i0lKe4h2xU",
+        "title": "Følelsen",
+        "search_query": "Kesi Følelsen",
+        "fetched_at": "2026-06-12T12:35:24.957606+00:00"
+      }
     },
     {
       "sequence": 177,
@@ -3623,7 +4631,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "IQ2HTsYUUT4",
+        "url": "https://www.youtube.com/watch?v=IQ2HTsYUUT4",
+        "title": "Kesi - Søvnløs",
+        "search_query": "Kesi Feat. Don Stefano Søvnløs",
+        "fetched_at": "2026-06-12T12:35:26.757398+00:00"
+      }
     },
     {
       "sequence": 179,
@@ -3642,7 +4657,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "s1VvkxpgwMk",
+        "url": "https://www.youtube.com/watch?v=s1VvkxpgwMk",
+        "title": "Kidd - Ik lavet penge [Officiel Video]",
+        "search_query": "Kidd Ik lavet penge",
+        "fetched_at": "2026-06-12T12:35:28.616100+00:00"
+      }
     },
     {
       "sequence": 180,
@@ -3661,7 +4683,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "FcjRwLRr0WQ",
+        "url": "https://www.youtube.com/watch?v=FcjRwLRr0WQ",
+        "title": "Kidd - Uhh Det Er Så Svært At Være Så God (Produceret af Partners)",
+        "search_query": "Kidd Uuh det er så svært at være så god",
+        "fetched_at": "2026-06-12T12:35:30.515484+00:00"
+      }
     },
     {
       "sequence": 181,
@@ -3680,7 +4709,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_rBeni3L7Gg",
+        "url": "https://www.youtube.com/watch?v=_rBeni3L7Gg",
+        "title": "Kim Larsen - Midt Om Natten (Officiel Audio)",
+        "search_query": "Kim Larsen Midt om natten",
+        "fetched_at": "2026-06-12T12:35:32.456219+00:00"
+      }
     },
     {
       "sequence": 182,
@@ -3699,7 +4735,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "zubyCLy7u6Q",
+        "url": "https://www.youtube.com/watch?v=zubyCLy7u6Q",
+        "title": "Kim Larsen og Bellami - Om Lidt (Official Audio)",
+        "search_query": "Kim Larsen & Bellami Om lidt",
+        "fetched_at": "2026-06-12T12:35:34.255139+00:00"
+      }
     },
     {
       "sequence": 183,
@@ -3718,7 +4761,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Bb81XO53aQc",
+        "url": "https://www.youtube.com/watch?v=Bb81XO53aQc",
+        "title": "Kim Larsen & Bellami - De Smukke Unge Mennesker (Official Audio)",
+        "search_query": "Kim Larsen & Bellami De smukke unge mennesker",
+        "fetched_at": "2026-06-12T12:35:36.144601+00:00"
+      }
     },
     {
       "sequence": 184,
@@ -3737,7 +4787,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XaysWKRT9zY",
+        "url": "https://www.youtube.com/watch?v=XaysWKRT9zY",
+        "title": "Kim Larsen & Bellami - Pianomand (Official Audio)",
+        "search_query": "Kim Larsen & Bellami Pianomand",
+        "fetched_at": "2026-06-12T12:35:38.037768+00:00"
+      }
     },
     {
       "sequence": 185,
@@ -3756,7 +4813,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rsL_i_ikQ9I",
+        "url": "https://www.youtube.com/watch?v=rsL_i_ikQ9I",
+        "title": "Kind mod Kind - Love Isn't Easy ft. Medina",
+        "search_query": "Kind Mod Kind Feat. Medina Love Isn't Easy",
+        "fetched_at": "2026-06-12T12:35:39.826108+00:00"
+      }
     },
     {
       "sequence": 186,
@@ -3775,7 +4839,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "N9YoMRF8W9o",
+        "url": "https://www.youtube.com/watch?v=N9YoMRF8W9o",
+        "title": "Save Me",
+        "search_query": "Kira And The Kindred Spirits Save Me",
+        "fetched_at": "2026-06-12T12:35:41.782383+00:00"
+      }
     },
     {
       "sequence": 187,
@@ -3794,7 +4865,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-yF0gKfHP70",
+        "url": "https://www.youtube.com/watch?v=-yF0gKfHP70",
+        "title": "Kliché - Militskvinder (Official Music Video)",
+        "search_query": "Kliché Militskvinder",
+        "fetched_at": "2026-06-12T12:35:43.654627+00:00"
+      }
     },
     {
       "sequence": 188,
@@ -3813,7 +4891,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "hojVgHzoZ1Y",
+        "url": "https://www.youtube.com/watch?v=hojVgHzoZ1Y",
+        "title": "Klumben & Raske Penge - Faxe Kondi [Official Video]",
+        "search_query": "Klumben & Raske Penge Faxe Kondi",
+        "fetched_at": "2026-06-12T12:35:45.584834+00:00"
+      }
     },
     {
       "sequence": 189,
@@ -3832,7 +4917,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vTgQS48vBqI",
+        "url": "https://www.youtube.com/watch?v=vTgQS48vBqI",
+        "title": "L.O.C. - Frk. Escobar",
+        "search_query": "L.O.C. Frk. Escobar",
+        "fetched_at": "2026-06-12T12:35:47.516123+00:00"
+      }
     },
     {
       "sequence": 190,
@@ -3851,7 +4943,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "R82XGJV_nkU",
+        "url": "https://www.youtube.com/watch?v=R82XGJV_nkU",
+        "title": "Laid Back - Sunshine Reggae",
+        "search_query": "Laid Back Sunshine Reggae",
+        "fetched_at": "2026-06-12T12:35:49.516535+00:00"
+      }
     },
     {
       "sequence": 191,
@@ -3870,7 +4969,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "mO85AjfGVUs",
+        "url": "https://www.youtube.com/watch?v=mO85AjfGVUs",
+        "title": "Gode Dage, Gode Drinks",
+        "search_query": "Lamin Gode dage, gode drinks",
+        "fetched_at": "2026-06-12T12:35:51.330916+00:00"
+      }
     },
     {
       "sequence": 192,
@@ -3941,7 +5047,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "nsH6UoasvEg",
+        "url": "https://www.youtube.com/watch?v=nsH6UoasvEg",
+        "title": "Ofelia",
+        "search_query": "Lars Lilholt Ofelia",
+        "fetched_at": "2026-06-12T12:35:53.289720+00:00"
+      }
     },
     {
       "sequence": 195,
@@ -3960,7 +5073,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3DLUVPZqV58",
+        "url": "https://www.youtube.com/watch?v=3DLUVPZqV58",
+        "title": "Lars Lilholt - Kald det kærlighed",
+        "search_query": "Lars Lilholt Band Kald det kærlighed",
+        "fetched_at": "2026-06-12T12:35:55.186834+00:00"
+      }
     },
     {
       "sequence": 196,
@@ -3979,7 +5099,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_IP8AQJo-2c",
+        "url": "https://www.youtube.com/watch?v=_IP8AQJo-2c",
+        "title": "Lea Romea - Bobler",
+        "search_query": "Lea Romea Bobler",
+        "fetched_at": "2026-06-12T12:35:57.000096+00:00"
+      }
     },
     {
       "sequence": 197,
@@ -3998,7 +5125,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "nxhIjjgQ3-Q",
+        "url": "https://www.youtube.com/watch?v=nxhIjjgQ3-Q",
+        "title": "Take It Easy",
+        "search_query": "Leo Mathisens Band Take It Easy",
+        "fetched_at": "2026-06-12T12:35:58.949356+00:00"
+      }
     },
     {
       "sequence": 198,
@@ -4017,7 +5151,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3_bt4gJR_f8",
+        "url": "https://www.youtube.com/watch?v=3_bt4gJR_f8",
+        "title": "Lis Sørensen - Mine Øjne De Skal Se",
+        "search_query": "Lis Sørensen Mine øjne de skal se",
+        "fetched_at": "2026-06-12T12:36:01.091574+00:00"
+      }
     },
     {
       "sequence": 199,
@@ -4062,7 +5203,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "xwcbw7n8o2E",
+        "url": "https://www.youtube.com/watch?v=xwcbw7n8o2E",
+        "title": "Lis Sørensen ~ Tæt På Ækvator",
+        "search_query": "Lis Sørensen Tæt på Ækvator",
+        "fetched_at": "2026-06-12T12:36:03.162618+00:00"
+      }
     },
     {
       "sequence": 201,
@@ -4081,7 +5229,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_qXPPHhs6nk",
+        "url": "https://www.youtube.com/watch?v=_qXPPHhs6nk",
+        "title": "Liss - Try (Official Video)",
+        "search_query": "Liss Try",
+        "fetched_at": "2026-06-12T12:36:05.071432+00:00"
+      }
     },
     {
       "sequence": 202,
@@ -4126,7 +5281,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "EMkYiilYLj4",
+        "url": "https://www.youtube.com/watch?v=EMkYiilYLj4",
+        "title": "Glemmer du",
+        "search_query": "Liva Weel Glemmer du",
+        "fetched_at": "2026-06-12T12:36:06.978734+00:00"
+      }
     },
     {
       "sequence": 204,
@@ -4145,7 +5307,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "eTjw_AKliZ0",
+        "url": "https://www.youtube.com/watch?v=eTjw_AKliZ0",
+        "title": "lIZZIE - RAMT I NATTEN",
+        "search_query": "Lizzie Ramt i natten",
+        "fetched_at": "2026-06-12T12:36:08.785604+00:00"
+      }
     },
     {
       "sequence": 205,
@@ -4164,7 +5333,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "M08DAbN2izM",
+        "url": "https://www.youtube.com/watch?v=M08DAbN2izM",
+        "title": "Lord Siva - Solhverv",
+        "search_query": "Lord Siva Solhverv",
+        "fetched_at": "2026-06-12T12:36:10.669145+00:00"
+      }
     },
     {
       "sequence": 206,
@@ -4183,7 +5359,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8rvPlF886s0",
+        "url": "https://www.youtube.com/watch?v=8rvPlF886s0",
+        "title": "Lord Siva & Vera - Paris",
+        "search_query": "Lord Siva & Vera Paris",
+        "fetched_at": "2026-06-12T12:36:12.760033+00:00"
+      }
     },
     {
       "sequence": 207,
@@ -4228,7 +5411,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "2eMAD_suWC0",
+        "url": "https://www.youtube.com/watch?v=2eMAD_suWC0",
+        "title": "Love Goes On Forever",
+        "search_query": "Love Shop Love Goes On Forever",
+        "fetched_at": "2026-06-12T12:36:14.729003+00:00"
+      }
     },
     {
       "sequence": 209,
@@ -4247,7 +5437,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "S9ydgJenbQA",
+        "url": "https://www.youtube.com/watch?v=S9ydgJenbQA",
+        "title": "Lowly - baglaens",
+        "search_query": "Lowly Baglaens",
+        "fetched_at": "2026-06-12T12:36:16.500101+00:00"
+      }
     },
     {
       "sequence": 210,
@@ -4266,7 +5463,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rMEZZyT1FWU",
+        "url": "https://www.youtube.com/watch?v=rMEZZyT1FWU",
+        "title": "Ordinary Things",
+        "search_query": "Lukas Graham Ordinary Things",
+        "fetched_at": "2026-06-12T12:36:18.490732+00:00"
+      }
     },
     {
       "sequence": 211,
@@ -4311,7 +5515,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WftN7G3MctU",
+        "url": "https://www.youtube.com/watch?v=WftN7G3MctU",
+        "title": "DEN SIDSTE TURIST I EUROPA - Lulu Ziegler med Robert Levin på piano 1948",
+        "search_query": "Lulu Ziegler Den sidste turist i Europa",
+        "fetched_at": "2026-06-12T12:36:20.290609+00:00"
+      }
     },
     {
       "sequence": 213,
@@ -4330,7 +5541,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-yju_4cCH_I",
+        "url": "https://www.youtube.com/watch?v=-yju_4cCH_I",
+        "title": "Mads Langer - 3AM",
+        "search_query": "Mads Langer 3 AM",
+        "fetched_at": "2026-06-12T12:36:23.178789+00:00"
+      }
     },
     {
       "sequence": 214,
@@ -4349,7 +5567,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XnCYP8rGUqY",
+        "url": "https://www.youtube.com/watch?v=XnCYP8rGUqY",
+        "title": "05 Mads langer - Overgir mig langsomt.",
+        "search_query": "Mads Langer Overgi'r mig langsomt",
+        "fetched_at": "2026-06-12T12:36:25.127762+00:00"
+      }
     },
     {
       "sequence": 215,
@@ -4368,7 +5593,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "E2WyDq0-5aY",
+        "url": "https://www.youtube.com/watch?v=E2WyDq0-5aY",
+        "title": "Lorteparforhold",
+        "search_query": "Magtens Korridorer Lorteparforhold",
+        "fetched_at": "2026-06-12T12:36:27.037797+00:00"
+      }
     },
     {
       "sequence": 216,
@@ -4387,7 +5619,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "eQKzo-i4QSQ",
+        "url": "https://www.youtube.com/watch?v=eQKzo-i4QSQ",
+        "title": "Malk De Koijn - Vi Tager Fuglen På Dig",
+        "search_query": "Malk De Koijn Vi tager fuglen på dig",
+        "fetched_at": "2026-06-12T12:36:28.791610+00:00"
+      }
     },
     {
       "sequence": 217,
@@ -4406,7 +5645,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ASYMny1wlI4",
+        "url": "https://www.youtube.com/watch?v=ASYMny1wlI4",
+        "title": "Malurt - 1982 - Mød Mig I Mørket",
+        "search_query": "Malurt Mød mig i mørket",
+        "fetched_at": "2026-06-12T12:36:30.879301+00:00"
+      }
     },
     {
       "sequence": 218,
@@ -4425,7 +5671,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "i_XbxA-YPyA",
+        "url": "https://www.youtube.com/watch?v=i_XbxA-YPyA",
+        "title": "Maria Montell - Imens Hun Sang (Di Da Di)",
+        "search_query": "Maria Montell Imens Hun Sang (Di Da Di)",
+        "fetched_at": "2026-06-12T12:36:32.739921+00:00"
+      }
     },
     {
       "sequence": 219,
@@ -4444,7 +5697,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "uDsiDzcRTjQ",
+        "url": "https://www.youtube.com/watch?v=uDsiDzcRTjQ",
+        "title": "Marie Frank Symptom Of My Time",
+        "search_query": "Marie Frank Symptom of My Time",
+        "fetched_at": "2026-06-12T12:36:34.722385+00:00"
+      }
     },
     {
       "sequence": 220,
@@ -4489,7 +5749,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "gMCcjwilc6I",
+        "url": "https://www.youtube.com/watch?v=gMCcjwilc6I",
+        "title": "Landet",
+        "search_query": "Marie Key Landet",
+        "fetched_at": "2026-06-12T12:36:36.846119+00:00"
+      }
     },
     {
       "sequence": 222,
@@ -4508,7 +5775,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ginBV6aeVlc",
+        "url": "https://www.youtube.com/watch?v=ginBV6aeVlc",
+        "title": "Martin Jensen - Solo Dance (4K)",
+        "search_query": "Martin Jensen Solo Dance",
+        "fetched_at": "2026-06-12T12:36:39.076403+00:00"
+      }
     },
     {
       "sequence": 223,
@@ -4527,7 +5801,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "jVlNetljnoI",
+        "url": "https://www.youtube.com/watch?v=jVlNetljnoI",
+        "title": "MC Einar - Arh Dér !",
+        "search_query": "MC Einar Ahr dér!",
+        "fetched_at": "2026-06-12T12:36:41.045390+00:00"
+      }
     },
     {
       "sequence": 224,
@@ -4546,7 +5827,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XTjJ2_P5P4U",
+        "url": "https://www.youtube.com/watch?v=XTjJ2_P5P4U",
+        "title": "Me & My - Dub-I-Dub",
+        "search_query": "Me & My Dub-I-Dub",
+        "fetched_at": "2026-06-12T12:36:43.001112+00:00"
+      }
     },
     {
       "sequence": 225,
@@ -4565,7 +5853,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "jjlisk3W_Jc",
+        "url": "https://www.youtube.com/watch?v=jjlisk3W_Jc",
+        "title": "Medina - \"VelkommenTil Medina\" - Official video",
+        "search_query": "Medina Velkommen til Medina",
+        "fetched_at": "2026-06-12T12:36:45.056206+00:00"
+      }
     },
     {
       "sequence": 226,
@@ -4610,7 +5905,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "uf9RwyDvffo",
+        "url": "https://www.youtube.com/watch?v=uf9RwyDvffo",
+        "title": "Medina - Vi To [Official Video]",
+        "search_query": "Medina Vi to",
+        "fetched_at": "2026-06-12T12:36:47.003252+00:00"
+      }
     },
     {
       "sequence": 228,
@@ -4655,7 +5957,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "R_3u7aspmDY",
+        "url": "https://www.youtube.com/watch?v=R_3u7aspmDY",
+        "title": "MEW - Am I Wry? No",
+        "search_query": "Mew Am I Wry? No",
+        "fetched_at": "2026-06-12T12:36:48.990063+00:00"
+      }
     },
     {
       "sequence": 230,
@@ -4700,7 +6009,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "pIUSjjlBwCI",
+        "url": "https://www.youtube.com/watch?v=pIUSjjlBwCI",
+        "title": "Michael Learns To Rock - The Actor [Official Video]",
+        "search_query": "Michael Learns To Rock The Actor",
+        "fetched_at": "2026-06-12T12:36:51.031184+00:00"
+      }
     },
     {
       "sequence": 232,
@@ -4719,7 +6035,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "IoNzfcG-Ls8",
+        "url": "https://www.youtube.com/watch?v=IoNzfcG-Ls8",
+        "title": "Inden Du Falder I Søvn",
+        "search_query": "Mikael Simpson Inden du falder i søvn",
+        "fetched_at": "2026-06-12T12:36:52.987412+00:00"
+      }
     },
     {
       "sequence": 233,
@@ -4738,7 +6061,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8QwfNg5xFUk",
+        "url": "https://www.youtube.com/watch?v=8QwfNg5xFUk",
+        "title": "Mille - kendt mig en uge (Officiel Audio)",
+        "search_query": "Mille kendt mig en uge",
+        "fetched_at": "2026-06-12T12:36:54.854836+00:00"
+      }
     },
     {
       "sequence": 234,
@@ -4757,7 +6087,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WUcXQ--yGWQ",
+        "url": "https://www.youtube.com/watch?v=WUcXQ--yGWQ",
+        "title": "MØ - Final Song (Official Video)",
+        "search_query": "MØ Final Song",
+        "fetched_at": "2026-06-12T12:36:56.806560+00:00"
+      }
     },
     {
       "sequence": 235,
@@ -4776,7 +6113,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "M5uIVBxWZVU",
+        "url": "https://www.youtube.com/watch?v=M5uIVBxWZVU",
+        "title": "MØ - Pilgrim (Official Audio)",
+        "search_query": "MØ Pilgrim",
+        "fetched_at": "2026-06-12T12:36:58.716383+00:00"
+      }
     },
     {
       "sequence": 236,
@@ -4795,7 +6139,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_dyMZuTlvAU",
+        "url": "https://www.youtube.com/watch?v=_dyMZuTlvAU",
+        "title": "To the Lighthouse",
+        "search_query": "moi Caprice To The Lighthouse",
+        "fetched_at": "2026-06-12T12:37:00.585838+00:00"
+      }
     },
     {
       "sequence": 237,
@@ -4814,7 +6165,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "EX7zxygEeLY",
+        "url": "https://www.youtube.com/watch?v=EX7zxygEeLY",
+        "title": "Shaida",
+        "search_query": "Moonjam Shaida",
+        "fetched_at": "2026-06-12T12:37:02.591206+00:00"
+      }
     },
     {
       "sequence": 238,
@@ -4833,7 +6191,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "mjUGJPkumhQ",
+        "url": "https://www.youtube.com/watch?v=mjUGJPkumhQ",
+        "title": "Det Modsatte",
+        "search_query": "Mumle Det modsatte",
+        "fetched_at": "2026-06-12T12:37:04.473780+00:00"
+      }
     },
     {
       "sequence": 239,
@@ -4852,7 +6217,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "avY-XIFNas0",
+        "url": "https://www.youtube.com/watch?v=avY-XIFNas0",
+        "title": "NABIHA - Mind The Gap [Official Video]",
+        "search_query": "Nabiha Mind The Gap",
+        "fetched_at": "2026-06-12T12:37:06.560542+00:00"
+      }
     },
     {
       "sequence": 240,
@@ -4897,7 +6269,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "A9eZdtFCZPo",
+        "url": "https://www.youtube.com/watch?v=A9eZdtFCZPo",
+        "title": "Velgørenhedssangen '' Afrika''",
+        "search_query": "Nanna Afrika",
+        "fetched_at": "2026-06-12T12:37:08.379595+00:00"
+      }
     },
     {
       "sequence": 242,
@@ -4916,7 +6295,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "NONnUBKcNZI",
+        "url": "https://www.youtube.com/watch?v=NONnUBKcNZI",
+        "title": "Natasja - Gi' mig Danmark tilbage",
+        "search_query": "Natasja Gi' mig danmark tilbage",
+        "fetched_at": "2026-06-12T12:37:10.367743+00:00"
+      }
     },
     {
       "sequence": 243,
@@ -4935,7 +6321,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5PDzXqreJC8",
+        "url": "https://www.youtube.com/watch?v=5PDzXqreJC8",
+        "title": "Natasja  - Op Med Ho'det  (Music Video)",
+        "search_query": "Natasja Op med ho'det",
+        "fetched_at": "2026-06-12T12:37:12.305020+00:00"
+      }
     },
     {
       "sequence": 244,
@@ -4980,7 +6373,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "KlV-xGTV1P0",
+        "url": "https://www.youtube.com/watch?v=KlV-xGTV1P0",
+        "title": "Nephew - Hjertestarter",
+        "search_query": "Nephew Hjertestarter",
+        "fetched_at": "2026-06-12T12:37:14.199967+00:00"
+      }
     },
     {
       "sequence": 246,
@@ -5025,7 +6425,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "M5J6aoBVN0w",
+        "url": "https://www.youtube.com/watch?v=M5J6aoBVN0w",
+        "title": "Du Er",
+        "search_query": "News Du er",
+        "fetched_at": "2026-06-12T12:37:16.114155+00:00"
+      }
     },
     {
       "sequence": 248,
@@ -5044,7 +6451,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "re7lKnB9KxQ",
+        "url": "https://www.youtube.com/watch?v=re7lKnB9KxQ",
+        "title": "Nice Little Penguins - I am flying LYRICS",
+        "search_query": "Nice Little Penguins Flying",
+        "fetched_at": "2026-06-12T12:37:17.931322+00:00"
+      }
     },
     {
       "sequence": 249,
@@ -5063,7 +6477,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Fhmy0DhwALs",
+        "url": "https://www.youtube.com/watch?v=Fhmy0DhwALs",
+        "title": "Først en halv time på den ene side så en halv time på den anden",
+        "search_query": "Niels Hausgaard Først en halv time på den ene side så en halv time på den anden",
+        "fetched_at": "2026-06-12T12:37:19.895382+00:00"
+      }
     },
     {
       "sequence": 250,
@@ -5082,7 +6503,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "P7cixb5T2-M",
+        "url": "https://www.youtube.com/watch?v=P7cixb5T2-M",
+        "title": "Brudevalsen - Niels W. Gade – Dansevenligt tempo (HQ)",
+        "search_query": "Niels W. Gade Et Folkesagn - Brudevals",
+        "fetched_at": "2026-06-12T12:37:22.519342+00:00"
+      }
     },
     {
       "sequence": 251,
@@ -5101,7 +6529,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "uKSP51Xvbj8",
+        "url": "https://www.youtube.com/watch?v=uKSP51Xvbj8",
+        "title": "I østen stiger solen op - Københavns Drengekor med mandskor af tidligere elever 1979",
+        "search_query": "Niels W. Gade. Tekst: B. S. Ingemann Morgensang af Elverskud - I østen stiger solen op",
+        "fetched_at": "2026-06-12T12:37:24.589507+00:00"
+      }
     },
     {
       "sequence": 252,
@@ -5120,7 +6555,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "hGg-zmzNKik",
+        "url": "https://www.youtube.com/watch?v=hGg-zmzNKik",
+        "title": "Niels-Henning Ørsted Pedersen & Kenny Drew - I skovens dybe stille ro",
+        "search_query": "Niels-Henning Ørsted Pedersen I skovens dybe stille ro",
+        "fetched_at": "2026-06-12T12:37:26.668590+00:00"
+      }
     },
     {
       "sequence": 253,
@@ -5217,7 +6659,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GjZeE3je75Y",
+        "url": "https://www.youtube.com/watch?v=GjZeE3je75Y",
+        "title": "Nik & Jay - Forstadsdrømme",
+        "search_query": "Nik & Jay Forstadsdrømme",
+        "fetched_at": "2026-06-12T12:37:28.653800+00:00"
+      }
     },
     {
       "sequence": 257,
@@ -5236,7 +6685,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LidQR7otedo",
+        "url": "https://www.youtube.com/watch?v=LidQR7otedo",
+        "title": "Noah Carter - winwin",
+        "search_query": "Noah Carter winwin",
+        "fetched_at": "2026-06-12T12:37:30.447912+00:00"
+      }
     },
     {
       "sequence": 258,
@@ -5255,7 +6711,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "DBqbJXT2-BI",
+        "url": "https://www.youtube.com/watch?v=DBqbJXT2-BI",
+        "title": "Nordstrøm - Berlin",
+        "search_query": "Nordstrøm Berlin",
+        "fetched_at": "2026-06-12T12:37:32.285341+00:00"
+      }
     },
     {
       "sequence": 259,
@@ -5274,7 +6737,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3LcL7MAqwOc",
+        "url": "https://www.youtube.com/watch?v=3LcL7MAqwOc",
+        "title": "Oh Land - White Nights",
+        "search_query": "Oh Land White Nights",
+        "fetched_at": "2026-06-12T12:37:34.375598+00:00"
+      }
     },
     {
       "sequence": 260,
@@ -5345,7 +6815,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "B2zB32FV5Hk",
+        "url": "https://www.youtube.com/watch?v=B2zB32FV5Hk",
+        "title": "One Two - Midt i en drøm",
+        "search_query": "One Two Midt i en drøm",
+        "fetched_at": "2026-06-12T12:37:36.362671+00:00"
+      }
     },
     {
       "sequence": 263,
@@ -5390,7 +6867,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "fcXtL8oR4R4",
+        "url": "https://www.youtube.com/watch?v=fcXtL8oR4R4",
+        "title": "Han Får For Lidt",
+        "search_query": "Østkyst Hustlers Han får for lidt",
+        "fetched_at": "2026-06-12T12:37:38.424779+00:00"
+      }
     },
     {
       "sequence": 265,
@@ -5409,7 +6893,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "RaenRS0EvEE",
+        "url": "https://www.youtube.com/watch?v=RaenRS0EvEE",
+        "title": "Otto Brandenburg - To lys på et bord (Officiel audiovideo)",
+        "search_query": "Otto Brandenburg To lys på et bord",
+        "fetched_at": "2026-06-12T12:37:40.359269+00:00"
+      }
     },
     {
       "sequence": 266,
@@ -5428,7 +6919,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "oBah3gWXeWY",
+        "url": "https://www.youtube.com/watch?v=oBah3gWXeWY",
+        "title": "Sømand i knibe (1960) - Når en sailor går i land (Otto Brandenburg)",
+        "search_query": "Otto Brandenburg Når en sailor går i land",
+        "fetched_at": "2026-06-12T12:37:42.307329+00:00"
+      }
     },
     {
       "sequence": 267,
@@ -5447,7 +6945,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "nSWt0CqMYDg",
+        "url": "https://www.youtube.com/watch?v=nSWt0CqMYDg",
+        "title": "Outlandish - Guantanamo (Video)",
+        "search_query": "Outlandish Guantanamo",
+        "fetched_at": "2026-06-12T12:37:44.329469+00:00"
+      }
     },
     {
       "sequence": 268,
@@ -5466,7 +6971,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Zl0CjWkdrRc",
+        "url": "https://www.youtube.com/watch?v=Zl0CjWkdrRc",
+        "title": "På Slaget 12 - Hjem Til Århus",
+        "search_query": "På Slaget 12 Hjem til Århus",
+        "fetched_at": "2026-06-12T12:37:46.517361+00:00"
+      }
     },
     {
       "sequence": 269,
@@ -5485,7 +6997,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LI9JlXRLFEY",
+        "url": "https://www.youtube.com/watch?v=LI9JlXRLFEY",
+        "title": "PRINCE OF PEACE - Palle Mikkelborg 1992",
+        "search_query": "Palle Mikkelborg Prince Of Peace",
+        "fetched_at": "2026-06-12T12:37:48.610827+00:00"
+      }
     },
     {
       "sequence": 270,
@@ -5504,7 +7023,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3j7nyRKKsbg",
+        "url": "https://www.youtube.com/watch?v=3j7nyRKKsbg",
+        "title": "Panamah - Børn Af Natten",
+        "search_query": "Panamah Børn af natten",
+        "fetched_at": "2026-06-12T12:37:50.503632+00:00"
+      }
     },
     {
       "sequence": 271,
@@ -5523,7 +7049,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "97jJKJFk_EU",
+        "url": "https://www.youtube.com/watch?v=97jJKJFk_EU",
+        "title": "Paprika Steen & Martin Brygmann - 1997 - Brug Dit Hjerte Som Telefon",
+        "search_query": "Paprika Steen & Martin Brygmann Brug dit hjerte som telefon",
+        "fetched_at": "2026-06-12T12:37:52.562405+00:00"
+      }
     },
     {
       "sequence": 272,
@@ -5542,7 +7075,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "MpzjOhwu7RQ",
+        "url": "https://www.youtube.com/watch?v=MpzjOhwu7RQ",
+        "title": "PATINA - Flammer Rammer - Musikvideo",
+        "search_query": "Patina Flammer rammer",
+        "fetched_at": "2026-06-12T12:37:54.480144+00:00"
+      }
     },
     {
       "sequence": 273,
@@ -5561,7 +7101,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "V-PZ2eCCsbw",
+        "url": "https://www.youtube.com/watch?v=V-PZ2eCCsbw",
+        "title": "Per Vers BLACK POWER musikvideo",
+        "search_query": "Per Vers Black Power",
+        "fetched_at": "2026-06-12T12:37:56.556537+00:00"
+      }
     },
     {
       "sequence": 274,
@@ -5606,7 +7153,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "swseL9w70BA",
+        "url": "https://www.youtube.com/watch?v=swseL9w70BA",
+        "title": "Bennys Badekar  Blækspruttesangen (HD version)",
+        "search_query": "Peter Belli Bennys badekar - Blækspruttesangen",
+        "fetched_at": "2026-06-12T12:37:58.520335+00:00"
+      }
     },
     {
       "sequence": 276,
@@ -5625,7 +7179,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "qz9Khh1i0rM",
+        "url": "https://www.youtube.com/watch?v=qz9Khh1i0rM",
+        "title": "Vent På Mig - Peter Frödin & Jimmy Jørgensen (En kort en lang)",
+        "search_query": "Peter Frödin & Jimmy Jørgensen Vent på mig",
+        "fetched_at": "2026-06-12T12:38:00.484007+00:00"
+      }
     },
     {
       "sequence": 277,
@@ -5644,7 +7205,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "OUFOx4XHEq4",
+        "url": "https://www.youtube.com/watch?v=OUFOx4XHEq4",
+        "title": "Peter Sommer - 8-6-6-0",
+        "search_query": "Peter Sommer 8-6-6-0",
+        "fetched_at": "2026-06-12T12:38:02.392734+00:00"
+      }
     },
     {
       "sequence": 278,
@@ -5663,7 +7231,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "0VQhd8ClzBw",
+        "url": "https://www.youtube.com/watch?v=0VQhd8ClzBw",
+        "title": "Peter Sommer - Elskede At Drømme, Drømmer Om At Elske",
+        "search_query": "Peter Sommer Elskede at drømme, drømmer om at elske",
+        "fetched_at": "2026-06-12T12:38:04.346288+00:00"
+      }
     },
     {
       "sequence": 279,
@@ -5682,7 +7257,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8Fy5cPdlGUE",
+        "url": "https://www.youtube.com/watch?v=8Fy5cPdlGUE",
+        "title": "Phlake - Pregnant (Lyrics)",
+        "search_query": "Phlake Pregnant",
+        "fetched_at": "2026-06-12T12:38:06.312087+00:00"
+      }
     },
     {
       "sequence": 280,
@@ -5701,7 +7283,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "PVqCrSbf6vo",
+        "url": "https://www.youtube.com/watch?v=PVqCrSbf6vo",
+        "title": "Regnvejrsdag i november - Pia Raug",
+        "search_query": "Pia Raug Regnvejrsdag i November",
+        "fetched_at": "2026-06-12T12:38:08.569313+00:00"
+      }
     },
     {
       "sequence": 281,
@@ -5720,7 +7309,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "VGHTQ-W9NMc",
+        "url": "https://www.youtube.com/watch?v=VGHTQ-W9NMc",
+        "title": "Når Du Går Herfra (Nattely)",
+        "search_query": "Pil Når du går herfra (Nattely)",
+        "fetched_at": "2026-06-12T12:38:10.531930+00:00"
+      }
     },
     {
       "sequence": 282,
@@ -5739,7 +7335,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6Ph83IOPYkQ",
+        "url": "https://www.youtube.com/watch?v=6Ph83IOPYkQ",
+        "title": "Dronning Af Månen",
+        "search_query": "Pil Dronning af månen",
+        "fetched_at": "2026-06-12T12:38:12.606546+00:00"
+      }
     },
     {
       "sequence": 283,
@@ -5784,7 +7387,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "xodNN9tvDEg",
+        "url": "https://www.youtube.com/watch?v=xodNN9tvDEg",
+        "title": "Vagabonderne på Bakkegaarden (1958) - Er du dus med himlens fugle?",
+        "search_query": "Poul Reichhardt Er du dus med himlens fugle",
+        "fetched_at": "2026-06-12T12:38:14.514629+00:00"
+      }
     },
     {
       "sequence": 285,
@@ -5829,7 +7439,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "K3kBnv7jmsw",
+        "url": "https://www.youtube.com/watch?v=K3kBnv7jmsw",
+        "title": "Go' Nu Nat",
+        "search_query": "Povl Dissing & Benny Andersen Go' nu nat",
+        "fetched_at": "2026-06-12T12:38:16.552576+00:00"
+      }
     },
     {
       "sequence": 287,
@@ -5848,7 +7465,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "fb5FOa3DrkY",
+        "url": "https://www.youtube.com/watch?v=fb5FOa3DrkY",
+        "title": "PRIVATE - My Secret Lover",
+        "search_query": "Private My Secret Lover",
+        "fetched_at": "2026-06-12T12:38:18.473223+00:00"
+      }
     },
     {
       "sequence": 288,
@@ -5867,7 +7491,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "0P7N_vlvU8w",
+        "url": "https://www.youtube.com/watch?v=0P7N_vlvU8w",
+        "title": "Quadron - Hey Love (Official Video)",
+        "search_query": "Quadron Hey Love",
+        "fetched_at": "2026-06-12T12:38:20.597698+00:00"
+      }
     },
     {
       "sequence": 289,
@@ -5886,7 +7517,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "eWU3rRjI1bo",
+        "url": "https://www.youtube.com/watch?v=eWU3rRjI1bo",
+        "title": "Rasmus Nøhr - Sommer I Europa",
+        "search_query": "Rasmus Nøhr Sommer i Europa",
+        "fetched_at": "2026-06-12T12:38:22.678620+00:00"
+      }
     },
     {
       "sequence": 290,
@@ -5905,7 +7543,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "QFtnV6pMqvA",
+        "url": "https://www.youtube.com/watch?v=QFtnV6pMqvA",
+        "title": "Rasmus Seebach - Natteravn",
+        "search_query": "Rasmus Seebach Natteravn",
+        "fetched_at": "2026-06-12T12:38:24.688385+00:00"
+      }
     },
     {
       "sequence": 291,
@@ -5924,7 +7569,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GvNel63ChA4",
+        "url": "https://www.youtube.com/watch?v=GvNel63ChA4",
+        "title": "Rasmus Seebach - Engel",
+        "search_query": "Rasmus Seebach Engel",
+        "fetched_at": "2026-06-12T12:38:26.649321+00:00"
+      }
     },
     {
       "sequence": 292,
@@ -5969,7 +7621,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-_QGeJ9WqyY",
+        "url": "https://www.youtube.com/watch?v=-_QGeJ9WqyY",
+        "title": "Rasmus Walter - Endeløst (Officiel video)",
+        "search_query": "Rasmus Walter Endeløst",
+        "fetched_at": "2026-06-12T12:38:28.463569+00:00"
+      }
     },
     {
       "sequence": 294,
@@ -5988,7 +7647,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "fYVGtKixrNM",
+        "url": "https://www.youtube.com/watch?v=fYVGtKixrNM",
+        "title": "Jeg Vil La' Lyset Brænde",
+        "search_query": "Ray Dee Ohh Jeg vil la' lyset brænde",
+        "fetched_at": "2026-06-12T12:38:30.582531+00:00"
+      }
     },
     {
       "sequence": 295,
@@ -6007,7 +7673,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rUebsVLWMKw",
+        "url": "https://www.youtube.com/watch?v=rUebsVLWMKw",
+        "title": "Efterår",
+        "search_query": "Ray Dee Ohh Efterår",
+        "fetched_at": "2026-06-12T12:38:33.182592+00:00"
+      }
     },
     {
       "sequence": 296,
@@ -6026,7 +7699,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "GnWtncUQZ34",
+        "url": "https://www.youtube.com/watch?v=GnWtncUQZ34",
+        "title": "Rigmor - Alt Det Du Gør",
+        "search_query": "Rigmor Alt det du gør",
+        "fetched_at": "2026-06-12T12:38:35.186134+00:00"
+      }
     },
     {
       "sequence": 297,
@@ -6045,7 +7725,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "monaAlRSTME",
+        "url": "https://www.youtube.com/watch?v=monaAlRSTME",
+        "title": "Rikke Thomsen - Ballebrovej 2",
+        "search_query": "Rikke Thomsen Ballebrovej 2",
+        "fetched_at": "2026-06-12T12:38:37.123476+00:00"
+      }
     },
     {
       "sequence": 298,
@@ -6064,7 +7751,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "iyQC8JXRgPQ",
+        "url": "https://www.youtube.com/watch?v=iyQC8JXRgPQ",
+        "title": "Ridder Lykke",
+        "search_query": "Rocazino Ridder lykke",
+        "fetched_at": "2026-06-12T12:38:39.199770+00:00"
+      }
     },
     {
       "sequence": 299,
@@ -6083,7 +7777,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "NF3f7J_GUgI",
+        "url": "https://www.youtube.com/watch?v=NF3f7J_GUgI",
+        "title": "Elsk Mig I Nat",
+        "search_query": "Rocazino Elsk mig i nat",
+        "fetched_at": "2026-06-12T12:38:41.250096+00:00"
+      }
     },
     {
       "sequence": 300,
@@ -6102,7 +7803,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "XjNhXGABQfs",
+        "url": "https://www.youtube.com/watch?v=XjNhXGABQfs",
+        "title": "MIN KLUB FØRST feat Alberte & Josefine Winding - OFFICIAL VIDEO (Rosa Lux version)",
+        "search_query": "Rosa Lux Feat. Alberte & Josefine Winding Min klub først (Rosa Lux Version)",
+        "fetched_at": "2026-06-12T12:38:43.308748+00:00"
+      }
     },
     {
       "sequence": 301,
@@ -6147,7 +7855,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WDLaJm5noSU",
+        "url": "https://www.youtube.com/watch?v=WDLaJm5noSU",
+        "title": "SIVAS - D.A.U.D.A ft. Gilli (prod. af Reza)",
+        "search_query": "S!vas Feat. Gilli D.A.U.D.A.",
+        "fetched_at": "2026-06-12T12:38:45.246754+00:00"
+      }
     },
     {
       "sequence": 303,
@@ -6192,7 +7907,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6y0tceUXz5o",
+        "url": "https://www.youtube.com/watch?v=6y0tceUXz5o",
+        "title": "Oh My God",
+        "search_query": "Saint clara Oh My God",
+        "fetched_at": "2026-06-12T12:38:47.704390+00:00"
+      }
     },
     {
       "sequence": 305,
@@ -6211,7 +7933,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "MvXhhRg2CW8",
+        "url": "https://www.youtube.com/watch?v=MvXhhRg2CW8",
+        "title": "Sanne Salomonsen - Kærligheden Kalder",
+        "search_query": "Sanne Salomonsen Kærligheden kalder",
+        "fetched_at": "2026-06-12T12:38:49.655450+00:00"
+      }
     },
     {
       "sequence": 306,
@@ -6230,7 +7959,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "93IWPk_Rhh4",
+        "url": "https://www.youtube.com/watch?v=93IWPk_Rhh4",
+        "title": "Sanne Salomonsen - Hvis du Forstod",
+        "search_query": "Sanne Salomonsen Hvis du forstod",
+        "fetched_at": "2026-06-12T12:38:51.851442+00:00"
+      }
     },
     {
       "sequence": 307,
@@ -6249,7 +7985,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "dapi9csH8fo",
+        "url": "https://www.youtube.com/watch?v=dapi9csH8fo",
+        "title": "Jeg i live (feat. Thomas Helmig) (2000 - Remaster)",
+        "search_query": "Sanne Salomonsen Jeg' i live",
+        "fetched_at": "2026-06-12T12:38:53.689571+00:00"
+      }
     },
     {
       "sequence": 308,
@@ -6268,7 +8011,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "FjGw0oP78kU",
+        "url": "https://www.youtube.com/watch?v=FjGw0oP78kU",
+        "title": "Saveus - Levitate Me",
+        "search_query": "Saveus Levitate Me",
+        "fetched_at": "2026-06-12T12:38:55.802161+00:00"
+      }
     },
     {
       "sequence": 309,
@@ -6365,7 +8115,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "6wA_lxyOFS4",
+        "url": "https://www.youtube.com/watch?v=6wA_lxyOFS4",
+        "title": "Romeo (Remastered)",
+        "search_query": "Sebastian Romeo",
+        "fetched_at": "2026-06-12T12:38:57.658980+00:00"
+      }
     },
     {
       "sequence": 313,
@@ -6436,7 +8193,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "SRdFx7yvlzQ",
+        "url": "https://www.youtube.com/watch?v=SRdFx7yvlzQ",
+        "title": "Shaka Loveless - Tomgang",
+        "search_query": "Shaka Loveless Tomgang",
+        "fetched_at": "2026-06-12T12:38:59.465800+00:00"
+      }
     },
     {
       "sequence": 316,
@@ -6559,7 +8323,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "TnmnNMOkDeY",
+        "url": "https://www.youtube.com/watch?v=TnmnNMOkDeY",
+        "title": "Sko/Torp - On a Long Lonely Night (Live, 2011)",
+        "search_query": "Sko/Torp On A Long Lonely Night",
+        "fetched_at": "2026-06-12T12:39:01.645846+00:00"
+      }
     },
     {
       "sequence": 321,
@@ -6578,7 +8349,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Lzps9qX8TEM",
+        "url": "https://www.youtube.com/watch?v=Lzps9qX8TEM",
+        "title": "Skousen & Ingemann - Herfra hvor vi står",
+        "search_query": "Skousen & Ingemann Herfra hvor vi står",
+        "fetched_at": "2026-06-12T12:39:03.651190+00:00"
+      }
     },
     {
       "sequence": 322,
@@ -6597,7 +8375,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "KBGWxIhqJZo",
+        "url": "https://www.youtube.com/watch?v=KBGWxIhqJZo",
+        "title": "Sui-Sui",
+        "search_query": "Sneakers Sui Sui",
+        "fetched_at": "2026-06-12T12:39:05.688813+00:00"
+      }
     },
     {
       "sequence": 323,
@@ -6616,7 +8401,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "eJoGH1w_4OY",
+        "url": "https://www.youtube.com/watch?v=eJoGH1w_4OY",
+        "title": "Woodoo",
+        "search_query": "Sneakers Woodoo",
+        "fetched_at": "2026-06-12T12:39:07.734788+00:00"
+      }
     },
     {
       "sequence": 324,
@@ -6635,7 +8427,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ANsNfAckYgY",
+        "url": "https://www.youtube.com/watch?v=ANsNfAckYgY",
+        "title": "Vilde Øjne",
+        "search_query": "Soleima Feat. School of X Vilde øjne",
+        "fetched_at": "2026-06-12T12:39:09.573081+00:00"
+      }
     },
     {
       "sequence": 325,
@@ -6654,7 +8453,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "LH51YHEMO7o",
+        "url": "https://www.youtube.com/watch?v=LH51YHEMO7o",
+        "title": "Søn - Pissoir (Officiel Musikvideo)",
+        "search_query": "Søn Pissoir",
+        "fetched_at": "2026-06-12T12:39:11.529357+00:00"
+      }
     },
     {
       "sequence": 326,
@@ -6673,7 +8479,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "lMK8oYbagyY",
+        "url": "https://www.youtube.com/watch?v=lMK8oYbagyY",
+        "title": "Kender Du Det?",
+        "search_query": "Søren Kragh-Jacobsen Kender du det",
+        "fetched_at": "2026-06-12T12:39:13.505075+00:00"
+      }
     },
     {
       "sequence": 327,
@@ -6692,7 +8505,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "5lBWuEZ2qyo",
+        "url": "https://www.youtube.com/watch?v=5lBWuEZ2qyo",
+        "title": "Søren Torpegaard Lund - Før Vi Går Hjem (LIVE) | Denmark 🇩🇰 | Grand Final | Eurovision 2026",
+        "search_query": "Søren Torpegaard Lund Før vi går hjem",
+        "fetched_at": "2026-06-12T12:39:15.574227+00:00"
+      }
     },
     {
       "sequence": 328,
@@ -6711,7 +8531,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "cU5wAczQRB8",
+        "url": "https://www.youtube.com/watch?v=cU5wAczQRB8",
+        "title": "Let Your Fingers Do The Walking (Remastered)",
+        "search_query": "Sort Sol Let Your Fingers Do The Walking",
+        "fetched_at": "2026-06-12T12:39:17.720062+00:00"
+      }
     },
     {
       "sequence": 329,
@@ -6730,7 +8557,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "uo7u8fUy9bw",
+        "url": "https://www.youtube.com/watch?v=uo7u8fUy9bw",
+        "title": "Søs Fenger - 1989 - Holder Øje Med Dig",
+        "search_query": "Søs Fenger Holder øje med dig",
+        "fetched_at": "2026-06-12T12:39:19.674495+00:00"
+      }
     },
     {
       "sequence": 330,
@@ -6775,7 +8609,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "AxbCk11PoYI",
+        "url": "https://www.youtube.com/watch?v=AxbCk11PoYI",
+        "title": "SPECKTORS - LÅGSUS",
+        "search_query": "Specktors Lågsus",
+        "fetched_at": "2026-06-12T12:39:21.679700+00:00"
+      }
     },
     {
       "sequence": 332,
@@ -6794,7 +8635,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8sZ99LXnq7U",
+        "url": "https://www.youtube.com/watch?v=8sZ99LXnq7U",
+        "title": "Spleen United - Spleen Utd.",
+        "search_query": "Spleen United Spleen Utd",
+        "fetched_at": "2026-06-12T12:39:23.614532+00:00"
+      }
     },
     {
       "sequence": 333,
@@ -6813,7 +8661,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Qpv6oi7oed8",
+        "url": "https://www.youtube.com/watch?v=Qpv6oi7oed8",
+        "title": "Steppeulvene - Itsi Bitsi (Official Audio)",
+        "search_query": "Steppeulvene Itsi bitsi",
+        "fetched_at": "2026-06-12T12:39:25.524730+00:00"
+      }
     },
     {
       "sequence": 334,
@@ -6832,7 +8687,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "N97DFcRXhCg",
+        "url": "https://www.youtube.com/watch?v=N97DFcRXhCg",
+        "title": "Sikke'n Dejlig Dag",
+        "search_query": "Stig Møller Sikke'n dejlig dag",
+        "fetched_at": "2026-06-12T12:39:27.593579+00:00"
+      }
     },
     {
       "sequence": 335,
@@ -6851,7 +8713,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "NpH5Ilr9FdA",
+        "url": "https://www.youtube.com/watch?v=NpH5Ilr9FdA",
+        "title": "So Far",
+        "search_query": "Superheroes So Far",
+        "fetched_at": "2026-06-12T12:39:29.570901+00:00"
+      }
     },
     {
       "sequence": 336,
@@ -6870,7 +8739,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "51qjXzNi3BE",
+        "url": "https://www.youtube.com/watch?v=51qjXzNi3BE",
+        "title": "Suspekt - Proletar (hvor jeg står)",
+        "search_query": "Suspekt Proletar (hvor jeg står)",
+        "fetched_at": "2026-06-12T12:39:31.434421+00:00"
+      }
     },
     {
       "sequence": 337,
@@ -6889,7 +8765,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "_b2yIJlsyUc",
+        "url": "https://www.youtube.com/watch?v=_b2yIJlsyUc",
+        "title": "Kinky Fætter",
+        "search_query": "Suspekt Kinky Fætter",
+        "fetched_at": "2026-06-12T12:39:33.326871+00:00"
+      }
     },
     {
       "sequence": 338,
@@ -6908,7 +8791,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vr2m_h5a0aY",
+        "url": "https://www.youtube.com/watch?v=vr2m_h5a0aY",
+        "title": "Swan Lee - I Don´t Mind",
+        "search_query": "Swan Lee I Don't Mind",
+        "fetched_at": "2026-06-12T12:39:35.429406+00:00"
+      }
     },
     {
       "sequence": 339,
@@ -6927,7 +8817,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "__SKKMU9dh0",
+        "url": "https://www.youtube.com/watch?v=__SKKMU9dh0",
+        "title": "Swan Lee - Love Will Keep You Warm",
+        "search_query": "Swan Lee Love Will Keep You Warm",
+        "fetched_at": "2026-06-12T12:39:37.771146+00:00"
+      }
     },
     {
       "sequence": 340,
@@ -6946,7 +8843,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "qjNvC_wu0cg",
+        "url": "https://www.youtube.com/watch?v=qjNvC_wu0cg",
+        "title": "Sys Bjerre // Malene - Musikvideo ucensureret",
+        "search_query": "Sys Bjerre Malene",
+        "fetched_at": "2026-06-12T12:39:39.763603+00:00"
+      }
     },
     {
       "sequence": 341,
@@ -6965,7 +8869,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "VksIj-Aw8OQ",
+        "url": "https://www.youtube.com/watch?v=VksIj-Aw8OQ",
+        "title": "Shirley & Jonas Winge Leisner - 1999 - Don't Look For Love",
+        "search_query": "Szhirley & Jonas Winge Leisner Don't Look For Love",
+        "fetched_at": "2026-06-12T12:39:41.771873+00:00"
+      }
     },
     {
       "sequence": 342,
@@ -7010,7 +8921,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "WWZ_nM4IWd4",
+        "url": "https://www.youtube.com/watch?v=WWZ_nM4IWd4",
+        "title": "Ben",
+        "search_query": "Tessa Ben",
+        "fetched_at": "2026-06-12T12:39:43.713018+00:00"
+      }
     },
     {
       "sequence": 344,
@@ -7029,7 +8947,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Hs_b8hNFu7k",
+        "url": "https://www.youtube.com/watch?v=Hs_b8hNFu7k",
+        "title": "Tessa - Glo På Mig",
+        "search_query": "Tessa Glo på mig",
+        "fetched_at": "2026-06-12T12:39:45.760390+00:00"
+      }
     },
     {
       "sequence": 345,
@@ -7048,7 +8973,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "x5h-LAvQDCQ",
+        "url": "https://www.youtube.com/watch?v=x5h-LAvQDCQ",
+        "title": "The Asteroids Galaxy Tour - The Golden Age (4K Official Video)",
+        "search_query": "The Asteroids Galaxy Tour The Golden Age",
+        "fetched_at": "2026-06-12T12:39:47.894189+00:00"
+      }
     },
     {
       "sequence": 346,
@@ -7145,7 +9077,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "mRUqpgg-8Ps",
+        "url": "https://www.youtube.com/watch?v=mRUqpgg-8Ps",
+        "title": "The Raveonettes - Love In A Trashcan",
+        "search_query": "The Raveonettes Love In A Trashcan",
+        "fetched_at": "2026-06-12T12:39:50.063012+00:00"
+      }
     },
     {
       "sequence": 350,
@@ -7164,7 +9103,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "9TL2B-iiVhA",
+        "url": "https://www.youtube.com/watch?v=9TL2B-iiVhA",
+        "title": "The Raveonettes - Last Dance",
+        "search_query": "The Raveonettes Last Dance",
+        "fetched_at": "2026-06-12T12:39:52.076877+00:00"
+      }
     },
     {
       "sequence": 351,
@@ -7183,7 +9129,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "oyqHFfKwlLg",
+        "url": "https://www.youtube.com/watch?v=oyqHFfKwlLg",
+        "title": "The Rumour Said Fire - The Balcony (OFFICIAL)",
+        "search_query": "The Rumour Said Fire The Balcony",
+        "fetched_at": "2026-06-12T12:39:54.019574+00:00"
+      }
     },
     {
       "sequence": 352,
@@ -7202,7 +9155,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "AfzqNkz6ziA",
+        "url": "https://www.youtube.com/watch?v=AfzqNkz6ziA",
+        "title": "Wild Child",
+        "search_query": "The Savage Rose Wild Child",
+        "fetched_at": "2026-06-12T12:39:56.046431+00:00"
+      }
     },
     {
       "sequence": 353,
@@ -7221,7 +9181,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "r8qVUdxdMfs",
+        "url": "https://www.youtube.com/watch?v=r8qVUdxdMfs",
+        "title": "Black Angel",
+        "search_query": "The Savage Rose Black Angel",
+        "fetched_at": "2026-06-12T12:39:58.021480+00:00"
+      }
     },
     {
       "sequence": 354,
@@ -7240,7 +9207,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Auwy0dhDz78",
+        "url": "https://www.youtube.com/watch?v=Auwy0dhDz78",
+        "title": "Blød inden i",
+        "search_query": "Thøger Dixgaard Blød inden i",
+        "fetched_at": "2026-06-12T12:39:59.776338+00:00"
+      }
     },
     {
       "sequence": 355,
@@ -7285,7 +9259,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "V324KhfzQ7M",
+        "url": "https://www.youtube.com/watch?v=V324KhfzQ7M",
+        "title": "Thomas Helmig - Malaga",
+        "search_query": "Thomas Helmig Malaga",
+        "fetched_at": "2026-06-12T12:40:01.616886+00:00"
+      }
     },
     {
       "sequence": 357,
@@ -7304,7 +9285,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "7aDyitTaM8U",
+        "url": "https://www.youtube.com/watch?v=7aDyitTaM8U",
+        "title": "Nu Hvor Du Har Brændt Mig Af",
+        "search_query": "Thomas Helmig Nu hvor du har brændt mig af",
+        "fetched_at": "2026-06-12T12:40:03.490067+00:00"
+      }
     },
     {
       "sequence": 358,
@@ -7323,7 +9311,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "oHDB0ncIwUg",
+        "url": "https://www.youtube.com/watch?v=oHDB0ncIwUg",
+        "title": "Midnat I Europa",
+        "search_query": "Thomas Helmig Brothers Midnat i Europa",
+        "fetched_at": "2026-06-12T12:40:05.367691+00:00"
+      }
     },
     {
       "sequence": 359,
@@ -7342,7 +9337,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "1t6HY7O-Ts0",
+        "url": "https://www.youtube.com/watch?v=1t6HY7O-Ts0",
+        "title": "Hej",
+        "search_query": "Thor Farlov Hej",
+        "fetched_at": "2026-06-12T12:40:07.158838+00:00"
+      }
     },
     {
       "sequence": 360,
@@ -7361,7 +9363,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ZIwnkGySwgg",
+        "url": "https://www.youtube.com/watch?v=ZIwnkGySwgg",
+        "title": "Right Next to the Right One",
+        "search_query": "Tim Christensen Right Next To The Right One",
+        "fetched_at": "2026-06-12T12:40:08.949616+00:00"
+      }
     },
     {
       "sequence": 361,
@@ -7380,7 +9389,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "HqoU8yNkSww",
+        "url": "https://www.youtube.com/watch?v=HqoU8yNkSww",
+        "title": "Tim Christensen - Whispering At The Top Of My Lungs",
+        "search_query": "Tim Christensen Whispering At The Top Of My Lungs",
+        "fetched_at": "2026-06-12T12:40:10.817533+00:00"
+      }
     },
     {
       "sequence": 362,
@@ -7399,7 +9415,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "e2sMbpCdxjo",
+        "url": "https://www.youtube.com/watch?v=e2sMbpCdxjo",
+        "title": "Tina Dickow - Open Wide | 20 år med Kronprinsparrets Priser",
+        "search_query": "Tina Dickow Open Wide",
+        "fetched_at": "2026-06-12T12:40:12.661829+00:00"
+      }
     },
     {
       "sequence": 363,
@@ -7418,7 +9441,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "TsjfdghARTw",
+        "url": "https://www.youtube.com/watch?v=TsjfdghARTw",
+        "title": "'Pigen Ud Af Aarhus'",
+        "search_query": "Tina Dickow Pigen ud af Aarhus",
+        "fetched_at": "2026-06-12T12:40:14.613071+00:00"
+      }
     },
     {
       "sequence": 364,
@@ -7437,7 +9467,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "Kb13CbUO11M",
+        "url": "https://www.youtube.com/watch?v=Kb13CbUO11M",
+        "title": "Tina Dico - Sacre Coeur",
+        "search_query": "Tina Dickow Sacre Coeur",
+        "fetched_at": "2026-06-12T12:40:16.572789+00:00"
+      }
     },
     {
       "sequence": 365,
@@ -7456,7 +9493,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "F5lq3NINeww",
+        "url": "https://www.youtube.com/watch?v=F5lq3NINeww",
+        "title": "Tobias Rahim - Når Mænd Græder",
+        "search_query": "Tobias Rahim Når mænd græder",
+        "fetched_at": "2026-06-12T12:40:18.532136+00:00"
+      }
     },
     {
       "sequence": 366,
@@ -7475,7 +9519,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "ezFsAWK_HF8",
+        "url": "https://www.youtube.com/watch?v=ezFsAWK_HF8",
+        "title": "Tobias Rahim - Mucki Bar",
+        "search_query": "Tobias Rahim Mucki Bar",
+        "fetched_at": "2026-06-12T12:40:20.377324+00:00"
+      }
     },
     {
       "sequence": 367,
@@ -7520,7 +9571,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3osUz0OZEQE",
+        "url": "https://www.youtube.com/watch?v=3osUz0OZEQE",
+        "title": "Eurovision Song Contest 1979 - Denmark - Tommy Seebach - Disco Tango",
+        "search_query": "Tommy Seebach Disco Tango",
+        "fetched_at": "2026-06-12T12:40:22.581504+00:00"
+      }
     },
     {
       "sequence": 369,
@@ -7539,7 +9597,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "gbYEZPNflFs",
+        "url": "https://www.youtube.com/watch?v=gbYEZPNflFs",
+        "title": "Tommy Seebach - Hip hurra, det' min fødselsdag (Official Audio)",
+        "search_query": "Tommy Seebach Hip hurra det' min fødselsdag",
+        "fetched_at": "2026-06-12T12:40:24.855885+00:00"
+      }
     },
     {
       "sequence": 370,
@@ -7558,7 +9623,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "PVcysquf6sE",
+        "url": "https://www.youtube.com/watch?v=PVcysquf6sE",
+        "title": "Anette Heick og Tommy Seebach Du Skælder Mig Hele Tiden Ud",
+        "search_query": "Tommy Seebach & Annette Heick Du skælder mig hele tiden ud",
+        "fetched_at": "2026-06-12T12:40:26.728673+00:00"
+      }
     },
     {
       "sequence": 371,
@@ -7603,7 +9675,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "endzf4013qc",
+        "url": "https://www.youtube.com/watch?v=endzf4013qc",
+        "title": "TopGunn - Kongens Have (Officiel Video)",
+        "search_query": "TopGunn Kongens Have",
+        "fetched_at": "2026-06-12T12:40:28.585378+00:00"
+      }
     },
     {
       "sequence": 373,
@@ -7622,7 +9701,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "tnXVun9OK9c",
+        "url": "https://www.youtube.com/watch?v=tnXVun9OK9c",
+        "title": "VLTJ",
+        "search_query": "Tørfisk VLTJ (Live Bechs Hotel 1990)",
+        "fetched_at": "2026-06-12T12:40:30.408135+00:00"
+      }
     },
     {
       "sequence": 374,
@@ -7641,7 +9727,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "oybcacCkqy8",
+        "url": "https://www.youtube.com/watch?v=oybcacCkqy8",
+        "title": "TØSEDRENGENE ~ Indianer",
+        "search_query": "Tøsedrengene Indianer",
+        "fetched_at": "2026-06-12T12:40:32.234617+00:00"
+      }
     },
     {
       "sequence": 375,
@@ -7660,7 +9753,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "0UzlQrr0uLY",
+        "url": "https://www.youtube.com/watch?v=0UzlQrr0uLY",
+        "title": "Tøsedrengene - Sig Du Ka Li' Mig",
+        "search_query": "Tøsedrengene Sig du ka' li' mig",
+        "fetched_at": "2026-06-12T12:40:34.048311+00:00"
+      }
     },
     {
       "sequence": 376,
@@ -7679,7 +9779,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "UAk5ilW6Hcg",
+        "url": "https://www.youtube.com/watch?v=UAk5ilW6Hcg",
+        "title": "Trentemøller - Moan. (Vocal Version Featuring Ane Trolle).",
+        "search_query": "Trentemøller Feat. Ane Trolle Moan (Vocal Version)",
+        "fetched_at": "2026-06-12T12:40:35.777834+00:00"
+      }
     },
     {
       "sequence": 377,
@@ -7698,7 +9805,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "W4RSzVf6Pek",
+        "url": "https://www.youtube.com/watch?v=W4RSzVf6Pek",
+        "title": "Hej Søster",
+        "search_query": "Trille Hej søster",
+        "fetched_at": "2026-06-12T12:40:37.541770+00:00"
+      }
     },
     {
       "sequence": 378,
@@ -7717,7 +9831,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rGqTlkLq9qA",
+        "url": "https://www.youtube.com/watch?v=rGqTlkLq9qA",
+        "title": "Danse i Måneskin",
+        "search_query": "Trine & Moonlighters Danse i måneskin",
+        "fetched_at": "2026-06-12T12:40:39.379681+00:00"
+      }
     },
     {
       "sequence": 379,
@@ -7736,7 +9857,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "n7wORgwY9A0",
+        "url": "https://www.youtube.com/watch?v=n7wORgwY9A0",
+        "title": "En Sang Om Kærlighed",
+        "search_query": "Tue West En sang om kærlighed",
+        "fetched_at": "2026-06-12T12:40:41.326382+00:00"
+      }
     },
     {
       "sequence": 380,
@@ -7755,7 +9883,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "xlvYV4gnsHs",
+        "url": "https://www.youtube.com/watch?v=xlvYV4gnsHs",
+        "title": "Turboweekend - Trouble Is (Original)",
+        "search_query": "Turboweekend Trouble Is",
+        "fetched_at": "2026-06-12T12:40:43.147391+00:00"
+      }
     },
     {
       "sequence": 381,
@@ -7878,7 +10013,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-uJV5hijO3g",
+        "url": "https://www.youtube.com/watch?v=-uJV5hijO3g",
+        "title": "Neonlys",
+        "search_query": "Ukendt Kunstner Neonlys",
+        "fetched_at": "2026-06-12T12:40:44.963950+00:00"
+      }
     },
     {
       "sequence": 386,
@@ -7897,7 +10039,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "3kb2l8SJS1Y",
+        "url": "https://www.youtube.com/watch?v=3kb2l8SJS1Y",
+        "title": "Ukendt Kunstner - Gennem Byen",
+        "search_query": "Ukendt Kunstner Gennem byen",
+        "fetched_at": "2026-06-12T12:40:47.101629+00:00"
+      }
     },
     {
       "sequence": 387,
@@ -7916,7 +10065,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "KQaBSPTXEzE",
+        "url": "https://www.youtube.com/watch?v=KQaBSPTXEzE",
+        "title": "Stein Bagger",
+        "search_query": "Ukendt Kunstner Feat. S!vas Stein Bagger",
+        "fetched_at": "2026-06-12T12:40:49.283814+00:00"
+      }
     },
     {
       "sequence": 388,
@@ -7935,7 +10091,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "vSaUWDOexXU",
+        "url": "https://www.youtube.com/watch?v=vSaUWDOexXU",
+        "title": "Ulige Numre - København",
+        "search_query": "Ulige Numre København",
+        "fetched_at": "2026-06-12T12:40:51.283224+00:00"
+      }
     },
     {
       "sequence": 389,
@@ -7980,7 +10143,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "buccvl316Z8",
+        "url": "https://www.youtube.com/watch?v=buccvl316Z8",
+        "title": "Godthåbsvej",
+        "search_query": "URO Godthåbsvej",
+        "fetched_at": "2026-06-12T12:40:53.184532+00:00"
+      }
     },
     {
       "sequence": 391,
@@ -7999,7 +10169,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "QvpaHbJXmWg",
+        "url": "https://www.youtube.com/watch?v=QvpaHbJXmWg",
+        "title": "Føles Godt",
+        "search_query": "URO Feat. Mekdes Føles godt",
+        "fetched_at": "2026-06-12T12:40:55.082074+00:00"
+      }
     },
     {
       "sequence": 392,
@@ -8018,7 +10195,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "wi2q19-Bs3E",
+        "url": "https://www.youtube.com/watch?v=wi2q19-Bs3E",
+        "title": "VETO - You Say Yes, I Say Yes",
+        "search_query": "Veto You Say Yes, I Say Yes",
+        "fetched_at": "2026-06-12T12:40:56.936362+00:00"
+      }
     },
     {
       "sequence": 393,
@@ -8037,7 +10221,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "IppBWuUmkU8",
+        "url": "https://www.youtube.com/watch?v=IppBWuUmkU8",
+        "title": "Vinnie Who - Remedy [Official Music Video]",
+        "search_query": "Vinnie Who Remedy",
+        "fetched_at": "2026-06-12T12:40:59.338484+00:00"
+      }
     },
     {
       "sequence": 394,
@@ -8056,7 +10247,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "TAhyZegVkhw",
+        "url": "https://www.youtube.com/watch?v=TAhyZegVkhw",
+        "title": "Volbeat - For Evigt ft. Johan Olsen",
+        "search_query": "Volbeat For evigt",
+        "fetched_at": "2026-06-12T12:41:01.222999+00:00"
+      }
     },
     {
       "sequence": 395,
@@ -8075,7 +10273,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "upRI8wvyeIM",
+        "url": "https://www.youtube.com/watch?v=upRI8wvyeIM",
+        "title": "Von Quar - Alt Hvad Jeg Vil (Officiel Video)",
+        "search_query": "Von Quar Alt hvad jeg vil",
+        "fetched_at": "2026-06-12T12:41:03.059899+00:00"
+      }
     },
     {
       "sequence": 396,
@@ -8094,7 +10299,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "0znzBFv9inM",
+        "url": "https://www.youtube.com/watch?v=0znzBFv9inM",
+        "title": "Wafande feat. Kaka: Gi' mig et smil",
+        "search_query": "Wafande Gi' mig et smil",
+        "fetched_at": "2026-06-12T12:41:04.986032+00:00"
+      }
     },
     {
       "sequence": 397,
@@ -8113,7 +10325,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "pfefYDZvDKk",
+        "url": "https://www.youtube.com/watch?v=pfefYDZvDKk",
+        "title": "When Saints Go Machine - Kelly (Official Music Video)",
+        "search_query": "When Saints Go Machine Kelly",
+        "fetched_at": "2026-06-12T12:41:07.042424+00:00"
+      }
     },
     {
       "sequence": 398,
@@ -8132,7 +10351,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "8DNQRtmIMxk",
+        "url": "https://www.youtube.com/watch?v=8DNQRtmIMxk",
+        "title": "Whigfield - Saturday Night (Official Video)",
+        "search_query": "Whigfield Saturday Night",
+        "fetched_at": "2026-06-12T12:41:08.858221+00:00"
+      }
     },
     {
       "sequence": 399,
@@ -8151,7 +10377,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "rHluXvNtD4s",
+        "url": "https://www.youtube.com/watch?v=rHluXvNtD4s",
+        "title": "Det Burde Ikk Være Sådan Her",
+        "search_query": "Xander Det burde ikk være sådan her",
+        "fetched_at": "2026-06-12T12:41:10.606625+00:00"
+      }
     },
     {
       "sequence": 400,
@@ -8170,7 +10403,14 @@
       },
       "funfact": null,
       "credits": null,
-      "in_top100": false
+      "in_top100": false,
+      "youtube": {
+        "id": "-gAREtmYG1E",
+        "url": "https://www.youtube.com/watch?v=-gAREtmYG1E",
+        "title": "Zar Paulo - Klap For Fædrelandet (Lyrikvideo)",
+        "search_query": "Zar Paulo Klap for fædrelandet",
+        "fetched_at": "2026-06-12T12:41:12.411992+00:00"
+      }
     }
   ],
   "chart_source": "top100.json",

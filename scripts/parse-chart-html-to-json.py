@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse raw.html (saved DR reveal page) into top100.json — fixed snapshot, not live."""
+"""One-time parser: saved DR reveal HTML → top100.json. JSON is canonical; raw HTML removed."""
 from html.parser import HTMLParser
 from html import unescape
 from pathlib import Path

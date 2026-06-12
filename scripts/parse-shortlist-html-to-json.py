@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse raw400.html (DR Top100 voting shortlist) into top400.json."""
+"""One-time parser: DR Top100 voting shortlist HTML → top400.json. JSON is canonical; raw HTML removed."""
 
 from html.parser import HTMLParser
 from html import unescape
