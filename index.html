@@ -17,19 +17,23 @@
       <button type="button" data-view="list" aria-pressed="true">List</button>
       <button type="button" data-view="canvas" aria-pressed="false">Canvas</button>
     </menu>
-    <p id="summary">Loading…</p>
+    <p id="summary"></p>
     <top100-my-songs></top100-my-songs>
     <label class="search" id="search-wrap" hidden>
-      <span class="visually-hidden">Filter songs</span>
-      <input type="search" id="search" placeholder="Filter by title or artist…" autocomplete="off">
+      <span class="visually-hidden">Filtrér sange</span>
+      <input type="search" id="search" placeholder="Filter…" autocomplete="off">
     </label>
     <ol id="songs"></ol>
   </main>
 
   <section id="canvas-view" hidden>
     <canvas id="field" aria-label="Cover field — drag to pan, scroll to zoom, click a cover to play"></canvas>
-    <p class="hint">drag · scroll to zoom · click a cover · esc zooms out</p>
+    <p class="hint">træk · scroll for zoom · klik et cover</p>
   </section>
+
+  <nav id="letter-rail" class="letter-rail" aria-label="Jump to letter" hidden></nav>
+
+  <top100-radio></top100-radio>
 
   <top100-player></top100-player>
 

@@ -6,6 +6,8 @@
   /* Solid fills — only the page background stays a gradient. */
   --panel: #fff3dd;
   --panel-strong: #ffe6bf;
+  /* A touch lighter than --panel-strong — softer card hover. */
+  --panel-hover: #ffedc6;
   --panel-border: #2a1500;
 
   --accent: #2a1500;
@@ -14,12 +16,12 @@
   --cover-bg: #ead9b8;
   --shadow-pop: 3px 3px 0 var(--panel-border);
 
-  --font-size-xs: .72rem;
-  --font-size-sm: .8rem;
-  --font-size-md: .9rem;
-  --font-size-lg: 1.35rem;
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
 
-  --radius: .8rem;
+  --radius: 1rem;
 }
 
 * {
@@ -47,7 +49,7 @@ body {
 }
 
 main {
-  max-width: 52rem;
+  max-width: 45rem;
   margin: 0 auto;
 }
 
@@ -68,9 +70,9 @@ button {
 .views {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: .3rem;
-  margin: 0 .4rem .5rem 0;
-  padding: .25rem;
+  gap: 0.2rem;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.2rem;
   list-style: none;
   background: var(--panel);
   border: 1px solid var(--panel-border);
@@ -80,7 +82,7 @@ button {
 
 .lists button,
 .views button {
-  padding: .35rem .9rem;
+  padding: 0.5rem 1rem;
   background: transparent;
   color: var(--ink-soft);
   border: 0;
@@ -100,9 +102,86 @@ button {
   color: var(--on-accent);
 }
 
+/* ── Radio4000 (floating, draggable player) ──────────── */
+top100-radio {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  width: 320px;
+  max-width: calc(100vw - 2rem);
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-pop);
+  overflow: hidden;
+}
+
+top100-radio.is-dragging {
+  user-select: none;
+}
+
+.r4-handle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  background: var(--panel-strong);
+  border-bottom: 1px solid var(--panel-border);
+  cursor: grab;
+  touch-action: none;
+}
+
+.r4-handle:active {
+  cursor: grabbing;
+}
+
+.r4-channel {
+  font-weight: 700;
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+
+.r4-channel:hover {
+  color: var(--ink);
+}
+
+.r4-toggle {
+  width: 1.5rem;
+  height: 1.5rem;
+  font: inherit;
+  font-size: var(--font-size-sm);
+  line-height: 1;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.r4-toggle:hover {
+  color: var(--ink);
+  background: var(--panel);
+}
+
+.r4-player {
+  display: block;
+  width: 320px;
+  max-width: 100%;
+  height: 500px;
+  border: 0;
+  background: var(--panel);
+}
+
+top100-radio.is-collapsed .r4-player {
+  display: none;
+}
+
 /* ── Pill buttons (play, add, remove, player) ────────── */
 .btn {
-  padding: .4rem .8rem;
+  padding: 0.5rem 1rem;
   font: inherit;
   color: var(--ink);
   background: transparent;
@@ -134,22 +213,22 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2rem;
+  height: 2rem;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1;
 }
 
 .search {
   display: block;
-  margin: .75rem 0;
+  margin: 1rem 0;
 }
 
 .search input {
   width: 100%;
   max-width: 22rem;
-  padding: .55rem .9rem;
+  padding: 0.5rem 1rem;
   font: inherit;
   color: var(--ink);
   background: var(--panel-strong);
@@ -167,7 +246,7 @@ button {
 }
 
 #summary {
-  margin: .5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
   color: var(--ink-soft);
   font-size: var(--font-size-md);
 }
@@ -175,79 +254,201 @@ button {
 /* ── My picks ────────────────────────────────────────── */
 top100-my-songs {
   display: block;
-  margin: 0 0 1.25rem;
-  padding: .9rem 1rem;
-  background: var(--panel-strong);
+  position: relative;
+  margin: 0 0 1.5rem;
+  background: var(--panel);
   border: 1px solid var(--panel-border);
   border-radius: var(--radius);
+  overflow: hidden;
 }
 
+top100-my-songs::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 0.5rem;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(42, 21, 0, .2));
+}
+
+/* Title-bar header, shared look with the Radio4000 dock handle. */
 .my-songs-header {
   display: flex;
   flex-wrap: wrap;
-  gap: .35rem .75rem;
-  align-items: baseline;
+  gap: 0.5rem 1rem;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: .6rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+  background: var(--panel-strong);
+  border-bottom: 1px solid var(--panel-border);
 }
 
 .my-songs-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-size-xs);
   font-weight: 700;
+  color: var(--ink-soft);
 }
 
-.my-songs-status {
+.my-songs-hint {
   margin: 0;
-  color: var(--ink-soft);
+  padding: 0.5rem 1rem 0;
+  color: var(--ink-dim);
   font-size: var(--font-size-sm);
-  font-weight: 700;
+  line-height: 1.4;
 }
 
 .my-songs-list {
   list-style: none;
-  padding: 0;
+  padding: 0.5rem 1rem 1rem;
   margin: 0;
   display: grid;
-  gap: .45rem;
+  gap: 0.5rem;
+  max-height: min(45vh, 26rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+.my-songs-list:empty {
+  padding: 0;
+}
+
+.my-songs-divider {
+  margin: 0.5rem 0 0;
+  padding: 0.2rem 0 0;
+  color: var(--ink-dim);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
 }
 
 .my-song-item {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: .15rem .75rem;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem 0.5rem;
   align-items: center;
-  padding: .55rem .7rem;
+  padding: 0.5rem 0.5rem;
   background: var(--panel);
   border: 1px solid var(--panel-border);
-  border-radius: calc(var(--radius) - .15rem);
+  border-radius: calc(var(--radius) - 0.2rem);
+  transition: box-shadow .12s ease, opacity .12s ease;
+}
+
+.my-song-item.is-top-pick {
+  background: #fff8eb;
+  border-width: 2px;
+}
+
+.my-song-item.is-dragging,
+.my-songs-list > li.is-dragging .my-song-item {
+  opacity: .45;
+}
+
+.my-song-item.is-drop-target,
+.my-songs-list > li.is-drop-target .my-song-item {
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+.my-song-rank {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  line-height: 1;
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  background: var(--panel-strong);
+}
+
+.is-top-pick .my-song-rank {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.my-song-body {
+  min-width: 0;
 }
 
 .my-song-item h3 {
   margin: 0;
-  grid-column: 1;
   font-size: var(--font-size-md);
   font-weight: 700;
   line-height: 1.25;
 }
 
 .my-song-artist {
-  margin: 0;
-  grid-column: 1;
+  margin: 0.2rem 0 0;
   color: var(--ink-soft);
   font-size: var(--font-size-sm);
 }
 
+.my-song-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.my-song-move {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.my-song-move .move-my-song {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+}
+
+.drag-my-song {
+  cursor: grab;
+  touch-action: none;
+}
+
+.drag-my-song:active {
+  cursor: grabbing;
+}
+
 .remove-my-song {
-  grid-column: 2;
-  grid-row: 1 / span 2;
   font-size: var(--font-size-sm);
+}
+
+.r4-add {
+  display: grid;
+  place-items: center;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .my-songs-empty {
   margin: 0;
+  padding: 0.5rem 1rem 1rem;
   color: var(--ink-dim);
   font-size: var(--font-size-sm);
+}
+
+.copy-my-songs {
+  font-size: var(--font-size-xs);
+  padding: 0.2rem 0.5rem;
+}
+
+.my-songs-footer {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  color: var(--ink-dim);
+  font-size: var(--font-size-sm);
+}
+
+.my-songs-footer a {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 /* ── Song list ───────────────────────────────────────── */
@@ -256,14 +457,14 @@ top100-my-songs {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: .6rem;
+  gap: 0.5rem;
 }
 
 article {
   display: grid;
   grid-template-columns: 84px 1fr;
   gap: 0 1rem;
-  padding: .8rem;
+  padding: 1rem;
   background: var(--panel);
   border: 1px solid var(--panel-border);
   border-radius: var(--radius);
@@ -275,28 +476,28 @@ article.playable {
 }
 
 article.playable:hover {
-  background: var(--panel-strong);
+  background: var(--panel-hover);
 }
 
 article h2 {
   margin: 0;
   grid-column: 2;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.25;
 }
 
 article .artist {
-  margin: .15rem 0 0;
+  margin: 0.2rem 0 0;
   grid-column: 2;
   color: var(--ink-soft);
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 article .funfact,
 article .credits {
   grid-column: 2;
-  margin: .5rem 0 0;
+  margin: 0.5rem 0 0;
   font-size: var(--font-size-sm);
   color: var(--ink-soft);
 }
@@ -312,7 +513,7 @@ article img {
   height: 84px;
   object-fit: cover;
   border: 1px solid var(--panel-border);
-  border-radius: .4rem;
+  border-radius: 0.5rem;
   background: var(--cover-bg);
 }
 
@@ -324,10 +525,10 @@ article.is-playing {
 .song-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
   grid-column: 2;
-  margin: .6rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -340,23 +541,13 @@ article.is-playing {
   font-size: var(--font-size-md);
 }
 
-.chart-badge {
-  display: inline-block;
-  margin-left: .4rem;
-  padding: .1rem .45rem;
-  font-size: var(--font-size-xs);
-  font-weight: 700;
-  color: var(--on-accent);
-  background: var(--accent);
-  border-radius: 999px;
-  vertical-align: middle;
-}
-
 body[data-list="top400"] .letter-header {
   position: sticky;
-  top: .5rem;
+  top: 0.5rem;
   z-index: 2;
-  padding: .25rem 0;
+  margin-left: -1rem;
+  padding: 0.2rem 0;
+  scroll-margin-top: 0.5rem;
 }
 
 body[data-list="top400"] .letter-header:not(:first-child) {
@@ -367,8 +558,8 @@ body[data-list="top400"] .letter-divider {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2rem;
+  height: 2rem;
   margin: 0;
   padding: 0;
   font-size: var(--font-size-md);
@@ -379,6 +570,68 @@ body[data-list="top400"] .letter-divider {
   border: 1px solid var(--panel-border);
   border-radius: 50%;
   box-shadow: var(--shadow-pop);
+}
+
+/* ── Letter jump rail (Top 400, list view) ───────────── */
+.letter-rail {
+  position: fixed;
+  /* Sit in the left gutter beside the 45rem main column. */
+  left: max(0.5rem, calc((100vw - 45rem) / 2 - 3rem));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: 0.2rem;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 999px;
+  box-shadow: var(--shadow-pop);
+  scrollbar-width: none;
+}
+
+/* Author display:flex would otherwise beat the UA [hidden] rule. */
+.letter-rail[hidden] {
+  display: none;
+}
+
+.letter-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.letter-rail-btn {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.letter-rail-btn:hover {
+  color: var(--ink);
+  background: var(--panel-strong);
+}
+
+.letter-rail-btn.is-active {
+  color: var(--on-accent);
+  background: var(--accent);
+}
+
+/* No room for the rail once the gutter closes up. */
+@media (max-width: 60rem) {
+  .letter-rail {
+    display: none;
+  }
 }
 
 /* ── Canvas view ─────────────────────────────────────── */
@@ -435,17 +688,17 @@ top100-player {
   --key-edge: #b9a988;
 
   position: fixed;
-  inset: auto 1rem 1.1rem auto;
+  inset: auto 1rem 1rem auto;
   z-index: 10;
   width: 13.5rem;
   display: grid;
-  gap: .7rem;
-  padding: .7rem;
+  gap: 0.2rem;
+  padding: 0.2rem 0.2rem 0.5rem;
   color: var(--lcd-ink);
   background:
     linear-gradient(160deg, #4a2f0c 0%, var(--device-face) 45%, #2c1a04 100%);
   border: 1px solid var(--device-edge);
-  border-radius: 1.1rem;
+  border-radius: 0.5rem;
   box-shadow:
     inset 0 1px 0 rgba(255, 220, 160, .35),
     inset 0 0 0 2px rgba(0, 0, 0, .25),
@@ -473,15 +726,15 @@ top100-player.is-dragging {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: 1fr auto;
-  height: 4.6rem;
-  gap: .15rem .5rem;
+  height: 4.5rem;
+  gap: 0.2rem 0.5rem;
   align-items: center;
-  padding: .55rem .6rem;
+  padding: 0.5rem 0.2rem;
   background:
     repeating-linear-gradient(0deg, rgba(0, 0, 0, .05) 0 1px, transparent 1px 3px),
     linear-gradient(180deg, #d6df66, var(--lcd-bg));
   border: 2px solid #16210a;
-  border-radius: .4rem;
+  border-radius: 0.5rem;
   box-shadow:
     inset 0 0 12px rgba(40, 60, 0, .35),
     inset 0 1px 0 rgba(255, 255, 255, .4);
@@ -493,7 +746,7 @@ top100-player.is-dragging {
   height: 38px;
   grid-row: 1 / -1;
   object-fit: cover;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   background: var(--cover-bg);
   filter: saturate(.7) sepia(.25);
   border: 1px solid #16210a;
@@ -521,13 +774,13 @@ top100-player.is-dragging {
 }
 
 .player-title {
-  font-size: .82rem;
+  font-size: 1rem;
   font-weight: 700;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .35);
 }
 
 .player-artist {
-  font-size: .68rem;
+  font-size: 0.5rem;
   color: #3c4a12;
 }
 
@@ -536,7 +789,7 @@ top100-player.is-dragging {
   grid-row: 2;
   align-self: end;
   font-family: ui-monospace, monospace;
-  font-size: .66rem;
+  font-size: 0.5rem;
   color: var(--lcd-ink);
   text-decoration: none;
   text-transform: uppercase;
@@ -559,9 +812,9 @@ top100-player.is-dragging {
 .player-controls {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: .45rem;
+  gap: 0.5rem;
   margin: 0;
-  padding: .1rem .2rem 0;
+  padding: 0.2rem 0.2rem 0;
   list-style: none;
 }
 
@@ -569,14 +822,15 @@ top100-player.is-dragging {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.4rem;
+  height: 2.5rem;
   padding: 0;
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1;
   color: #2a1a06;
   background: linear-gradient(180deg, var(--key-face), #d8c8aa);
   border: 1px solid var(--key-edge);
-  border-radius: .55rem;
+  border-radius: 0.5rem;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, .8),
     0 2px 0 #8c7c5c,
@@ -585,14 +839,18 @@ top100-player.is-dragging {
 }
 
 .btn.pad.pad-play {
-  border-radius: 50%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   background: linear-gradient(180deg, #ffd98a, #e6a93f);
   border-color: #9a6b1d;
 }
 
-.btn.pad:hover:not(:disabled) {
-  filter: brightness(1.05);
+.btn.pad:hover:not(:disabled):not([aria-pressed="true"]) {
+  color: #2a1a06;
+  background: linear-gradient(180deg, #fff1d1, #e6d6b8);
+}
+
+.btn.pad.pad-play:hover:not(:disabled) {
+  background: linear-gradient(180deg, #ffe4a6, #efb650);
 }
 
 .btn.pad:active:not(:disabled) {

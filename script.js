@@ -1,9 +1,10 @@
 import { initCanvas } from './canvas.js';
 import './player.js';
+import './radio.js';
 import {
-  addMySong,
+  toggleMySong,
   isInMySongs,
-  isMySongsFull,
+  backfillMySongUrls,
   CHANGE_EVENT,
 } from './my-songs.js';
 
@@ -13,6 +14,7 @@ const template = document.querySelector('#song-template');
 const player = document.querySelector('top100-player');
 const searchInput = document.querySelector('#search');
 const searchWrap = document.querySelector('#search-wrap');
+const letterRail = document.querySelector('#letter-rail');
 
 const datasets = {
   top100: { songs: [], meta: null },
@@ -22,9 +24,14 @@ const datasets = {
 let activeList = 'top100';
 let queue = [];
 let visibleIndices = [];
-let currentIndex = -1;
 let canvasView = null;
 let filterQuery = '';
+let letterGroups = [];
+const LETTER_STICKY_TOP_REM = 0.5;
+
+// Playback is global state, independent of which list is on screen.
+// It stays anchored to the list the track came from until a new track is picked.
+let playback = { listId: null, song: null };
 
 function isCanvasView() {
   return document.body.dataset.view === 'canvas';
@@ -43,7 +50,7 @@ function youtubeUrl(song) {
 }
 
 function currentSong() {
-  return queue[currentIndex];
+  return playback.song;
 }
 
 function sortSongs(listId, songs) {
@@ -86,64 +93,41 @@ function songHeading(song, listId) {
   return listId === 'top100' ? rankedTitle(song) : text(song.title);
 }
 
-// Player label: ranked for any chart song, in either list.
+// Player label: only reveal rank when listening from the Top 100 list.
 function songLabel(song, listId) {
-  return listId === 'top100' || song.in_top100 ? rankedTitle(song) : text(song.title);
+  return listId === 'top100' ? rankedTitle(song) : text(song.title);
 }
 
 function updateSummary() {
-  const meta = datasets[activeList].meta;
   const total = queue.length;
   const shown = visibleIndices.length;
-
-  if (activeList === 'top100') {
-    const range = meta?.rank_range;
-    const rangeText = range ? `Ranks ${range.highest}–${range.lowest}` : '';
-    summary.textContent = filterQuery
-      ? `${shown} of ${total} chart songs match “${filterQuery}”. ${rangeText}`
-      : `${total} chart songs. ${rangeText}`;
-    return;
-  }
-
-  const chartCount = queue.filter((song) => song.in_top100).length;
-  summary.textContent = filterQuery
-    ? `${shown} of ${total} shortlist songs match “${filterQuery}”. ${chartCount} are on the chart.`
-    : `${total} shortlist songs (alphabetical). ${chartCount} are on the chart.`;
+  // Only show a count while filtering; otherwise the list speaks for itself.
+  summary.textContent = filterQuery ? `${shown} / ${total}` : '';
 }
 
 function updateMySongButtons() {
-  const full = isMySongsFull();
-
   document.querySelectorAll('.add-my-song').forEach((button) => {
     const songId = button.dataset.songId;
     const selected = songId && isInMySongs(songId);
 
     button.classList.toggle('is-selected', selected);
     button.setAttribute('aria-pressed', String(selected));
-
-    if (selected) {
-      button.disabled = true;
-      button.textContent = '✓';
-      button.setAttribute('aria-label', 'In my picks');
-    } else if (full) {
-      button.disabled = true;
-      button.textContent = '+';
-      button.setAttribute('aria-label', 'My picks full (5 of 5)');
-    } else {
-      button.disabled = false;
-      button.textContent = '+';
-      button.setAttribute('aria-label', 'Add to my picks');
-    }
+    // Stays clickable when selected so it can toggle back off.
+    button.textContent = selected ? '✓' : '+';
+    button.setAttribute(
+      'aria-label',
+      selected ? 'Remove from my picks' : 'Add to my picks',
+    );
   });
 }
 
 function updateListPlaybackState() {
-  const song = currentSong();
   const isPlaying = !player.paused;
+  const playingId = playback.song?.id ?? null;
 
   document.querySelectorAll('.play-song').forEach((button) => {
     if (button.disabled) return;
-    const isCurrent = Number(button.dataset.index) === currentIndex;
+    const isCurrent = playingId != null && button.dataset.songId === playingId;
     const playing = isCurrent && isPlaying;
     button.classList.toggle('is-current', isCurrent);
     button.textContent = playing ? '⏸' : '▶';
@@ -154,8 +138,9 @@ function updateListPlaybackState() {
   document.querySelectorAll('article.is-playing').forEach((article) => {
     article.classList.remove('is-playing');
   });
-  if (song) {
-    const currentArticle = list.querySelector(`[data-index="${currentIndex}"]`);
+  // The playing track may not be in the list currently on screen — that's fine.
+  if (playingId != null) {
+    const currentArticle = list.querySelector(`article[data-song-id="${playingId}"]`);
     currentArticle?.classList.add('is-playing');
   }
 }
@@ -178,7 +163,7 @@ function updatePlayer() {
 
   const image = song.image;
   player.setMetadata({
-    title: songLabel(song, activeList),
+    title: songLabel(song, playback.listId),
     artist: text(song.artist),
     coverUrl: image?.url || null,
     coverAlt: image?.alt || `${text(song.title)} cover`,
@@ -186,11 +171,10 @@ function updatePlayer() {
   });
 }
 
-async function playIndex(index) {
-  if (!queue[index] || !playable(queue[index])) return;
+async function playSong(song, listId) {
+  if (!song || !playable(song)) return;
 
-  const song = queue[index];
-  currentIndex = index;
+  playback = { listId, song };
 
   player.load(song.media.audio_url);
   updatePlayer();
@@ -204,52 +188,70 @@ async function playIndex(index) {
   updatePlayer();
 }
 
-function nextIndex(direction) {
-  if (!visibleIndices.length) return -1;
+// The ordered, playable songs that next/prev step through. Anchored to the
+// list the current track came from; falls back to the displayed list when
+// nothing is playing yet. Honors the search filter only while that list is on screen.
+function navList() {
+  const listId = playback.listId ?? activeList;
+  const songs =
+    listId === activeList
+      ? visibleIndices.map((i) => queue[i])
+      : datasets[listId].songs;
+  return { listId, songs: songs.filter(playable) };
+}
+
+function pickNext(songs, direction) {
+  if (!songs.length) return null;
 
   if (player.shuffle && direction > 0) {
-    const pick = Math.floor(Math.random() * visibleIndices.length);
-    return visibleIndices[pick];
+    return songs[Math.floor(Math.random() * songs.length)];
   }
 
-  const currentPos = visibleIndices.indexOf(currentIndex);
-  const startPos = currentPos < 0 ? (direction > 0 ? -1 : 0) : currentPos;
-  const nextPos = (startPos + direction + visibleIndices.length) % visibleIndices.length;
-  return visibleIndices[nextPos];
+  const pos = playback.song ? songs.indexOf(playback.song) : -1;
+  const start = pos < 0 ? (direction > 0 ? -1 : 0) : pos;
+  return songs[(start + direction + songs.length) % songs.length];
 }
 
 function playNext() {
-  playIndex(nextIndex(1));
+  const { listId, songs } = navList();
+  const song = pickNext(songs, 1);
+  if (song) playSong(song, listId);
 }
 
 function playPrevious() {
-  playIndex(nextIndex(-1));
+  const { listId, songs } = navList();
+  const song = pickNext(songs, -1);
+  if (song) playSong(song, listId);
 }
 
-function togglePlay(index = currentIndex) {
-  if (index === currentIndex && player.hasSource) {
+function togglePlay(song = null, listId = activeList) {
+  const target = song ?? playback.song;
+
+  // Re-pressing the current track just toggles pause/resume.
+  if (target && target === playback.song && player.hasSource) {
     if (player.paused) player.play();
     else player.pause();
     return;
   }
 
-  playIndex(index >= 0 ? index : nextIndex(1));
+  if (target) playSong(target, song ? listId : playback.listId);
+  else playNext();
 }
 
-function renderSong(song, index) {
+function renderSong(song) {
   const fragment = template.content.cloneNode(true);
   const li = fragment.querySelector('li');
   const article = fragment.querySelector('article');
   const heading = fragment.querySelector('h2');
   const artist = fragment.querySelector('.artist');
   const image = fragment.querySelector('img');
-  const playSong = fragment.querySelector('.play-song');
+  const playButton = fragment.querySelector('.play-song');
   const addMySongButton = fragment.querySelector('.add-my-song');
   const ytLink = fragment.querySelector('.youtube-link');
   const funfact = fragment.querySelector('.funfact');
   const credits = fragment.querySelector('.credits');
 
-  article.dataset.index = index;
+  if (song.id) article.dataset.songId = song.id;
   if (activeList === 'top100') {
     li.value = song.rank;
   } else {
@@ -257,12 +259,6 @@ function renderSong(song, index) {
   }
 
   heading.textContent = songHeading(song, activeList);
-  if (activeList === 'top400' && song.in_top100 && song.rank) {
-    const badge = document.createElement('span');
-    badge.className = 'chart-badge';
-    badge.textContent = `Chart #${song.rank}`;
-    heading.append(' ', badge);
-  }
 
   artist.textContent = text(song.artist);
 
@@ -274,39 +270,33 @@ function renderSong(song, index) {
   }
 
   if (playable(song)) {
-    playSong.dataset.index = index;
-    playSong.addEventListener('click', (event) => {
+    if (song.id) playButton.dataset.songId = song.id;
+    playButton.addEventListener('click', (event) => {
       event.stopPropagation();
-      togglePlay(index);
+      togglePlay(song, activeList);
     });
     article.addEventListener('click', (event) => {
       if (event.target.closest('a, button')) return;
-      togglePlay(index);
+      togglePlay(song, activeList);
     });
     article.classList.add('playable');
   } else {
-    playSong.disabled = true;
-    playSong.setAttribute('aria-label', 'No preview');
+    playButton.disabled = true;
+    playButton.setAttribute('aria-label', 'No preview');
   }
 
   if (song.id) {
     addMySongButton.dataset.songId = song.id;
     addMySongButton.addEventListener('click', (event) => {
       event.stopPropagation();
-      addMySong(song, activeList);
+      toggleMySong(song, activeList);
     });
   } else {
     addMySongButton.remove();
   }
 
-  const yt = youtubeUrl(song);
-  if (yt) {
-    ytLink.href = yt;
-    ytLink.hidden = false;
-    ytLink.addEventListener('click', (event) => event.stopPropagation());
-  } else {
-    ytLink.remove();
-  }
+  // Full tracks live in the Radio4000 player; no per-card link.
+  ytLink.remove();
 
   const funfactText = text(song.funfact);
   const creditsText = text(song.credits);
@@ -321,6 +311,7 @@ function renderSong(song, index) {
 function renderLetterHeader(letter) {
   const li = document.createElement('li');
   li.className = 'letter-header';
+  li.dataset.letter = letter;
   const divider = document.createElement('div');
   divider.className = 'letter-divider';
   divider.textContent = letter;
@@ -328,9 +319,80 @@ function renderLetterHeader(letter) {
   return li;
 }
 
+function letterStickyTop() {
+  const rootFontSize = Number.parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+  return LETTER_STICKY_TOP_REM * rootFontSize;
+}
+
+function findLetterHeader(letter) {
+  return [...list.querySelectorAll('.letter-header')]
+    .find((header) => header.dataset.letter === letter) ?? null;
+}
+
+function setActiveLetter(active) {
+  letterRail.querySelectorAll('.letter-rail-btn').forEach((button) => {
+    const isActive = button.dataset.letter === active;
+    button.classList.toggle('is-active', isActive);
+    button.setAttribute('aria-current', isActive ? 'true' : 'false');
+  });
+}
+
+// Scroll to the header's layout position instead of scrollIntoView(); sticky
+// elements can otherwise produce odd no-op/partial jumps when scrolling upward.
+function scrollToLetter(letter) {
+  const header = findLetterHeader(letter);
+  if (!header) return;
+
+  setActiveLetter(letter);
+  window.scrollTo({
+    top: Math.max(0, header.offsetTop - letterStickyTop()),
+    behavior: 'smooth',
+  });
+}
+
+// Highlight the rail letter for the group currently under the sticky line.
+function updateActiveLetter() {
+  if (letterRail.hidden) return;
+  const threshold = letterStickyTop() + 1;
+  let active = letterGroups[0] ?? null;
+  for (const header of list.querySelectorAll('.letter-header')) {
+    if (header.getBoundingClientRect().top <= threshold) active = header.dataset.letter;
+    else break;
+  }
+  setActiveLetter(active);
+}
+
+function renderLetterRail() {
+  const show = activeList === 'top400' && !isCanvasView() && letterGroups.length > 0;
+  letterRail.hidden = !show;
+  if (!show) {
+    letterRail.replaceChildren();
+    return;
+  }
+
+  letterRail.replaceChildren(
+    ...letterGroups.map((letter) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'letter-rail-btn';
+      button.dataset.letter = letter;
+      button.textContent = letter;
+      button.setAttribute('aria-label', `Jump to ${letter}`);
+      button.setAttribute('aria-current', 'false');
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        scrollToLetter(letter);
+      });
+      return button;
+    }),
+  );
+  updateActiveLetter();
+}
+
 function renderList() {
   rebuildVisibleIndices();
   const nodes = [];
+  const letters = [];
   let lastLetter = null;
 
   for (const index of visibleIndices) {
@@ -339,13 +401,16 @@ function renderList() {
       const letter = songGroupLetter(song);
       if (letter !== lastLetter) {
         nodes.push(renderLetterHeader(letter));
+        letters.push(letter);
         lastLetter = letter;
       }
     }
-    nodes.push(renderSong(song, index));
+    nodes.push(renderSong(song));
   }
 
   list.replaceChildren(...nodes);
+  letterGroups = letters;
+  renderLetterRail();
   updateSummary();
   updatePlayer();
   updateMySongButtons();
@@ -362,8 +427,7 @@ function setList(listId) {
   document.body.dataset.list = listId;
   localStorage.setItem('top100-list', listId);
   queue = datasets[listId].songs;
-  currentIndex = -1;
-  player.clear();
+  // Leave playback alone — the current track keeps playing across list switches.
   filterQuery = '';
   searchInput.value = '';
 
@@ -395,11 +459,12 @@ function setView(view) {
   });
 
   document.querySelector('#canvas-view').hidden = view !== 'canvas';
+  renderLetterRail();
 
   if (view === 'canvas') {
     if (!canvasView && queue.length) {
       canvasView = initCanvas(document.querySelector('#field'), queue, {
-        onSelect: (song) => playIndex(queue.indexOf(song)),
+        onSelect: (song) => playSong(song, activeList),
         isActive: isCanvasView,
       });
     }
@@ -427,6 +492,14 @@ async function init() {
       loadDataset('top100.json', 'top100'),
       loadDataset('top400.json', 'top400'),
     ]);
+
+    const urlById = new Map();
+    for (const { songs } of Object.values(datasets)) {
+      for (const song of songs) {
+        if (song.id && song.youtube?.url) urlById.set(song.id, song.youtube.url);
+      }
+    }
+    backfillMySongUrls((id) => urlById.get(id) ?? null);
 
     const savedList = localStorage.getItem('top100-list');
     setList(savedList === 'top400' ? 'top400' : 'top100');
@@ -457,6 +530,20 @@ player.addEventListener('pause', updateListPlaybackState);
 player.addEventListener('ended', playNext);
 
 document.addEventListener(CHANGE_EVENT, updateMySongButtons);
+
+let activeLetterPending = false;
+window.addEventListener(
+  'scroll',
+  () => {
+    if (letterRail.hidden || activeLetterPending) return;
+    activeLetterPending = true;
+    requestAnimationFrame(() => {
+      activeLetterPending = false;
+      updateActiveLetter();
+    });
+  },
+  { passive: true },
+);
 
 document.addEventListener('keydown', (event) => {
   if (event.target.closest('input, textarea, select, button, a')) return;

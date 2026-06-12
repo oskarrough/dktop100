@@ -15,8 +15,8 @@ export class Top100Player extends HTMLElement {
       <div class="player-screen">
         <img class="player-cover" alt="" hidden>
         <div class="player-meta" aria-live="polite">
-          <div class="player-title">Pick a song</div>
-          <div class="player-artist">30 sec previews · DR</div>
+          <div class="player-title">Vælg en sang</div>
+          <div class="player-artist">Smagsprøver · DR</div>
         </div>
         <a class="player-youtube" href="#" target="_blank" rel="noopener noreferrer" hidden>▷ YouTube</a>
       </div>
@@ -163,8 +163,8 @@ export class Top100Player extends HTMLElement {
   }
 
   resetDisplay() {
-    this.#title.textContent = 'Pick a song';
-    this.#artist.textContent = '30 second previews from DR';
+    this.#title.textContent = 'Vælg en sang';
+    this.#artist.textContent = 'Smagsprøver · DR';
     this.#cover.hidden = true;
     this.#cover.removeAttribute('src');
     this.#youtubeLink.hidden = true;
