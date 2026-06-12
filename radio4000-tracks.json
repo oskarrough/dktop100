@@ -1,506 +1,506 @@
 {
-  "source": "top100.json",
-  "count": 100,
-  "tracks": [
-    {
-      "title": "#1 Alberte - Lyse nætter",
-      "url": "https://www.youtube.com/watch?v=B4NXA_69GVo",
-      "ytid": "B4NXA_69GVo"
-    },
-    {
-      "title": "#2 Gasolin' - Kvinde min",
-      "url": "https://www.youtube.com/watch?v=qMuQNFef32c",
-      "ytid": "qMuQNFef32c"
-    },
-    {
-      "title": "#3 Kim Larsen & Bellami - Pianomand",
-      "url": "https://www.youtube.com/watch?v=XaysWKRT9zY",
-      "ytid": "XaysWKRT9zY"
-    },
-    {
-      "title": "#4 Kim Larsen & Bellami - Om lidt",
-      "url": "https://www.youtube.com/watch?v=zubyCLy7u6Q",
-      "ytid": "zubyCLy7u6Q"
-    },
-    {
-      "title": "#5 Anne Linnet - Forårsdag",
-      "url": "https://www.youtube.com/watch?v=DnspQ12-qyc",
-      "ytid": "DnspQ12-qyc"
-    },
-    {
-      "title": "#6 Andreas Odbjerg - I morgen er der også en dag",
-      "url": "https://www.youtube.com/watch?v=9slH1ejBHDU",
-      "ytid": "9slH1ejBHDU"
-    },
-    {
-      "title": "#7 Kim Larsen & Bellami - De smukke unge mennesker",
-      "url": "https://www.youtube.com/watch?v=Bb81XO53aQc",
-      "ytid": "Bb81XO53aQc"
-    },
-    {
-      "title": "#8 Natasja - Gi' mig danmark tilbage",
-      "url": "https://www.youtube.com/watch?v=NONnUBKcNZI",
-      "ytid": "NONnUBKcNZI"
-    },
-    {
-      "title": "#9 Lars Lilholt Band - Kald det kærlighed",
-      "url": "https://www.youtube.com/watch?v=3DLUVPZqV58",
-      "ytid": "3DLUVPZqV58"
-    },
-    {
-      "title": "#10 Brdr. Olsen - Smuk som et stjerneskud",
-      "url": "https://www.youtube.com/watch?v=OdGqv_w3zxA",
-      "ytid": "OdGqv_w3zxA"
-    },
-    {
-      "title": "#11 Thomas Helmig - Malaga",
-      "url": "https://www.youtube.com/watch?v=V324KhfzQ7M",
-      "ytid": "V324KhfzQ7M"
-    },
-    {
-      "title": "#12 C.V. Jørgensen - Costa del Sol (En inciterende flamenco)",
-      "url": "https://www.youtube.com/watch?v=gRqYlyKzan4",
-      "ytid": "gRqYlyKzan4"
-    },
-    {
-      "title": "#13 Dizzy Mizz Lizzy - Silverflame",
-      "url": "https://www.youtube.com/watch?v=B-yd1hBRvos",
-      "ytid": "B-yd1hBRvos"
-    },
-    {
-      "title": "#14 Sort Sol - Let Your Fingers Do The Walking",
-      "url": "https://www.youtube.com/watch?v=cU5wAczQRB8",
-      "ytid": "cU5wAczQRB8"
-    },
-    {
-      "title": "#15 Benny Andersen & Povl Dissing - Svantes lykkelige dag",
-      "url": "https://www.youtube.com/watch?v=GhrPgbIHVAQ",
-      "ytid": "GhrPgbIHVAQ"
-    },
-    {
-      "title": "#16 D.A.D - Sleeping My Day Away",
-      "url": "https://www.youtube.com/watch?v=ASfVIFUw20Y",
-      "ytid": "ASfVIFUw20Y"
-    },
-    {
-      "title": "#17 Grethe & Jørgen Ingmann - Dansevise",
-      "url": "https://www.youtube.com/watch?v=Gid2IrKa2R8",
-      "ytid": "Gid2IrKa2R8"
-    },
-    {
-      "title": "#18 Volbeat Feat. Johan Olsen - For evigt",
-      "url": "https://www.youtube.com/watch?v=TAhyZegVkhw",
-      "ytid": "TAhyZegVkhw"
-    },
-    {
-      "title": "#19 Kim Larsen - Midt om natten",
-      "url": "https://www.youtube.com/watch?v=_rBeni3L7Gg",
-      "ytid": "_rBeni3L7Gg"
-    },
-    {
-      "title": "#20 Anne Linnet - Tusind stykker",
-      "url": "https://www.youtube.com/watch?v=uKePOqtRA20",
-      "ytid": "uKePOqtRA20"
-    },
-    {
-      "title": "#21 Anne Linnet - Barndommens gade",
-      "url": "https://www.youtube.com/watch?v=bsjvnDcocJc",
-      "ytid": "bsjvnDcocJc"
-    },
-    {
-      "title": "#22 Lukas Graham - 7 Years",
-      "url": "https://www.youtube.com/watch?v=LHCob76kigA",
-      "ytid": "LHCob76kigA"
-    },
-    {
-      "title": "#23 TV-2 - Bag duggede ruder",
-      "url": "https://www.youtube.com/watch?v=Vjj7RFez3ZI",
-      "ytid": "Vjj7RFez3ZI"
-    },
-    {
-      "title": "#24 Shu-Bi-Dua - Danmark",
-      "url": "https://www.youtube.com/watch?v=xvq1__JFtrI",
-      "ytid": "xvq1__JFtrI"
-    },
-    {
-      "title": "#25 Bent Fabricius-Bjerre - Matador",
-      "url": "https://www.youtube.com/watch?v=41rpXrTujn0",
-      "ytid": "41rpXrTujn0"
-    },
-    {
-      "title": "#26 Poul Schierbeck. Tekst: H. C. Andersen - I Danmark er jeg født",
-      "url": "https://www.youtube.com/watch?v=nnguV67rdi4",
-      "ytid": "nnguV67rdi4"
-    },
-    {
-      "title": "#27 APHACA - En drøm om et menneske",
-      "url": "https://www.youtube.com/watch?v=CTfuFLJ_ULU",
-      "ytid": "CTfuFLJ_ULU"
-    },
-    {
-      "title": "#28 Shu-Bi-Dua - Den røde tråd",
-      "url": "https://www.youtube.com/watch?v=utRz8CXRNmk",
-      "ytid": "utRz8CXRNmk"
-    },
-    {
-      "title": "#29 Danseorkestret - Kom tilbage nu",
-      "url": "https://www.youtube.com/watch?v=JMwOu3WOTUk",
-      "ytid": "JMwOu3WOTUk"
-    },
-    {
-      "title": "#30 Gasolin' - Rabalderstræde",
-      "url": "https://www.youtube.com/watch?v=iwMEILToxwo",
-      "ytid": "iwMEILToxwo"
-    },
-    {
-      "title": "#31 Tommy Seebach Band - Under stjernerne på himlen",
-      "url": "https://www.youtube.com/watch?v=EB5YJlVcI-s",
-      "ytid": "EB5YJlVcI-s"
-    },
-    {
-      "title": "#32 Poul Krebs - Sådan nogen som os",
-      "url": "https://www.youtube.com/watch?v=mNIdDxpK9bU",
-      "ytid": "mNIdDxpK9bU"
-    },
-    {
-      "title": "#33 Egil Harder. Tekst: Kaj Munk - Den blå anemone",
-      "url": "https://www.youtube.com/watch?v=31gjxxAW5qs",
-      "ytid": "31gjxxAW5qs"
-    },
-    {
-      "title": "#34 Tekst: B. S. Ingemann - Dejlig er jorden",
-      "url": "https://www.youtube.com/watch?v=nzwwbs-CG4M",
-      "ytid": "nzwwbs-CG4M"
-    },
-    {
-      "title": "#35 Liva Weel - Man binder os på mund og hånd",
-      "url": "https://www.youtube.com/watch?v=gUfArSKBC3c",
-      "ytid": "gUfArSKBC3c"
-    },
-    {
-      "title": "#36 TV-2 - Kys det nu (det satans liv)",
-      "url": "https://www.youtube.com/watch?v=j6D7SMFCeYc",
-      "ytid": "j6D7SMFCeYc"
-    },
-    {
-      "title": "#37 Dodo & The Dodo's - Vågner i natten",
-      "url": "https://www.youtube.com/watch?v=rO39Z-9wN5A",
-      "ytid": "rO39Z-9wN5A"
-    },
-    {
-      "title": "#38 Ulige Numre - Frit land",
-      "url": "https://www.youtube.com/watch?v=MMsQrtOinKM",
-      "ytid": "MMsQrtOinKM"
-    },
-    {
-      "title": "#39 Aqua - Barbie Girl",
-      "url": "https://www.youtube.com/watch?v=ZyhrYis509A",
-      "ytid": "ZyhrYis509A"
-    },
-    {
-      "title": "#40 The Minds Of 99 - Hurtige hænder (Acoustic Version - Moyo Live P3)",
-      "url": "https://www.youtube.com/watch?v=mdV1bi3Gne4",
-      "ytid": "mdV1bi3Gne4"
-    },
-    {
-      "title": "#41 Benjamin Hav Feat. Lukas Graham - Du ligner din mor",
-      "url": "https://www.youtube.com/watch?v=ktYB3hF3xi0",
-      "ytid": "ktYB3hF3xi0"
-    },
-    {
-      "title": "#42 Lars H.U.G. - Elsker dig for evigt",
-      "url": "https://www.youtube.com/watch?v=9qkIcrU4VbY",
-      "ytid": "9qkIcrU4VbY"
-    },
-    {
-      "title": "#43 TV-2 - De første kærester på månen",
-      "url": "https://www.youtube.com/watch?v=UxP58lcgvvc",
-      "ytid": "UxP58lcgvvc"
-    },
-    {
-      "title": "#44 Lis Sørensen - Verden er i farver",
-      "url": "https://www.youtube.com/watch?v=XPed-u0vdp4",
-      "ytid": "XPed-u0vdp4"
-    },
-    {
-      "title": "#45 Birthe Kjær - Vi maler byen rød",
-      "url": "https://www.youtube.com/watch?v=Z58HzQ8baks",
-      "ytid": "Z58HzQ8baks"
-    },
-    {
-      "title": "#46 Per Warming. Tekst: Jens Rosendal - Forelskelsessang (Du kom med alt det der var dig)",
-      "url": "https://www.youtube.com/watch?v=FSFaDf5ssPk",
-      "ytid": "FSFaDf5ssPk"
-    },
-    {
-      "title": "#47 C.V. Jørgensen - Sæsonen er slut",
-      "url": "https://www.youtube.com/watch?v=FQnifPUm7Kk",
-      "ytid": "FQnifPUm7Kk"
-    },
-    {
-      "title": "#48 Michael Falch - I et land uden høje bjerge",
-      "url": "https://www.youtube.com/watch?v=TeqdJXspEeM",
-      "ytid": "TeqdJXspEeM"
-    },
-    {
-      "title": "#49 TV-2 - Hele verden fra forstanden",
-      "url": "https://www.youtube.com/watch?v=BJkb0Mbrdns",
-      "ytid": "BJkb0Mbrdns"
-    },
-    {
-      "title": "#50 Love Shop - En nat bliver det sommer",
-      "url": "https://www.youtube.com/watch?v=0XPFOj-8F60",
-      "ytid": "0XPFOj-8F60"
-    },
-    {
-      "title": "#51 Oluf Ring. Tekst: Jakob Knudsen - Se, nu stiger solen af havets skød",
-      "url": "https://www.youtube.com/watch?v=iVv4TJPV2C8",
-      "ytid": "iVv4TJPV2C8"
-    },
-    {
-      "title": "#52 Sebastian Feat. Lis Sørensen - Stille før storm",
-      "url": "https://www.youtube.com/watch?v=z_vrgIyqyHQ",
-      "ytid": "z_vrgIyqyHQ"
-    },
-    {
-      "title": "#53 Carl Nielsen. Tekst: Harald Bergstedt - Solen er så rød mor",
-      "url": "https://www.youtube.com/watch?v=yaQQp8rHyp4",
-      "ytid": "yaQQp8rHyp4"
-    },
-    {
-      "title": "#54 Nik & Jay - En dag tilbage",
-      "url": "https://www.youtube.com/watch?v=_JgbyISzmjQ",
-      "ytid": "_JgbyISzmjQ"
-    },
-    {
-      "title": "#55 Gnags - Vilde kaniner",
-      "url": "https://www.youtube.com/watch?v=-fk8fXTiAAo",
-      "ytid": "-fk8fXTiAAo"
-    },
-    {
-      "title": "#56 Kashmir - Rocket Brothers",
-      "url": "https://www.youtube.com/watch?v=rkQsoyKoiWg",
-      "ytid": "rkQsoyKoiWg"
-    },
-    {
-      "title": "#57 Carl Emil Petersen - Amager forbrænding",
-      "url": "https://www.youtube.com/watch?v=QjuckJrsZig",
-      "ytid": "QjuckJrsZig"
-    },
-    {
-      "title": "#58 Sebastian - Du er ikke alene",
-      "url": "https://www.youtube.com/watch?v=WUZuuvnycUM",
-      "ytid": "WUZuuvnycUM"
-    },
-    {
-      "title": "#59 Gnags - Danmark",
-      "url": "https://www.youtube.com/watch?v=OOH5XdAQPfo",
-      "ytid": "OOH5XdAQPfo"
-    },
-    {
-      "title": "#60 The Minds Of 99 - Alle skuffer over tid",
-      "url": "https://www.youtube.com/watch?v=XKzKZ6iYIYE",
-      "ytid": "XKzKZ6iYIYE"
-    },
-    {
-      "title": "#61 John Mogensen - Så længe jeg lever",
-      "url": "https://www.youtube.com/watch?v=Bctlvz-qpKE",
-      "ytid": "Bctlvz-qpKE"
-    },
-    {
-      "title": "#62 Medina - Kun for mig",
-      "url": "https://www.youtube.com/watch?v=Pmr-EFuIkP8",
-      "ytid": "Pmr-EFuIkP8"
-    },
-    {
-      "title": "#63 Saybia - The Second You Sleep",
-      "url": "https://www.youtube.com/watch?v=i9oyEHUqAhg",
-      "ytid": "i9oyEHUqAhg"
-    },
-    {
-      "title": "#64 Tobias Rahim & Andreas Odbjerg - STOR MAND",
-      "url": "https://www.youtube.com/watch?v=HfmWPfqyYyY",
-      "ytid": "HfmWPfqyYyY"
-    },
-    {
-      "title": "#65 Gasolin' - Hva' gør vi nu lille du",
-      "url": "https://www.youtube.com/watch?v=gQ5ZWxsjDKQ",
-      "ytid": "gQ5ZWxsjDKQ"
-    },
-    {
-      "title": "#66 Nik & Jay - Novembervej",
-      "url": "https://www.youtube.com/watch?v=TtNRjzHb6s0",
-      "ytid": "TtNRjzHb6s0"
-    },
-    {
-      "title": "#67 C. C. Hoffmann. Tekst: N. F. S. Grundtvig - Hil dig, Frelser og Forsoner",
-      "url": "https://www.youtube.com/watch?v=Gp72iytsIkI",
-      "ytid": "Gp72iytsIkI"
-    },
-    {
-      "title": "#68 Nik & Jay - Hot",
-      "url": "https://www.youtube.com/watch?v=YPV8LqSRSDg",
-      "ytid": "YPV8LqSRSDg"
-    },
-    {
-      "title": "#69 Sebastian Feat. Lis Sørensen - Fuld af nattens stjerner",
-      "url": "https://www.youtube.com/watch?v=-xy8J3UmuU0",
-      "ytid": "-xy8J3UmuU0"
-    },
-    {
-      "title": "#70 Rasmus Seebach - Øde ø",
-      "url": "https://www.youtube.com/watch?v=iosIF6_3XSY",
-      "ytid": "iosIF6_3XSY"
-    },
-    {
-      "title": "#71 The Minds Of 99 - Under din sne",
-      "url": "https://www.youtube.com/watch?v=9a3LILb-yQE",
-      "ytid": "9a3LILb-yQE"
-    },
-    {
-      "title": "#72 Nephew - Igen og igen og",
-      "url": "https://www.youtube.com/watch?v=SMaVOcLHygE",
-      "ytid": "SMaVOcLHygE"
-    },
-    {
-      "title": "#73 Shu-Bi-Dua - Hvalborg",
-      "url": "https://www.youtube.com/watch?v=jCPiBWSVBE4",
-      "ytid": "jCPiBWSVBE4"
-    },
-    {
-      "title": "#74 Bamses Venner - I en lille båd der gynger",
-      "url": "https://www.youtube.com/watch?v=kcTiYW6mQ50",
-      "ytid": "kcTiYW6mQ50"
-    },
-    {
-      "title": "#75 Oluf Ring. Tekst: Thøger Larsen - Danmark, nu blunder",
-      "url": "https://www.youtube.com/watch?v=Jrtl1PlrR0E",
-      "ytid": "Jrtl1PlrR0E"
-    },
-    {
-      "title": "#76 Nanna - Buster",
-      "url": "https://www.youtube.com/watch?v=CTyB89fOqhE",
-      "ytid": "CTyB89fOqhE"
-    },
-    {
-      "title": "#77 Gnags - Mr. Swing King",
-      "url": "https://www.youtube.com/watch?v=1cjX37BKvDA",
-      "ytid": "1cjX37BKvDA"
-    },
-    {
-      "title": "#78 Johnny Madsen - Udenfor sæsonen",
-      "url": "https://www.youtube.com/watch?v=x8MMudQqFkE",
-      "ytid": "x8MMudQqFkE"
-    },
-    {
-      "title": "#79 Nephew Feat. L.O.C. - Hospital (Live Roskilde Festival 2007)",
-      "url": "https://www.youtube.com/watch?v=LItSnFlKA5k",
-      "ytid": "LItSnFlKA5k"
-    },
-    {
-      "title": "#80 Agnes Obel - Riverside",
-      "url": "https://www.youtube.com/watch?v=vjncyiuwwXQ",
-      "ytid": "vjncyiuwwXQ"
-    },
-    {
-      "title": "#81 Thomas Helmig - Stupid Man",
-      "url": "https://www.youtube.com/watch?v=q9Wt4MAPv0A",
-      "ytid": "q9Wt4MAPv0A"
-    },
-    {
-      "title": "#82 Back To Back - Jonathan",
-      "url": "https://www.youtube.com/watch?v=zLbo5rUckCg",
-      "ytid": "zLbo5rUckCg"
-    },
-    {
-      "title": "#83 Kesi Feat. Hans Philip - Blå himmel",
-      "url": "https://www.youtube.com/watch?v=4DP2jNfRGzE",
-      "ytid": "4DP2jNfRGzE"
-    },
-    {
-      "title": "#84 Rugsted & Kreutzfeldt - Jeg ved det godt",
-      "url": "https://www.youtube.com/watch?v=uVyLBAMyLJM",
-      "ytid": "uVyLBAMyLJM"
-    },
-    {
-      "title": "#85 Carpark North - Transparent & Glasslike",
-      "url": "https://www.youtube.com/watch?v=RCHz-U5UuNQ",
-      "ytid": "RCHz-U5UuNQ"
-    },
-    {
-      "title": "#86 Safri Duo - Played-A-Live (The Bongo Song)",
-      "url": "https://www.youtube.com/watch?v=IksRDCMYnn8",
-      "ytid": "IksRDCMYnn8"
-    },
-    {
-      "title": "#87 Scarlet Pleasure - What A Life",
-      "url": "https://www.youtube.com/watch?v=FjVVqpZw-wg",
-      "ytid": "FjVVqpZw-wg"
-    },
-    {
-      "title": "#88 Mew - Comforting Sounds",
-      "url": "https://www.youtube.com/watch?v=AtckSsQ_Au0",
-      "ytid": "AtckSsQ_Au0"
-    },
-    {
-      "title": "#89 Shit & Chanel - Smuk og dejlig",
-      "url": "https://www.youtube.com/watch?v=V6qALCFpVuU",
-      "ytid": "V6qALCFpVuU"
-    },
-    {
-      "title": "#90 John Mogensen - Der er noget galt i Danmark",
-      "url": "https://www.youtube.com/watch?v=qq9hETqTm-s",
-      "ytid": "qq9hETqTm-s"
-    },
-    {
-      "title": "#91 C.V. Jørgensen - Bellevue",
-      "url": "https://www.youtube.com/watch?v=BwVILChrNbA",
-      "ytid": "BwVILChrNbA"
-    },
-    {
-      "title": "#92 Danser med Drenge - Hvor længe vil du ydmyge dig?",
-      "url": "https://www.youtube.com/watch?v=0fKOQxbH-08",
-      "ytid": "0fKOQxbH-08"
-    },
-    {
-      "title": "#93 Søs Fenger, Thomas Helmig, Sanne Salomonsen & Anne Linnet - Den jeg elsker, elsker jeg",
-      "url": "https://www.youtube.com/watch?v=3eSprK01vps",
-      "ytid": "3eSprK01vps"
-    },
-    {
-      "title": "#94 Marie Key - Uden forsvar",
-      "url": "https://www.youtube.com/watch?v=7uyG1hGNDKs",
-      "ytid": "7uyG1hGNDKs"
-    },
-    {
-      "title": "#95 Guldimund & Saveus - Vil du noget?",
-      "url": "https://www.youtube.com/watch?v=3nNUyYMuzTo",
-      "ytid": "3nNUyYMuzTo"
-    },
-    {
-      "title": "#96 Lars H.U.G. - Natsværmer",
-      "url": "https://www.youtube.com/watch?v=vRGDqO1Ze8M",
-      "ytid": "vRGDqO1Ze8M"
-    },
-    {
-      "title": "#97 Clausen & Petersen feat. Eva Madsen - Mormors kolonihavehus",
-      "url": "https://www.youtube.com/watch?v=rG0RdkmPysk",
-      "ytid": "rG0RdkmPysk"
-    },
-    {
-      "title": "#98 Gilli - Knokler hårdt",
-      "url": "https://www.youtube.com/watch?v=RRLLPavaSwo",
-      "ytid": "RRLLPavaSwo"
-    },
-    {
-      "title": "#99 Bamses Venner - Jeg elsker kun dig",
-      "url": "https://www.youtube.com/watch?v=KvASdgGNlrU",
-      "ytid": "KvASdgGNlrU"
-    },
-    {
-      "title": "#100 One Two - Den bedste tid",
-      "url": "https://www.youtube.com/watch?v=oNAhuyZTZb8",
-      "ytid": "oNAhuyZTZb8"
-    }
-  ]
+	"source": "top100.json",
+	"count": 100,
+	"tracks": [
+		{
+			"title": "#1 Alberte - Lyse nætter",
+			"url": "https://www.youtube.com/watch?v=B4NXA_69GVo",
+			"ytid": "B4NXA_69GVo"
+		},
+		{
+			"title": "#2 Gasolin' - Kvinde min",
+			"url": "https://www.youtube.com/watch?v=qMuQNFef32c",
+			"ytid": "qMuQNFef32c"
+		},
+		{
+			"title": "#3 Kim Larsen & Bellami - Pianomand",
+			"url": "https://www.youtube.com/watch?v=XaysWKRT9zY",
+			"ytid": "XaysWKRT9zY"
+		},
+		{
+			"title": "#4 Kim Larsen & Bellami - Om lidt",
+			"url": "https://www.youtube.com/watch?v=zubyCLy7u6Q",
+			"ytid": "zubyCLy7u6Q"
+		},
+		{
+			"title": "#5 Anne Linnet - Forårsdag",
+			"url": "https://www.youtube.com/watch?v=DnspQ12-qyc",
+			"ytid": "DnspQ12-qyc"
+		},
+		{
+			"title": "#6 Andreas Odbjerg - I morgen er der også en dag",
+			"url": "https://www.youtube.com/watch?v=9slH1ejBHDU",
+			"ytid": "9slH1ejBHDU"
+		},
+		{
+			"title": "#7 Kim Larsen & Bellami - De smukke unge mennesker",
+			"url": "https://www.youtube.com/watch?v=Bb81XO53aQc",
+			"ytid": "Bb81XO53aQc"
+		},
+		{
+			"title": "#8 Natasja - Gi' mig danmark tilbage",
+			"url": "https://www.youtube.com/watch?v=NONnUBKcNZI",
+			"ytid": "NONnUBKcNZI"
+		},
+		{
+			"title": "#9 Lars Lilholt Band - Kald det kærlighed",
+			"url": "https://www.youtube.com/watch?v=3DLUVPZqV58",
+			"ytid": "3DLUVPZqV58"
+		},
+		{
+			"title": "#10 Brdr. Olsen - Smuk som et stjerneskud",
+			"url": "https://www.youtube.com/watch?v=OdGqv_w3zxA",
+			"ytid": "OdGqv_w3zxA"
+		},
+		{
+			"title": "#11 Thomas Helmig - Malaga",
+			"url": "https://www.youtube.com/watch?v=V324KhfzQ7M",
+			"ytid": "V324KhfzQ7M"
+		},
+		{
+			"title": "#12 C.V. Jørgensen - Costa del Sol (En inciterende flamenco)",
+			"url": "https://www.youtube.com/watch?v=gRqYlyKzan4",
+			"ytid": "gRqYlyKzan4"
+		},
+		{
+			"title": "#13 Dizzy Mizz Lizzy - Silverflame",
+			"url": "https://www.youtube.com/watch?v=B-yd1hBRvos",
+			"ytid": "B-yd1hBRvos"
+		},
+		{
+			"title": "#14 Sort Sol - Let Your Fingers Do The Walking",
+			"url": "https://www.youtube.com/watch?v=cU5wAczQRB8",
+			"ytid": "cU5wAczQRB8"
+		},
+		{
+			"title": "#15 Benny Andersen & Povl Dissing - Svantes lykkelige dag",
+			"url": "https://www.youtube.com/watch?v=GhrPgbIHVAQ",
+			"ytid": "GhrPgbIHVAQ"
+		},
+		{
+			"title": "#16 D.A.D - Sleeping My Day Away",
+			"url": "https://www.youtube.com/watch?v=ASfVIFUw20Y",
+			"ytid": "ASfVIFUw20Y"
+		},
+		{
+			"title": "#17 Grethe & Jørgen Ingmann - Dansevise",
+			"url": "https://www.youtube.com/watch?v=Gid2IrKa2R8",
+			"ytid": "Gid2IrKa2R8"
+		},
+		{
+			"title": "#18 Volbeat Feat. Johan Olsen - For evigt",
+			"url": "https://www.youtube.com/watch?v=TAhyZegVkhw",
+			"ytid": "TAhyZegVkhw"
+		},
+		{
+			"title": "#19 Kim Larsen - Midt om natten",
+			"url": "https://www.youtube.com/watch?v=_rBeni3L7Gg",
+			"ytid": "_rBeni3L7Gg"
+		},
+		{
+			"title": "#20 Anne Linnet - Tusind stykker",
+			"url": "https://www.youtube.com/watch?v=uKePOqtRA20",
+			"ytid": "uKePOqtRA20"
+		},
+		{
+			"title": "#21 Anne Linnet - Barndommens gade",
+			"url": "https://www.youtube.com/watch?v=bsjvnDcocJc",
+			"ytid": "bsjvnDcocJc"
+		},
+		{
+			"title": "#22 Lukas Graham - 7 Years",
+			"url": "https://www.youtube.com/watch?v=LHCob76kigA",
+			"ytid": "LHCob76kigA"
+		},
+		{
+			"title": "#23 TV-2 - Bag duggede ruder",
+			"url": "https://www.youtube.com/watch?v=Vjj7RFez3ZI",
+			"ytid": "Vjj7RFez3ZI"
+		},
+		{
+			"title": "#24 Shu-Bi-Dua - Danmark",
+			"url": "https://www.youtube.com/watch?v=xvq1__JFtrI",
+			"ytid": "xvq1__JFtrI"
+		},
+		{
+			"title": "#25 Bent Fabricius-Bjerre - Matador",
+			"url": "https://www.youtube.com/watch?v=41rpXrTujn0",
+			"ytid": "41rpXrTujn0"
+		},
+		{
+			"title": "#26 Poul Schierbeck. Tekst: H. C. Andersen - I Danmark er jeg født",
+			"url": "https://www.youtube.com/watch?v=nnguV67rdi4",
+			"ytid": "nnguV67rdi4"
+		},
+		{
+			"title": "#27 APHACA - En drøm om et menneske",
+			"url": "https://www.youtube.com/watch?v=CTfuFLJ_ULU",
+			"ytid": "CTfuFLJ_ULU"
+		},
+		{
+			"title": "#28 Shu-Bi-Dua - Den røde tråd",
+			"url": "https://www.youtube.com/watch?v=utRz8CXRNmk",
+			"ytid": "utRz8CXRNmk"
+		},
+		{
+			"title": "#29 Danseorkestret - Kom tilbage nu",
+			"url": "https://www.youtube.com/watch?v=JMwOu3WOTUk",
+			"ytid": "JMwOu3WOTUk"
+		},
+		{
+			"title": "#30 Gasolin' - Rabalderstræde",
+			"url": "https://www.youtube.com/watch?v=iwMEILToxwo",
+			"ytid": "iwMEILToxwo"
+		},
+		{
+			"title": "#31 Tommy Seebach Band - Under stjernerne på himlen",
+			"url": "https://www.youtube.com/watch?v=EB5YJlVcI-s",
+			"ytid": "EB5YJlVcI-s"
+		},
+		{
+			"title": "#32 Poul Krebs - Sådan nogen som os",
+			"url": "https://www.youtube.com/watch?v=mNIdDxpK9bU",
+			"ytid": "mNIdDxpK9bU"
+		},
+		{
+			"title": "#33 Egil Harder. Tekst: Kaj Munk - Den blå anemone",
+			"url": "https://www.youtube.com/watch?v=31gjxxAW5qs",
+			"ytid": "31gjxxAW5qs"
+		},
+		{
+			"title": "#34 Tekst: B. S. Ingemann - Dejlig er jorden",
+			"url": "https://www.youtube.com/watch?v=nzwwbs-CG4M",
+			"ytid": "nzwwbs-CG4M"
+		},
+		{
+			"title": "#35 Liva Weel - Man binder os på mund og hånd",
+			"url": "https://www.youtube.com/watch?v=gUfArSKBC3c",
+			"ytid": "gUfArSKBC3c"
+		},
+		{
+			"title": "#36 TV-2 - Kys det nu (det satans liv)",
+			"url": "https://www.youtube.com/watch?v=j6D7SMFCeYc",
+			"ytid": "j6D7SMFCeYc"
+		},
+		{
+			"title": "#37 Dodo & The Dodo's - Vågner i natten",
+			"url": "https://www.youtube.com/watch?v=rO39Z-9wN5A",
+			"ytid": "rO39Z-9wN5A"
+		},
+		{
+			"title": "#38 Ulige Numre - Frit land",
+			"url": "https://www.youtube.com/watch?v=MMsQrtOinKM",
+			"ytid": "MMsQrtOinKM"
+		},
+		{
+			"title": "#39 Aqua - Barbie Girl",
+			"url": "https://www.youtube.com/watch?v=ZyhrYis509A",
+			"ytid": "ZyhrYis509A"
+		},
+		{
+			"title": "#40 The Minds Of 99 - Hurtige hænder (Acoustic Version - Moyo Live P3)",
+			"url": "https://www.youtube.com/watch?v=mdV1bi3Gne4",
+			"ytid": "mdV1bi3Gne4"
+		},
+		{
+			"title": "#41 Benjamin Hav Feat. Lukas Graham - Du ligner din mor",
+			"url": "https://www.youtube.com/watch?v=ktYB3hF3xi0",
+			"ytid": "ktYB3hF3xi0"
+		},
+		{
+			"title": "#42 Lars H.U.G. - Elsker dig for evigt",
+			"url": "https://www.youtube.com/watch?v=9qkIcrU4VbY",
+			"ytid": "9qkIcrU4VbY"
+		},
+		{
+			"title": "#43 TV-2 - De første kærester på månen",
+			"url": "https://www.youtube.com/watch?v=UxP58lcgvvc",
+			"ytid": "UxP58lcgvvc"
+		},
+		{
+			"title": "#44 Lis Sørensen - Verden er i farver",
+			"url": "https://www.youtube.com/watch?v=XPed-u0vdp4",
+			"ytid": "XPed-u0vdp4"
+		},
+		{
+			"title": "#45 Birthe Kjær - Vi maler byen rød",
+			"url": "https://www.youtube.com/watch?v=Z58HzQ8baks",
+			"ytid": "Z58HzQ8baks"
+		},
+		{
+			"title": "#46 Per Warming. Tekst: Jens Rosendal - Forelskelsessang (Du kom med alt det der var dig)",
+			"url": "https://www.youtube.com/watch?v=FSFaDf5ssPk",
+			"ytid": "FSFaDf5ssPk"
+		},
+		{
+			"title": "#47 C.V. Jørgensen - Sæsonen er slut",
+			"url": "https://www.youtube.com/watch?v=FQnifPUm7Kk",
+			"ytid": "FQnifPUm7Kk"
+		},
+		{
+			"title": "#48 Michael Falch - I et land uden høje bjerge",
+			"url": "https://www.youtube.com/watch?v=TeqdJXspEeM",
+			"ytid": "TeqdJXspEeM"
+		},
+		{
+			"title": "#49 TV-2 - Hele verden fra forstanden",
+			"url": "https://www.youtube.com/watch?v=BJkb0Mbrdns",
+			"ytid": "BJkb0Mbrdns"
+		},
+		{
+			"title": "#50 Love Shop - En nat bliver det sommer",
+			"url": "https://www.youtube.com/watch?v=0XPFOj-8F60",
+			"ytid": "0XPFOj-8F60"
+		},
+		{
+			"title": "#51 Oluf Ring. Tekst: Jakob Knudsen - Se, nu stiger solen af havets skød",
+			"url": "https://www.youtube.com/watch?v=iVv4TJPV2C8",
+			"ytid": "iVv4TJPV2C8"
+		},
+		{
+			"title": "#52 Sebastian Feat. Lis Sørensen - Stille før storm",
+			"url": "https://www.youtube.com/watch?v=z_vrgIyqyHQ",
+			"ytid": "z_vrgIyqyHQ"
+		},
+		{
+			"title": "#53 Carl Nielsen. Tekst: Harald Bergstedt - Solen er så rød mor",
+			"url": "https://www.youtube.com/watch?v=yaQQp8rHyp4",
+			"ytid": "yaQQp8rHyp4"
+		},
+		{
+			"title": "#54 Nik & Jay - En dag tilbage",
+			"url": "https://www.youtube.com/watch?v=_JgbyISzmjQ",
+			"ytid": "_JgbyISzmjQ"
+		},
+		{
+			"title": "#55 Gnags - Vilde kaniner",
+			"url": "https://www.youtube.com/watch?v=-fk8fXTiAAo",
+			"ytid": "-fk8fXTiAAo"
+		},
+		{
+			"title": "#56 Kashmir - Rocket Brothers",
+			"url": "https://www.youtube.com/watch?v=rkQsoyKoiWg",
+			"ytid": "rkQsoyKoiWg"
+		},
+		{
+			"title": "#57 Carl Emil Petersen - Amager forbrænding",
+			"url": "https://www.youtube.com/watch?v=QjuckJrsZig",
+			"ytid": "QjuckJrsZig"
+		},
+		{
+			"title": "#58 Sebastian - Du er ikke alene",
+			"url": "https://www.youtube.com/watch?v=WUZuuvnycUM",
+			"ytid": "WUZuuvnycUM"
+		},
+		{
+			"title": "#59 Gnags - Danmark",
+			"url": "https://www.youtube.com/watch?v=OOH5XdAQPfo",
+			"ytid": "OOH5XdAQPfo"
+		},
+		{
+			"title": "#60 The Minds Of 99 - Alle skuffer over tid",
+			"url": "https://www.youtube.com/watch?v=XKzKZ6iYIYE",
+			"ytid": "XKzKZ6iYIYE"
+		},
+		{
+			"title": "#61 John Mogensen - Så længe jeg lever",
+			"url": "https://www.youtube.com/watch?v=Bctlvz-qpKE",
+			"ytid": "Bctlvz-qpKE"
+		},
+		{
+			"title": "#62 Medina - Kun for mig",
+			"url": "https://www.youtube.com/watch?v=Pmr-EFuIkP8",
+			"ytid": "Pmr-EFuIkP8"
+		},
+		{
+			"title": "#63 Saybia - The Second You Sleep",
+			"url": "https://www.youtube.com/watch?v=i9oyEHUqAhg",
+			"ytid": "i9oyEHUqAhg"
+		},
+		{
+			"title": "#64 Tobias Rahim & Andreas Odbjerg - STOR MAND",
+			"url": "https://www.youtube.com/watch?v=HfmWPfqyYyY",
+			"ytid": "HfmWPfqyYyY"
+		},
+		{
+			"title": "#65 Gasolin' - Hva' gør vi nu lille du",
+			"url": "https://www.youtube.com/watch?v=gQ5ZWxsjDKQ",
+			"ytid": "gQ5ZWxsjDKQ"
+		},
+		{
+			"title": "#66 Nik & Jay - Novembervej",
+			"url": "https://www.youtube.com/watch?v=TtNRjzHb6s0",
+			"ytid": "TtNRjzHb6s0"
+		},
+		{
+			"title": "#67 C. C. Hoffmann. Tekst: N. F. S. Grundtvig - Hil dig, Frelser og Forsoner",
+			"url": "https://www.youtube.com/watch?v=Gp72iytsIkI",
+			"ytid": "Gp72iytsIkI"
+		},
+		{
+			"title": "#68 Nik & Jay - Hot",
+			"url": "https://www.youtube.com/watch?v=YPV8LqSRSDg",
+			"ytid": "YPV8LqSRSDg"
+		},
+		{
+			"title": "#69 Sebastian Feat. Lis Sørensen - Fuld af nattens stjerner",
+			"url": "https://www.youtube.com/watch?v=-xy8J3UmuU0",
+			"ytid": "-xy8J3UmuU0"
+		},
+		{
+			"title": "#70 Rasmus Seebach - Øde ø",
+			"url": "https://www.youtube.com/watch?v=iosIF6_3XSY",
+			"ytid": "iosIF6_3XSY"
+		},
+		{
+			"title": "#71 The Minds Of 99 - Under din sne",
+			"url": "https://www.youtube.com/watch?v=9a3LILb-yQE",
+			"ytid": "9a3LILb-yQE"
+		},
+		{
+			"title": "#72 Nephew - Igen og igen og",
+			"url": "https://www.youtube.com/watch?v=SMaVOcLHygE",
+			"ytid": "SMaVOcLHygE"
+		},
+		{
+			"title": "#73 Shu-Bi-Dua - Hvalborg",
+			"url": "https://www.youtube.com/watch?v=jCPiBWSVBE4",
+			"ytid": "jCPiBWSVBE4"
+		},
+		{
+			"title": "#74 Bamses Venner - I en lille båd der gynger",
+			"url": "https://www.youtube.com/watch?v=kcTiYW6mQ50",
+			"ytid": "kcTiYW6mQ50"
+		},
+		{
+			"title": "#75 Oluf Ring. Tekst: Thøger Larsen - Danmark, nu blunder",
+			"url": "https://www.youtube.com/watch?v=Jrtl1PlrR0E",
+			"ytid": "Jrtl1PlrR0E"
+		},
+		{
+			"title": "#76 Nanna - Buster",
+			"url": "https://www.youtube.com/watch?v=CTyB89fOqhE",
+			"ytid": "CTyB89fOqhE"
+		},
+		{
+			"title": "#77 Gnags - Mr. Swing King",
+			"url": "https://www.youtube.com/watch?v=1cjX37BKvDA",
+			"ytid": "1cjX37BKvDA"
+		},
+		{
+			"title": "#78 Johnny Madsen - Udenfor sæsonen",
+			"url": "https://www.youtube.com/watch?v=x8MMudQqFkE",
+			"ytid": "x8MMudQqFkE"
+		},
+		{
+			"title": "#79 Nephew Feat. L.O.C. - Hospital (Live Roskilde Festival 2007)",
+			"url": "https://www.youtube.com/watch?v=LItSnFlKA5k",
+			"ytid": "LItSnFlKA5k"
+		},
+		{
+			"title": "#80 Agnes Obel - Riverside",
+			"url": "https://www.youtube.com/watch?v=vjncyiuwwXQ",
+			"ytid": "vjncyiuwwXQ"
+		},
+		{
+			"title": "#81 Thomas Helmig - Stupid Man",
+			"url": "https://www.youtube.com/watch?v=q9Wt4MAPv0A",
+			"ytid": "q9Wt4MAPv0A"
+		},
+		{
+			"title": "#82 Back To Back - Jonathan",
+			"url": "https://www.youtube.com/watch?v=zLbo5rUckCg",
+			"ytid": "zLbo5rUckCg"
+		},
+		{
+			"title": "#83 Kesi Feat. Hans Philip - Blå himmel",
+			"url": "https://www.youtube.com/watch?v=4DP2jNfRGzE",
+			"ytid": "4DP2jNfRGzE"
+		},
+		{
+			"title": "#84 Rugsted & Kreutzfeldt - Jeg ved det godt",
+			"url": "https://www.youtube.com/watch?v=uVyLBAMyLJM",
+			"ytid": "uVyLBAMyLJM"
+		},
+		{
+			"title": "#85 Carpark North - Transparent & Glasslike",
+			"url": "https://www.youtube.com/watch?v=RCHz-U5UuNQ",
+			"ytid": "RCHz-U5UuNQ"
+		},
+		{
+			"title": "#86 Safri Duo - Played-A-Live (The Bongo Song)",
+			"url": "https://www.youtube.com/watch?v=IksRDCMYnn8",
+			"ytid": "IksRDCMYnn8"
+		},
+		{
+			"title": "#87 Scarlet Pleasure - What A Life",
+			"url": "https://www.youtube.com/watch?v=FjVVqpZw-wg",
+			"ytid": "FjVVqpZw-wg"
+		},
+		{
+			"title": "#88 Mew - Comforting Sounds",
+			"url": "https://www.youtube.com/watch?v=AtckSsQ_Au0",
+			"ytid": "AtckSsQ_Au0"
+		},
+		{
+			"title": "#89 Shit & Chanel - Smuk og dejlig",
+			"url": "https://www.youtube.com/watch?v=V6qALCFpVuU",
+			"ytid": "V6qALCFpVuU"
+		},
+		{
+			"title": "#90 John Mogensen - Der er noget galt i Danmark",
+			"url": "https://www.youtube.com/watch?v=qq9hETqTm-s",
+			"ytid": "qq9hETqTm-s"
+		},
+		{
+			"title": "#91 C.V. Jørgensen - Bellevue",
+			"url": "https://www.youtube.com/watch?v=BwVILChrNbA",
+			"ytid": "BwVILChrNbA"
+		},
+		{
+			"title": "#92 Danser med Drenge - Hvor længe vil du ydmyge dig?",
+			"url": "https://www.youtube.com/watch?v=0fKOQxbH-08",
+			"ytid": "0fKOQxbH-08"
+		},
+		{
+			"title": "#93 Søs Fenger, Thomas Helmig, Sanne Salomonsen & Anne Linnet - Den jeg elsker, elsker jeg",
+			"url": "https://www.youtube.com/watch?v=3eSprK01vps",
+			"ytid": "3eSprK01vps"
+		},
+		{
+			"title": "#94 Marie Key - Uden forsvar",
+			"url": "https://www.youtube.com/watch?v=7uyG1hGNDKs",
+			"ytid": "7uyG1hGNDKs"
+		},
+		{
+			"title": "#95 Guldimund & Saveus - Vil du noget?",
+			"url": "https://www.youtube.com/watch?v=3nNUyYMuzTo",
+			"ytid": "3nNUyYMuzTo"
+		},
+		{
+			"title": "#96 Lars H.U.G. - Natsværmer",
+			"url": "https://www.youtube.com/watch?v=vRGDqO1Ze8M",
+			"ytid": "vRGDqO1Ze8M"
+		},
+		{
+			"title": "#97 Clausen & Petersen feat. Eva Madsen - Mormors kolonihavehus",
+			"url": "https://www.youtube.com/watch?v=rG0RdkmPysk",
+			"ytid": "rG0RdkmPysk"
+		},
+		{
+			"title": "#98 Gilli - Knokler hårdt",
+			"url": "https://www.youtube.com/watch?v=RRLLPavaSwo",
+			"ytid": "RRLLPavaSwo"
+		},
+		{
+			"title": "#99 Bamses Venner - Jeg elsker kun dig",
+			"url": "https://www.youtube.com/watch?v=KvASdgGNlrU",
+			"ytid": "KvASdgGNlrU"
+		},
+		{
+			"title": "#100 One Two - Den bedste tid",
+			"url": "https://www.youtube.com/watch?v=oNAhuyZTZb8",
+			"ytid": "oNAhuyZTZb8"
+		}
+	]
 }
