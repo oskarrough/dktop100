@@ -1,6 +1,8 @@
 const STORAGE_KEY = "top100-my-songs"
 const MAX_TOP = 5
 const CHANGE_EVENT = "top100-my-songs-change"
+// Playback lives in script.js (it has the full song data); we only announce the wish.
+const PLAY_EVENT = "top100-my-songs-play"
 
 let songs = loadFromStorage()
 
@@ -30,6 +32,8 @@ function songEntry(song, listId) {
 		artist: song.artist,
 		rank: song.rank ?? null,
 		listId: listId || null,
+		image: song.image?.url || null,
+		imageAlt: song.image?.alt || `${song.title} cover`,
 		// Kept so the copied text can feed straight into a Radio4000 channel.
 		url: song.youtube?.url || null,
 	}
@@ -72,15 +76,16 @@ export function toggleMySong(song, listId) {
 	return addMySong(song, listId)
 }
 
-// Entries saved before the url field existed get it filled in once the
-// datasets are loaded. urlForId: (id) => url | null.
-export function backfillMySongUrls(urlForId) {
+// Entries saved before newer fields existed get them filled in once the
+// datasets are loaded. dataForId: (id) => { url, image, imageAlt, title, artist } | null.
+export function backfillMySongUrls(dataForId) {
 	let changed = false
 	for (const song of songs) {
-		if (song.url) continue
-		const url = urlForId(song.id)
-		if (url) {
-			song.url = url
+		const data = dataForId(song.id)
+		if (!data) continue
+		for (const key of ["url", "image", "imageAlt", "title", "artist"]) {
+			if (song[key] || !data[key]) continue
+			song[key] = data[key]
 			changed = true
 		}
 	}
@@ -99,7 +104,6 @@ export function moveMySong(fromIndex, toIndex) {
 }
 
 function songLabel(song) {
-	if (song.rank) return `#${song.rank} ${song.title}`
 	return song.title
 }
 
@@ -143,21 +147,20 @@ export class Top100MySongs extends HTMLElement {
 		super()
 		this.setAttribute("aria-label", "Favoritter")
 		this.innerHTML = `
-      <header class="my-songs-header">
-        <h2 class="my-songs-title">Favoritter (0)</h2>
-        <button type="button" class="btn copy-my-songs" hidden>Kopiér som tekst</button>
+      <header>
+        <h2>Favoritter (0)</h2>
+        <button type="button" class="btn" hidden>Kopiér som tekst</button>
       </header>
-      <p class="my-songs-hint">Kun top ${MAX_TOP} tæller.</p>
-      <ol class="my-songs-list"></ol>
-      <p class="my-songs-empty" hidden>Tilføj sange med +.</p>
-      <p class="my-songs-footer" hidden>
-        Gem dem for evigt —
-        <a href="https://radio4000.com" target="_blank" rel="noopener noreferrer">lav din egen radio på Radio4000</a>
+      <p class="hint" hidden>Kun top ${MAX_TOP} tæller.</p>
+      <ol></ol>
+      <p class="empty" hidden>Tilføj sange med +.</p>
+      <p class="footer" hidden>
+        Gem for evigt på <a href="https://radio4000.com" target="_blank" rel="noopener noreferrer">Radio4000</a>
       </p>
     `
-		this.#list = this.querySelector(".my-songs-list")
+		this.#list = this.querySelector("ol")
 
-		const copyButton = this.querySelector(".copy-my-songs")
+		const copyButton = this.querySelector("header button")
 		let copyResetTimer = null
 		copyButton.addEventListener("click", async () => {
 			const ok = await copyText(mySongsAsText())
@@ -169,6 +172,16 @@ export class Top100MySongs extends HTMLElement {
 		})
 
 		this.#list.addEventListener("click", (event) => {
+			const play = event.target.closest("[data-play-id]")
+			if (play) {
+				document.dispatchEvent(
+					new CustomEvent(PLAY_EVENT, {
+						detail: { id: play.dataset.playId, listId: play.dataset.listId || null },
+					}),
+				)
+				return
+			}
+
 			const remove = event.target.closest("[data-remove-id]")
 			if (remove) {
 				removeMySong(remove.dataset.removeId)
@@ -274,11 +287,11 @@ export class Top100MySongs extends HTMLElement {
 	#render() {
 		const count = songs.length
 
-		const title = this.querySelector(".my-songs-title")
-		const empty = this.querySelector(".my-songs-empty")
-		const hint = this.querySelector(".my-songs-hint")
-		const copyButton = this.querySelector(".copy-my-songs")
-		const footer = this.querySelector(".my-songs-footer")
+		const title = this.querySelector("header h2")
+		const empty = this.querySelector(".empty")
+		const hint = this.querySelector(".hint")
+		const copyButton = this.querySelector("header button")
+		const footer = this.querySelector(".footer")
 		title.textContent = `Favoritter (${count})`
 		empty.hidden = count > 0
 		hint.hidden = count === 0
@@ -289,7 +302,6 @@ export class Top100MySongs extends HTMLElement {
 			const items = []
 			if (index === MAX_TOP) {
 				const divider = document.createElement("li")
-				divider.className = "my-songs-divider"
 				divider.setAttribute("aria-hidden", "true")
 				divider.textContent = "Resten"
 				items.push(divider)
@@ -300,35 +312,48 @@ export class Top100MySongs extends HTMLElement {
 			const isTop = index < MAX_TOP
 
 			const article = document.createElement("article")
-			article.className = `my-song-item${isTop ? " is-top-pick" : ""}`
+			article.className = isTop ? "song is-top-pick" : "song"
 
 			const rank = document.createElement("span")
-			rank.className = "my-song-rank"
-			rank.textContent = isTop ? String(index + 1) : "·"
+			rank.textContent = String(index + 1)
 
-			const body = document.createElement("div")
-			body.className = "my-song-body"
+			const figure = document.createElement("figure")
+			const thumb = document.createElement("img")
+			thumb.loading = "lazy"
+			thumb.alt = song.imageAlt || `${song.title} cover`
+			if (song.image) thumb.src = song.image
+			else thumb.hidden = true
+			figure.append(thumb)
 
 			const heading = document.createElement("h3")
 			heading.textContent = songLabel(song)
 
 			const artist = document.createElement("p")
-			artist.className = "my-song-artist"
+			artist.className = "artist"
 			artist.textContent = song.artist || ""
 
-			body.append(heading, artist)
+			const actions = document.createElement("menu")
+			const actionItem = (...children) => {
+				const item = document.createElement("li")
+				item.append(...children)
+				return item
+			}
 
-			const actions = document.createElement("div")
-			actions.className = "my-song-actions"
+			const play = document.createElement("button")
+			play.type = "button"
+			play.className = "btn icon"
+			play.dataset.playId = song.id
+			if (song.listId) play.dataset.listId = song.listId
+			play.setAttribute("aria-label", `Play ${song.title}`)
+			play.textContent = "▶"
 
 			const moveGroup = document.createElement("div")
-			moveGroup.className = "my-song-move"
 			moveGroup.setAttribute("role", "group")
 			moveGroup.setAttribute("aria-label", `Reorder ${song.title}`)
 
 			const moveTop = document.createElement("button")
 			moveTop.type = "button"
-			moveTop.className = "btn icon move-my-song"
+			moveTop.className = "btn icon"
 			moveTop.dataset.move = "top"
 			moveTop.textContent = "⇈"
 			moveTop.disabled = index === 0
@@ -336,7 +361,7 @@ export class Top100MySongs extends HTMLElement {
 
 			const moveUp = document.createElement("button")
 			moveUp.type = "button"
-			moveUp.className = "btn icon move-my-song"
+			moveUp.className = "btn icon"
 			moveUp.dataset.move = "up"
 			moveUp.textContent = "↑"
 			moveUp.disabled = index === 0
@@ -344,7 +369,7 @@ export class Top100MySongs extends HTMLElement {
 
 			const moveDown = document.createElement("button")
 			moveDown.type = "button"
-			moveDown.className = "btn icon move-my-song"
+			moveDown.className = "btn icon"
 			moveDown.dataset.move = "down"
 			moveDown.textContent = "↓"
 			moveDown.disabled = index === songs.length - 1
@@ -354,23 +379,23 @@ export class Top100MySongs extends HTMLElement {
 
 			const drag = document.createElement("button")
 			drag.type = "button"
-			drag.className = "btn icon drag-my-song"
+			drag.className = "btn icon"
 			drag.dataset.dragHandle = ""
 			drag.setAttribute("aria-label", `Drag to reorder ${song.title}`)
 			drag.textContent = "⠿"
 
 			const remove = document.createElement("button")
 			remove.type = "button"
-			remove.className = "btn icon remove-my-song"
+			remove.className = "btn icon"
 			remove.dataset.removeId = song.id
 			remove.setAttribute("aria-label", `Remove ${song.title} from my picks`)
 			remove.textContent = "✕"
 
-			actions.append(moveTop, moveGroup, drag)
+			actions.append(actionItem(play), actionItem(moveTop), actionItem(moveGroup), actionItem(drag))
 
 			if (song.url) {
 				const r4 = document.createElement("a")
-				r4.className = "btn icon r4-add"
+				r4.className = "btn icon"
 				const params = new URLSearchParams({
 					url: song.url,
 					title: `${song.artist} – ${song.title}`,
@@ -380,11 +405,11 @@ export class Top100MySongs extends HTMLElement {
 				r4.rel = "noopener noreferrer"
 				r4.setAttribute("aria-label", `Add ${song.title} to your Radio4000`)
 				r4.textContent = "R4"
-				actions.append(r4)
+				actions.append(actionItem(r4))
 			}
 
-			actions.append(remove)
-			article.append(rank, body, actions)
+			actions.append(actionItem(remove))
+			article.append(rank, figure, heading, artist, actions)
 			li.append(article)
 			items.push(li)
 			return items
@@ -399,4 +424,4 @@ customElements.define("top100-my-songs", Top100MySongs)
 /** @deprecated use MAX_TOP */
 const MAX_SONGS = MAX_TOP
 
-export { STORAGE_KEY, MAX_TOP, MAX_SONGS, CHANGE_EVENT }
+export { STORAGE_KEY, MAX_TOP, MAX_SONGS, CHANGE_EVENT, PLAY_EVENT }

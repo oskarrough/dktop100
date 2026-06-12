@@ -12,6 +12,7 @@
 			<menu class="lists" aria-label="Song list">
 				<button type="button" data-list="top100" aria-pressed="true">Top 100</button>
 				<button type="button" data-list="top400" aria-pressed="false">Top 400</button>
+				<button type="button" data-list="favoritter" aria-pressed="false">Favoritter</button>
 			</menu>
 			<menu class="views" aria-label="View">
 				<button type="button" data-view="list" aria-pressed="true">List</button>
@@ -42,11 +43,11 @@
 
 		<template id="song-template">
 			<li>
-				<article>
-					<h2></h2>
+				<article class="song">
+					<figure><img alt="" width="140" height="140" /></figure>
+					<h3></h3>
 					<p class="artist"></p>
-					<img alt="" width="140" height="140" />
-					<menu class="song-actions">
+					<menu>
 						<button type="button" class="btn icon play-song" aria-label="Play preview">▶</button>
 						<button type="button" class="btn icon add-my-song" aria-label="Add to my picks">
 							+

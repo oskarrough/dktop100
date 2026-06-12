@@ -1,7 +1,14 @@
 import { initCanvas } from "./canvas.js"
 import "./player.js"
 import "./radio.js"
-import { toggleMySong, isInMySongs, backfillMySongUrls, CHANGE_EVENT } from "./my-songs.js"
+import {
+	toggleMySong,
+	isInMySongs,
+	getMySongs,
+	backfillMySongUrls,
+	CHANGE_EVENT,
+	PLAY_EVENT,
+} from "./my-songs.js"
 
 const summary = document.querySelector("#summary")
 const list = document.querySelector("#songs")
@@ -113,13 +120,20 @@ function updateMySongButtons() {
 	})
 }
 
+function updateFavoritesTab() {
+	const tab = document.querySelector('.lists [data-list="favoritter"]')
+	const count = getMySongs().length
+	tab.textContent = count ? `Favoritter (${count})` : "Favoritter"
+}
+
 function updateListPlaybackState() {
 	const isPlaying = !player.paused
 	const playingId = playback.song?.id ?? null
 
-	document.querySelectorAll(".play-song").forEach((button) => {
+	document.querySelectorAll(".play-song, [data-play-id]").forEach((button) => {
 		if (button.disabled) return
-		const isCurrent = playingId != null && button.dataset.songId === playingId
+		const buttonId = button.dataset.songId ?? button.dataset.playId
+		const isCurrent = playingId != null && buttonId === playingId
 		const playing = isCurrent && isPlaying
 		button.classList.toggle("is-current", isCurrent)
 		button.textContent = playing ? "⏸" : "▶"
@@ -227,13 +241,24 @@ function togglePlay(song = null, listId = activeList) {
 	else playNext()
 }
 
+// Resolve a favorited song id back to the full dataset entry (it has the audio url).
+function findSongById(id, preferredListId = null) {
+	const order = preferredListId ? [preferredListId, "top100", "top400"] : ["top100", "top400"]
+	for (const listId of order) {
+		const song = datasets[listId]?.songs.find((entry) => entry.id === id)
+		if (song) return { song, listId }
+	}
+	return null
+}
+
 function renderSong(song) {
 	const fragment = template.content.cloneNode(true)
 	const li = fragment.querySelector("li")
 	const article = fragment.querySelector("article")
-	const heading = fragment.querySelector("h2")
+	const heading = fragment.querySelector("h3")
 	const artist = fragment.querySelector(".artist")
-	const image = fragment.querySelector("img")
+	const figure = fragment.querySelector("figure")
+	const image = figure.querySelector("img")
 	const playButton = fragment.querySelector(".play-song")
 	const addMySongButton = fragment.querySelector(".add-my-song")
 	const ytLink = fragment.querySelector(".youtube-link")
@@ -255,7 +280,7 @@ function renderSong(song) {
 		image.src = song.image.url
 		image.alt = song.image.alt || `${text(song.title)} cover`
 	} else {
-		image.remove()
+		figure.remove()
 	}
 
 	if (playable(song)) {
@@ -413,12 +438,14 @@ function resetCanvas() {
 }
 
 function setList(listId) {
-	if (!datasets[listId]?.songs?.length) return
+	// "favoritter" has no dataset — its songs live in the top100-my-songs component.
+	const isFavorites = listId === "favoritter"
+	if (!isFavorites && !datasets[listId]?.songs?.length) return
 
 	activeList = listId
 	document.body.dataset.list = listId
 	localStorage.setItem("top100-list", listId)
-	queue = datasets[listId].songs
+	queue = isFavorites ? [] : datasets[listId].songs
 	// Leave playback alone — the current track keeps playing across list switches.
 	filterQuery = ""
 	searchInput.value = ""
@@ -428,20 +455,20 @@ function setList(listId) {
 	})
 
 	const canvasButton = document.querySelector('.views [data-view="canvas"]')
-	if (listId === "top400") {
+	if (listId === "top100") {
+		canvasButton.hidden = false
+	} else {
 		canvasButton.hidden = true
 		if (isCanvasView()) setView("list")
-	} else {
-		canvasButton.hidden = false
 	}
 
-	searchWrap.hidden = false
+	searchWrap.hidden = isFavorites
 	resetCanvas()
 	renderList()
 }
 
 function setView(view) {
-	if (activeList === "top400" && view === "canvas") view = "list"
+	if (activeList !== "top100" && view === "canvas") view = "list"
 
 	document.body.dataset.view = view
 	localStorage.setItem("top100-view", view)
@@ -482,16 +509,24 @@ async function init() {
 	try {
 		await Promise.all([loadDataset("top100.json", "top100"), loadDataset("top400.json", "top400")])
 
-		const urlById = new Map()
+		const songDataById = new Map()
 		for (const { songs } of Object.values(datasets)) {
 			for (const song of songs) {
-				if (song.id && song.youtube?.url) urlById.set(song.id, song.youtube.url)
+				if (!song.id) continue
+				songDataById.set(song.id, {
+					title: song.title,
+					artist: song.artist,
+					url: song.youtube?.url || null,
+					image: song.image?.url || null,
+					imageAlt: song.image?.alt || `${song.title} cover`,
+				})
 			}
 		}
-		backfillMySongUrls((id) => urlById.get(id) ?? null)
+		backfillMySongUrls((id) => songDataById.get(id) ?? null)
 
 		const savedList = localStorage.getItem("top100-list")
-		setList(savedList === "top400" ? "top400" : "top100")
+		setList(["top400", "favoritter"].includes(savedList) ? savedList : "top100")
+		updateFavoritesTab()
 		setView(localStorage.getItem("top100-view") || "list")
 	} catch (error) {
 		summary.textContent = error.message
@@ -518,7 +553,17 @@ player.addEventListener("play", updateListPlaybackState)
 player.addEventListener("pause", updateListPlaybackState)
 player.addEventListener("ended", playNext)
 
-document.addEventListener(CHANGE_EVENT, updateMySongButtons)
+document.addEventListener(CHANGE_EVENT, () => {
+	updateMySongButtons()
+	updateFavoritesTab()
+	// The favoritter list re-rendered; restore ⏸/▶ state on its play buttons.
+	updateListPlaybackState()
+})
+
+document.addEventListener(PLAY_EVENT, (event) => {
+	const found = findSongById(event.detail.id, event.detail.listId)
+	if (found) togglePlay(found.song, found.listId)
+})
 
 let activeLetterPending = false
 window.addEventListener(

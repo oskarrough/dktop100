@@ -233,6 +233,11 @@ top100-radio.is-collapsed .r4-player {
 	margin: 1rem 0;
 }
 
+/* Author display:block would otherwise beat the UA [hidden] rule. */
+.search[hidden] {
+	display: none;
+}
+
 .search input {
 	width: 100%;
 	max-width: 22rem;
@@ -259,7 +264,61 @@ top100-radio.is-collapsed .r4-player {
 	font-size: var(--font-size-md);
 }
 
-/* ── My picks ────────────────────────────────────────── */
+/* ── Song card (shared by the song lists and favoritter) ──
+   Same figure/title/artist/menu markup everywhere; each list
+   only overrides where its menu sits. */
+.song {
+	display: grid;
+	grid-template-columns: 84px minmax(0, 1fr);
+	gap: 0 1rem;
+	padding: 1rem;
+	background: var(--panel);
+	border: 1px solid var(--panel-border);
+	border-radius: var(--radius);
+}
+
+.song figure {
+	grid-column: 1;
+	grid-row: 1 / span 5;
+	align-self: start;
+	margin: 0;
+}
+
+.song img {
+	display: block;
+	width: 84px;
+	height: 84px;
+	object-fit: cover;
+	border: 1px solid var(--panel-border);
+	border-radius: 0.5rem;
+	background: var(--cover-bg);
+}
+
+.song h3 {
+	margin: 0;
+	grid-column: 2;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.song .artist {
+	margin: 0.2rem 0 0;
+	grid-column: 2;
+	color: var(--ink-soft);
+	font-size: 1rem;
+}
+
+.song menu {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* ── My picks (the Favoritter tab) ───────────────────── */
 top100-my-songs {
 	display: block;
 	position: relative;
@@ -270,19 +329,19 @@ top100-my-songs {
 	overflow: hidden;
 }
 
-top100-my-songs::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	height: 0.5rem;
-	pointer-events: none;
-	background: linear-gradient(to bottom, transparent, rgba(42, 21, 0, 0.2));
+/* Lives in its own tab; hidden whenever another list is shown. */
+body:not([data-list="favoritter"]) top100-my-songs {
+	display: none;
+}
+
+/* Canvas only makes sense for the chart lists; the whole view
+   switcher goes when favoritter is open (List alone is pointless). */
+body[data-list="favoritter"] .views {
+	display: none;
 }
 
 /* Title-bar header, shared look with the Radio4000 dock handle. */
-.my-songs-header {
+top100-my-songs header {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.5rem 1rem;
@@ -293,14 +352,14 @@ top100-my-songs::after {
 	border-bottom: 1px solid var(--panel-border);
 }
 
-.my-songs-title {
+top100-my-songs header h2 {
 	margin: 0;
 	font-size: var(--font-size-xs);
 	font-weight: 700;
 	color: var(--ink-soft);
 }
 
-.my-songs-hint {
+top100-my-songs .hint {
 	margin: 0;
 	padding: 0.5rem 1rem 0;
 	color: var(--ink-dim);
@@ -308,23 +367,19 @@ top100-my-songs::after {
 	line-height: 1.4;
 }
 
-.my-songs-list {
+top100-my-songs ol {
 	list-style: none;
 	padding: 0.5rem 1rem 1rem;
 	margin: 0;
 	display: grid;
 	gap: 0.5rem;
-	max-height: min(45vh, 26rem);
-	overflow-y: auto;
-	overscroll-behavior: contain;
-	scrollbar-gutter: stable;
 }
 
-.my-songs-list:empty {
+top100-my-songs ol:empty {
 	padding: 0;
 }
 
-.my-songs-divider {
+top100-my-songs ol li[aria-hidden] {
 	margin: 0.5rem 0 0;
 	padding: 0.2rem 0 0;
 	color: var(--ink-dim);
@@ -334,40 +389,39 @@ top100-my-songs::after {
 	text-transform: uppercase;
 }
 
-.my-song-item {
-	display: grid;
-	grid-template-columns: auto 1fr auto;
-	gap: 0.5rem 0.5rem;
-	align-items: center;
-	padding: 0.5rem 0.5rem;
-	background: var(--panel);
-	border: 1px solid var(--panel-border);
-	border-radius: calc(var(--radius) - 0.2rem);
+/* Shared card, plus a third column for the actions menu. */
+top100-my-songs .song {
+	grid-template-columns: 84px minmax(0, 1fr) auto;
+	position: relative;
 	transition:
 		box-shadow 0.12s ease,
 		opacity 0.12s ease;
 }
 
-.my-song-item.is-top-pick {
+top100-my-songs .song.is-top-pick {
 	background: #fff8eb;
 	border-width: 2px;
 }
 
-.my-song-item.is-dragging,
-.my-songs-list > li.is-dragging .my-song-item {
+top100-my-songs .song.is-dragging,
+top100-my-songs ol > li.is-dragging .song {
 	opacity: 0.45;
 }
 
-.my-song-item.is-drop-target,
-.my-songs-list > li.is-drop-target .my-song-item {
+top100-my-songs .song.is-drop-target,
+top100-my-songs ol > li.is-drop-target .song {
 	box-shadow: inset 0 0 0 2px var(--accent);
 }
 
-.my-song-rank {
+top100-my-songs .song > span {
 	display: grid;
 	place-items: center;
-	width: 1.5rem;
-	height: 1.5rem;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.25rem;
+	z-index: 1;
+	width: 1.35rem;
+	height: 1.35rem;
 	font-size: var(--font-size-sm);
 	font-weight: 800;
 	line-height: 1;
@@ -376,60 +430,53 @@ top100-my-songs::after {
 	background: var(--panel-strong);
 }
 
-.is-top-pick .my-song-rank {
+top100-my-songs .song.is-top-pick > span {
 	background: var(--accent);
 	color: var(--on-accent);
 }
 
-.my-song-body {
-	min-width: 0;
+/* Keeps the cover's grid cell when a favorite has no image yet. */
+top100-my-songs .song img[hidden] {
+	display: block;
+	visibility: hidden;
 }
 
-.my-song-item h3 {
-	margin: 0;
-	font-size: var(--font-size-md);
-	font-weight: 700;
-	line-height: 1.25;
+top100-my-songs .song menu {
+	grid-column: 3;
+	grid-row: 1 / span 5;
+	align-self: center;
 }
 
-.my-song-artist {
-	margin: 0.2rem 0 0;
-	color: var(--ink-soft);
-	font-size: var(--font-size-sm);
+top100-my-songs .song menu > li {
+	display: contents;
 }
 
-.my-song-actions {
-	display: flex;
-	gap: 0.5rem;
-	align-items: center;
-}
-
-.my-song-move {
+top100-my-songs .song menu [role="group"] {
 	display: flex;
 	flex-direction: column;
 	gap: 0.2rem;
 }
 
-.my-song-move .move-my-song {
+top100-my-songs .song menu [role="group"] button {
 	width: 1.5rem;
 	height: 1.5rem;
 	font-size: 1rem;
 }
 
-.drag-my-song {
+top100-my-songs [data-drag-handle] {
 	cursor: grab;
 	touch-action: none;
 }
 
-.drag-my-song:active {
+top100-my-songs [data-drag-handle]:active {
 	cursor: grabbing;
 }
 
-.remove-my-song {
+top100-my-songs [data-remove-id] {
 	font-size: var(--font-size-sm);
 }
 
-.r4-add {
+top100-my-songs .song menu a {
 	display: grid;
 	place-items: center;
 	font-size: var(--font-size-xs);
@@ -437,26 +484,29 @@ top100-my-songs::after {
 	text-decoration: none;
 }
 
-.my-songs-empty {
+top100-my-songs .empty {
 	margin: 0;
 	padding: 0.5rem 1rem 1rem;
 	color: var(--ink-dim);
 	font-size: var(--font-size-sm);
 }
 
-.copy-my-songs {
+/* button.btn so this outweighs the .btn base padding. */
+top100-my-songs header button.btn {
 	font-size: var(--font-size-xs);
 	padding: 0.2rem 0.5rem;
 }
 
-.my-songs-footer {
+/* Tucked into the bottom-right corner so it never blocks the list. */
+top100-my-songs .footer {
 	margin: 0;
-	padding: 0 1rem 1rem;
+	padding: 0 1rem 0.75rem;
+	text-align: right;
 	color: var(--ink-dim);
-	font-size: var(--font-size-sm);
+	font-size: var(--font-size-xs);
 }
 
-.my-songs-footer a {
+top100-my-songs .footer a {
 	color: var(--accent);
 	font-weight: 700;
 }
@@ -470,79 +520,41 @@ top100-my-songs::after {
 	gap: 0.5rem;
 }
 
-article {
-	display: grid;
-	grid-template-columns: 84px 1fr;
-	gap: 0 1rem;
-	padding: 1rem;
-	background: var(--panel);
-	border: 1px solid var(--panel-border);
-	border-radius: var(--radius);
+#songs .song {
 	transition:
 		background 0.15s,
 		transform 0.15s;
 }
 
-article.playable {
+#songs .song.playable {
 	cursor: pointer;
 }
 
-article.playable:hover {
+#songs .song.playable:hover {
 	background: var(--panel-hover);
 }
 
-article h2 {
-	margin: 0;
-	grid-column: 2;
-	font-size: 1rem;
-	font-weight: 700;
-	line-height: 1.25;
-}
-
-article .artist {
-	margin: 0.2rem 0 0;
-	grid-column: 2;
-	color: var(--ink-soft);
-	font-size: 1rem;
-}
-
-article .funfact,
-article .credits {
+#songs .song .funfact,
+#songs .song .credits {
 	grid-column: 2;
 	margin: 0.5rem 0 0;
 	font-size: var(--font-size-sm);
 	color: var(--ink-soft);
 }
 
-article .credits {
+#songs .song .credits {
 	color: var(--ink-dim);
 }
 
-article img {
-	grid-row: 1 / span 5;
-	align-self: start;
-	width: 84px;
-	height: 84px;
-	object-fit: cover;
-	border: 1px solid var(--panel-border);
-	border-radius: 0.5rem;
-	background: var(--cover-bg);
-}
-
-article.is-playing {
+#songs .song.is-playing {
 	background: var(--panel-strong);
 	box-shadow: var(--shadow-pop);
 }
 
-.song-actions {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	align-items: center;
+#songs .song menu {
 	grid-column: 2;
+	flex-wrap: wrap;
 	margin: 0.5rem 0 0;
-	padding: 0;
-	list-style: none;
 }
 
 .youtube-link,
@@ -891,11 +903,15 @@ top100-player.is-dragging {
 }
 
 @media (max-width: 42rem) {
-	article {
-		grid-template-columns: 64px 1fr;
+	#songs .song {
+		grid-template-columns: 64px minmax(0, 1fr);
 	}
 
-	article img {
+	top100-my-songs .song {
+		grid-template-columns: 64px minmax(0, 1fr) auto;
+	}
+
+	.song img {
 		width: 64px;
 		height: 64px;
 	}
