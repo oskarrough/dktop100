@@ -1,14 +1,12 @@
-// Canvas field of 100 covers — golden-angle spiral by rank, #1 in the
-// center. Drag to pan, scroll/pinch to zoom, click a cover to play it via
-// the shared player. Unrevealed ranks render as "?" slots.
-//
-// initCanvas(canvasEl, songs, { onSelect, isActive }) → { focusRank, blur, resize }
+// Canvas field of covers — golden-angle spiral, slot #1 in the center.
+// Drag to pan, scroll/pinch to zoom, click a cover to play via the shared player.
+// itemCount: spiral slots (100 for Top 100). getSlot(song, index) → 1-based slot.
 
 const COVER = 120 // world size of one cover
 const GOLDEN = Math.PI * (3 - Math.sqrt(5))
 const SPIRAL = COVER * 0.78 // spiral spacing factor
 
-export function initCanvas(canvas, songs, { onSelect, isActive }) {
+export function initCanvas(canvas, songs, { onSelect, isActive, itemCount, getSlot }) {
 	const ctx = canvas.getContext("2d")
 
 	let focused = null
@@ -17,22 +15,22 @@ export function initCanvas(canvas, songs, { onSelect, isActive }) {
 	const cam = { x: 0, y: 0, zoom: 0.6 }
 	const camTarget = { x: 0, y: 0, zoom: 0.6 }
 
-	function spiralPosition(rank) {
-		const angle = rank * GOLDEN
-		const radius = SPIRAL * Math.sqrt(rank)
+	function spiralPosition(slot) {
+		const angle = slot * GOLDEN
+		const radius = SPIRAL * Math.sqrt(slot)
 		return { x: Math.cos(angle) * radius, y: Math.sin(angle) * radius }
 	}
 
-	const byRank = new Map(songs.map((song) => [song.rank, song]))
+	const bySlot = new Map(songs.map((song, index) => [getSlot(song, index), song]))
 	const items = []
-	for (let rank = 1; rank <= 100; rank++) {
-		const { x, y } = spiralPosition(rank)
+	for (let slot = 1; slot <= itemCount; slot++) {
+		const { x, y } = spiralPosition(slot)
 		items.push({
-			rank,
-			song: byRank.get(rank) || null,
+			slot,
+			song: bySlot.get(slot) || null,
 			x,
 			y,
-			phase: rank * 2.39996,
+			phase: slot * 2.39996,
 			img: null,
 			imgReady: false,
 		})
@@ -141,7 +139,7 @@ export function initCanvas(canvas, songs, { onSelect, isActive }) {
 				ctx.font = `700 ${Math.max(s * 0.3, 8)}px system-ui, sans-serif`
 				ctx.textAlign = "center"
 				ctx.textBaseline = "middle"
-				ctx.fillText(item.song ? `#${item.rank}` : "?", screen.x, screen.y)
+				ctx.fillText(item.song ? `#${item.slot}` : "?", screen.x, screen.y)
 			}
 
 			if (isFocused) {
@@ -154,7 +152,7 @@ export function initCanvas(canvas, songs, { onSelect, isActive }) {
 			// Rank label once zoomed in enough to read it.
 			if (item.imgReady && size > 70) {
 				ctx.fillStyle = "rgb(0 0 0 / .65)"
-				const label = `#${item.rank}`
+				const label = `#${item.slot}`
 				ctx.font = `700 ${size * 0.14}px system-ui, sans-serif`
 				ctx.textAlign = "left"
 				ctx.textBaseline = "top"
@@ -169,8 +167,8 @@ export function initCanvas(canvas, songs, { onSelect, isActive }) {
 
 	// --- focus ---
 
-	function focusRank(rank) {
-		const item = items[rank - 1]
+	function focusSlot(slot) {
+		const item = items[slot - 1]
 		if (!item?.song) return
 		focused = item
 
@@ -281,12 +279,12 @@ export function initCanvas(canvas, songs, { onSelect, isActive }) {
 	resize()
 	addEventListener("resize", resize)
 
-	// Start looking at the outer ring where revealed songs live.
-	const start = spiralPosition(60)
+	// Start looking at the outer ring where most covers live.
+	const start = spiralPosition(Math.round(itemCount * 0.6))
 	cam.x = camTarget.x = start.x
 	cam.y = camTarget.y = start.y
 
 	requestAnimationFrame(render)
 
-	return { focusRank, blur, resize }
+	return { focusSlot, blur, resize }
 }

@@ -39,6 +39,26 @@ function isCanvasView() {
 	return document.body.dataset.view === "canvas"
 }
 
+function canvasConfig() {
+	if (activeList === "top100") {
+		return {
+			itemCount: 100,
+			getSlot: (song) => song.rank,
+		}
+	}
+	return {
+		itemCount: queue.length,
+		getSlot: (_song, index) => index + 1,
+	}
+}
+
+function canvasSlotForSong(song) {
+	if (!song) return null
+	if (activeList === "top100") return song.rank ?? null
+	const index = queue.indexOf(song)
+	return index >= 0 ? index + 1 : null
+}
+
 function text(value) {
 	return value == null ? "" : String(value)
 }
@@ -163,8 +183,9 @@ function updatePlayer() {
 		return
 	}
 
-	if (canvasView && isCanvasView() && song.rank) {
-		canvasView.focusRank(song.rank)
+	if (canvasView && isCanvasView()) {
+		const slot = canvasSlotForSong(song)
+		if (slot) canvasView.focusSlot(slot)
 	}
 
 	const image = song.image
@@ -455,20 +476,17 @@ function setList(listId) {
 	})
 
 	const canvasButton = document.querySelector('.views [data-view="canvas"]')
-	if (listId === "top100") {
-		canvasButton.hidden = false
-	} else {
-		canvasButton.hidden = true
-		if (isCanvasView()) setView("list")
-	}
+	canvasButton.hidden = isFavorites
+	if (isFavorites && isCanvasView()) setView("list")
 
 	searchWrap.hidden = isFavorites
 	resetCanvas()
 	renderList()
+	if (isCanvasView() && !isFavorites) setView("canvas")
 }
 
 function setView(view) {
-	if (activeList !== "top100" && view === "canvas") view = "list"
+	if (activeList === "favoritter" && view === "canvas") view = "list"
 
 	document.body.dataset.view = view
 	localStorage.setItem("top100-view", view)
@@ -485,12 +503,13 @@ function setView(view) {
 			canvasView = initCanvas(document.querySelector("#field"), queue, {
 				onSelect: (song) => playSong(song, activeList),
 				isActive: isCanvasView,
+				...canvasConfig(),
 			})
 		}
 		if (canvasView) {
 			canvasView.resize()
-			const song = currentSong()
-			if (song?.rank) canvasView.focusRank(song.rank)
+			const slot = canvasSlotForSong(currentSong())
+			if (slot) canvasView.focusSlot(slot)
 		}
 	}
 }
